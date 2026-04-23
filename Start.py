@@ -1,16 +1,28 @@
 import os
 from nicegui import ui, app
 
+# ---------- Theme Colors ----------
+ui.colors(
+    primary="#005487",
+    secondary="#de7c00",
+    accent="#4e5b31"
+    )
+
+ui.add_head_html("""
+                 <style>
+                    body {background: #ffffff; color: #98b8ad;}
+                </style>
+                """)
 
 # ---------- Auth state ----------
 def is_logged_in() -> bool:
     return app.storage.user.get("logged_in", False)
 
 
-# ---------- Shared navbar ----------
+# ---------- Shared navbar ----------col
 def navbar():
     with ui.header().classes("items-center justify-between px-6 py-3").style(
-        "background: #005487; box-shadow: 0 2px 8px rgba(0,0,0,0.3);"
+        "background: var(--q-primary); box-shadow: 0 2px 8px rgba(0,0,0,0.3);"
     ):
         with ui.row().classes("items-center gap-3"):
             ui.label("🥑").style("font-size: 1.6rem;")
@@ -26,14 +38,10 @@ def navbar():
                     ("Order Trends", "/order-trends"),
                     ("KPI Showcase", "/kpi"),
                 ]:
-                    ui.button(label, on_click=lambda r=route: ui.navigate.to(r)).props(
-                        "flat"
-                    ).style("color: #de7c00; font-weight: 550;")
-
-                ui.separator().props("vertical").style("background: rgba(255,255,255,0.3); height:24px;")
-                ui.button("Log out", on_click=do_logout).props("flat").style(
-                    "color: #de7c00; font-weight: 550;"
-                )
+                    ui.button(label, on_click=lambda r=route: ui.navigate.to(r)).props("flat", color="secondary")
+                    
+                ui.separator().props("vertical").style("background: rgba(255,255,255,0.3); height:30px;")
+                ui.button("Log out", on_click=do_logout).props("flat", color="secondary")
 
 
 # ---------- Auth actions ----------
@@ -90,7 +98,7 @@ def _render_login():
     ):
         with ui.card().style(
             "width: 360px; padding: 2rem; border-radius: 16px; "
-            "box-shadow: 0 4px 24px rgba(0,0,0,0.12);"
+            "box-shadow: 0 4px 24px rgba(0,0,0,0.12); color: secondary;"
         ):
             with ui.column().classes("items-center gap-4 w-full"):
                 ui.label("🥑").style("font-size: 3rem;")
@@ -104,7 +112,7 @@ def _render_login():
                 ui.separator()
 
                 ui.button("Log in", on_click=_do_login).props("unelevated").style(
-                    "width: 100%; background: #005487; color: white; "
+                    "width: 100%; color: white; "
                     "font-size: 1rem; font-weight: 600; border-radius: 8px; padding: 10px;"
                 )
 
