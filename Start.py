@@ -39,12 +39,12 @@ def navbar():
                     ("KPI Showcase", "/kpi"),
                 ]:
                     ui.button(label, on_click=lambda r=route: ui.navigate.to(r)).props(
-                        "flat color=secondary"
+                        "flat color=white"
                     )
                 ui.separator().props("vertical").style(
                     "background: rgba(255,255,255,0.3); height:30px;"
                 )
-                ui.button("Log out", on_click=do_logout).props("flat color=secondary")
+                ui.button("Log out", on_click=do_logout).props("flat color=white")
 
 
 # ---------- Auth actions ----------
@@ -113,7 +113,7 @@ def _render_login():
                     "font-size: 1.4rem; font-weight: 700; color: var(--q-primary);"
                 )
                 ui.label("Feeding San Diego's internal toolkit").style(
-                    "font-size: 0.85rem; color: var(--q-accent); text-align: center;"
+                    "font-size: 0.85rem; font-weight: 550; color: var(--q-accent); text-align: center;"
                 )
                 ui.separator()
                 ui.button("Log in", on_click=_do_login).props("unelevated color=primary").style(
