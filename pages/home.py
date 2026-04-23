@@ -7,17 +7,17 @@ def render():
         with ui.row().classes("items-center gap-3"):
             ui.label("🥑").style("font-size: 2.5rem;")
             ui.label("Welcome to Fluffy!").style(
-                "font-size: 2rem; font-weight: 700; color: #1a3a5c;"
+                "font-size: 2rem; font-weight: 700; color: var(--q-primary);"
             )
 
         ui.label(
             "Fluffy is an all-in-one interface designed specifically for Feeding San Diego."
-        ).style("font-size: 1.05rem; color: #444;")
+        ).style("font-size: 1.05rem; font-weight: 550; color: var(--q-accent);")
 
         ui.separator()
 
         ui.label("What can Fluffy do?").style(
-            "font-size: 1.2rem; font-weight: 600; color: #1a3a5c;"
+            "font-size: 1.2rem; font-weight: 600; color: var(--q-primary);"
         )
 
         # Feature cards
@@ -51,18 +51,18 @@ def render():
         with ui.grid(columns=1).classes("w-full gap-4"):
             for icon, title, route, description in features:
                 with ui.card().classes("w-full cursor-pointer hover:shadow-lg transition-shadow").style(
-                    "border-radius: 12px; border-left: 4px solid #1a3a5c;"
+                    "border-radius: 12px; border-left: 4px solid var(--q-accent);"
                 ) as card:
                     with ui.row().classes("items-start gap-4 p-2"):
                         ui.label(icon).style("font-size: 2rem; min-width: 2.5rem;")
                         with ui.column().classes("gap-1"):
                             ui.label(title).style(
-                                "font-size: 1.1rem; font-weight: 600; color: #1a3a5c;"
+                                "font-size: 1.1rem; font-weight: 600; color: var(--q-primary);"
                             )
-                            ui.label(description).style("color: #555; line-height: 1.5;")
+                            ui.label(description).style("color: var(--q-accent); line-height: 1.5;")
                             ui.button(
                                 f"Open {title} →",
                                 on_click=lambda r=route: ui.navigate.to(r),
                             ).props("flat").style(
-                                "color: #1a3a5c; font-weight: 600; padding: 0; margin-top: 4px;"
+                                "color: var(--q-primary); font-weight: 600; padding: 0; margin-top: 4px;"
                             )
