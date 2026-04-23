@@ -1,9 +1,11 @@
 import os
 from nicegui import ui, app
 
+
 # ---------- Auth state ----------
 def is_logged_in() -> bool:
     return app.storage.user.get("logged_in", False)
+
 
 # ---------- Shared navbar ----------
 def navbar():
@@ -26,11 +28,11 @@ def navbar():
                 ]:
                     ui.button(label, on_click=lambda r=route: ui.navigate.to(r)).props(
                         "flat"
-                    ).style("color: white; font-weight: 500;")
+                    ).style("color: #de7c00; font-weight: 550;")
 
                 ui.separator().props("vertical").style("background: rgba(255,255,255,0.3); height:24px;")
                 ui.button("Log out", on_click=do_logout).props("flat").style(
-                    "color: #de7c00; font-weight: 500;"
+                    "color: #de7c00; font-weight: 550;"
                 )
 
 
@@ -93,16 +95,16 @@ def _render_login():
             with ui.column().classes("items-center gap-4 w-full"):
                 ui.label("🥑").style("font-size: 3rem;")
                 ui.label("Welcome to Fluffy").style(
-                    "font-size: 1.4rem; font-weight: 700; color: #1a3a5c;"
+                    "font-size: 1.4rem; font-weight: 700; color: #005487;"
                 )
                 ui.label("Feeding San Diego's internal toolkit").style(
-                    "font-size: 0.85rem; color: #666; text-align: center;"
+                    "font-size: 0.85rem; color: #4e5b31; text-align: center;"
                 )
 
                 ui.separator()
 
                 ui.button("Log in", on_click=_do_login).props("unelevated").style(
-                    "width: 100%; background: #1a3a5c; color: white; "
+                    "width: 100%; background: #005487; color: white; "
                     "font-size: 1rem; font-weight: 600; border-radius: 8px; padding: 10px;"
                 )
 
