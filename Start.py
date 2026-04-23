@@ -8,7 +8,7 @@ def is_logged_in() -> bool:
 # ---------- Shared navbar ----------
 def navbar():
     with ui.header().classes("items-center justify-between px-6 py-3").style(
-        "background: #1a3a5c; box-shadow: 0 2px 8px rgba(0,0,0,0.3);"
+        "background: #005487; box-shadow: 0 2px 8px rgba(0,0,0,0.3);"
     ):
         with ui.row().classes("items-center gap-3"):
             ui.label("🥑").style("font-size: 1.6rem;")
@@ -30,7 +30,7 @@ def navbar():
 
                 ui.separator().props("vertical").style("background: rgba(255,255,255,0.3); height:24px;")
                 ui.button("Log out", on_click=do_logout).props("flat").style(
-                    "color: #ffcdd2; font-weight: 500;"
+                    "color: #de7c00; font-weight: 500;"
                 )
 
 
