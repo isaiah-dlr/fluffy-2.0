@@ -1,0 +1,852 @@
+Pull Date,Shipment Date,Agency Name,Agency Order #,Item Description,Item #,Quantity Pulled,Agency Order Total,Pulling Errors,Error Type,Corrective Action,Team Member,Checked By,Accuracy %,Done
+,,October 2025,,,,,,,,,,,0,TRUE
+,,Friday,,,,,,,,,,,,TRUE
+10/03/25,10/07/25,MP: Pauma,AO-76226,-,-,243,243,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/03/25,10/07/25,Brothers Keeper,AO-76262,-,-,96,96,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/03/25,10/07/25,MP: Downtown Fallbrook,AO-76239,-,-,93,93,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/03/25,10/07/25,SP: Borrego Springs,AO-76221,-,-,191,191,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/03/25,10/07/25,SP: Valley High,AO-76238,-,-,90,90,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/03/25,10/07/25,MP: Mesa Grande,AO-76224,-,-,31,31,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/03/25,10/07/25,MP: Lakeside,AO-76189,-,-,105,105,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/03/25,10/07/25,SP: Hoover High School,AO-76130,-,-,189,189,,,,Andrew Marquez,Kenny Conner,100,TRUE
+10/03/25,10/07/25,SP: Siatech South Bay,AO-76128,-,-,27,27,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/03/25,10/07/25,MiraCosta Oceanside,AO-76288,-,-,45,45,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/03/25,10/07/25,North Park Apostolic,AO-76282,-,-,58,58,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/03/25,10/07/25,SP: Escondido High School,AO-76241,-,-,121,121,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/03/25,10/07/25,BP: Julian Elementary School,AO-76298,-,-,38,38,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/03/25,10/07/25,San Marcos SDA,AO-76301,-,-,13,13,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/03/25,10/07/25,Venture Church,AO-76320,-,-,32,32,,,,AJ Enriquez,Kenny Conner,100,TRUE
+,,Monday,,,,,,,,,,,,TRUE
+10/06/25,10/08/25,SP: Mt. Miguel,AO-76137,-,-,38,38,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/06/25,10/08/25,SP: Paradise Hills Elementary,AO-76138,-,-,64,64,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/06/25,10/08/25,MP: Shelter Valley,AO-76291,-,-,53,53,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/06/25,10/08/25,SP: Castle Park,AO-76134,-,-,272,272,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/06/25,10/08/25,SP: Lemon Crest,AO-76292,-,-,40,40,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/06/25,10/08/25,Ocean Beach Emergency Food,AO-76300,-,-,40,40,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/06/25,10/08/25,MP: Julian,AO-76283,-,-,86,86,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/06/25,10/08/25,City Heights Assembly,AO-76303,-,-,26,26,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/06/25,10/08/25,Mission Village,AO-76315,-,-,15,15,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/06/25,10/08/25,Community  Resource Center,AO-76332,-,-,33,33,,,,AJ Enriquez,Michael Hartin,100,TRUE
+10/06/25,10/08/25,Backcountry Communities Thriving,AO-76337,-,-,28,28,,,,Andrew Marquez,Michael Hartin,100,TRUE
+10/06/25,10/08/25,SP: San Marcos Elementry,AO-76352,-,-,247,247,,,,Brandon Chiang,Michael Hartin,100,TRUE
+10/06/25,10/08/25,Libby Elementary,AO-76353,-,-,40,40,,,,Brandon Chiang,AJ Enriquez,100,TRUE
+10/06/25,10/08/25,SD Rescue Mission,AO-76349,-,-,50,50,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/06/25,10/08/25,Veterans Village,AO-76341,-,-,59,59,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/06/25,10/08/25,St. Rose of Lima,AO-76331,-,-,75,75,,,,Brandon Chiang,Kenny Conner,100,TRUE
+,,Tuesday,,,,,,,,,,,,TRUE
+10/07/25,10/09/25,SP: Mann Middle School,AO-76149,-,-,42,42,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/07/25,10/09/25,SP: Lemon Grove Academy,AO-76161,-,-,63,63,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/07/25,10/09/25,SP: Boyce Child Development Center,AO-76383,Scooby-Doo baked graham crackers,D-1528,12,7,5,Wrong quantity,Andrew returned 5 cases.,Andrew Marquez,Kenny Conner,171.4285714,TRUE
+10/07/25,10/09/25,SP: Clothier Child Development Center,AO-76384,"Black Beans, Cans",P-0090,2,3,-1,Wrong quantity,Andrew pulled the remaining case.,Andrew Marquez,Kenny Conner,66.66666667,TRUE
+10/07/25,10/09/25,SP: North Terrace Elementary,AO-76382,-,-,74,74,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/07/25,10/09/25,La Maestra Community Health Centers,AO-76371,-,-,41,41,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/07/25,10/09/25,New Hope SDA,AO-76359,-,-,65,65,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/07/25,10/09/25,"McAlister, Inc.",AO-76357,-,-,62,62,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/07/25,10/09/25,Meridian Baptist Church,AO-76336,-,-,60,60,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/07/25,10/09/25,ASI of CSUSM (CalState San Marcos),AO-76325,-,-,81,81,,,,Andrew Marquez,Kenny Conner,100,TRUE
+10/07/25,10/09/25,MP: Guatay,AO-76296,-,-,88,88,,,,Andrew Marquez,Kenny Conner,100,TRUE
+10/07/25,10/09/25,SP: Hilltop Child Development Center,AO-76230,-,-,134,134,,,,Andrew Marquez,Kenny Conner,100,TRUE
+10/07/25,10/09/25,SP: Clairemont Canyons Academy,AO-76229,-,-,44,44,,,,Andrew Marquez,Kenny Conner,100,TRUE
+10/07/25,10/09/25,SP: Imperial Beach Charter School,AO-76163,-,-,75,75,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/07/25,10/09/25,SP: Millennial Tech Middle,AO-76162,-,-,86,86,,,,Brandon Chiang,Kenny Conner,100,TRUE
+,,Wednesday,,,,,,,,,,,,TRUE
+10/08/25,10/10/25,Shepherds Pantry,AO-76351,-,-,25,25,,,,Andrew Marquez,Kenny Conner,100,TRUE
+10/08/25,10/10/25,Bridge of Hope,AO-76360,-,-,82,82,,,,Andrew Marquez,Kenny Conner,100,TRUE
+10/08/25,10/10/25,Shadow Mountain Cares,AO-76381,-,-,181,181,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/08/25,10/10/25,Southport Christian Center,AO-76355,-,-,259,259,,,,Andrew Marquez,Kenny Conner,100,TRUE
+10/08/25,10/10/25,Masjidul Taqwa,AO-76358,-,-,170,170,,,,Brandon Chiang,Kenny Conner,100,TRUE
+,,Thursday,,,,,,,,,,,,TRUE
+10/09/25,10/10/25,First Congregational Church of Ramona,AO-76348,-,-,284,284,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/09/25,10/10/25,MP: Bonsall,AO-76407,-,-,195,195,,,,Andrew Marquez,Kenny Conner,100,TRUE
+10/09/25,10/10/25,Good Shepherd Community Projects,AO-76363,-,-,40,40,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/09/25,10/10/25,Us 4 Warriors,AO-76375,-,-,44,44,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/09/25,10/10/25,SP: Rolando Park Elementary,AO-76168,-,-,40,40,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/09/25,10/10/25,SP: Kempton Street Academy,AO-76164,-,-,71,71,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/09/25,10/10/25,SP: Loma Verde Academy,AO-76171,-,-,77,77,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/09/25,10/10/25,SP: Lincoln High School,AO-76172,-,-,77,77,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/09/25,10/10/25,Church of the Nazarene,AO-76387,-,-,122,122,,,,Brandon Chiang,Kenny Conner,100,TRUE
+,,Friday,,,,,,,,,,,,TRUE
+10/10/25,10/11/25,South Bay Food Pantry,AO-76388,,,,,,,,Brandon Chiang,,,
+10/10/25,10/11/25,Courage to Call,AO-76413,,,,,,,,Andrew Marquez,,,
+10/10/25,10/13/25,TrueCare San Marcos,AO-76414,-,-,21,21,0,,,Andrew Marquez,Kenny Conner,100,TRUE
+10/10/25,10/13/25,SP: Fallbrook STEM,AO-76423,-,-,46,46,,,,Andrew Marquez,Kenny Conner,100,TRUE
+10/10/25,10/13/25,SP: Berry Elementary,AO-76207,-,-,52,52,0,,,Alex Tapia,Kenny Conner,100,TRUE
+10/10/25,10/13/25,SP: Bayside STEAM,AO-76208,-,-,107,107,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/10/25,10/13/25,Southwestern College,AO-76369,-,-,38,38,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/10/25,10/13/25,Fallbrook Food Pantry,AO-76374,-,-,280,280,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/10/25,10/13/25,Vista Teen Outreach,AO-76380,-,-,73,73,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/10/25,10/13/25,Jewish Family Services,AO-76386,-,-,,,,,,Brandon Chiang,,,
+10/10/25,10/13/25,Friendships for Hope,,Produce Only,,,,,,,,,,
+10/10/25,10/13/25,Templo Evangelico Maranatha,AO-76389,Produce Only,,,,,,,,,,
+10/10/25,10/13/25,Faith Tabernacle,AO-76432,-,-,,,,,,Brandon Chiang,,,TRUE
+10/10/25,10/13/25,SP: Orange Glen High School,AO-76435,-,-,,,,,,Alex Tapia,,,
+10/10/25,10/13/25,SP: San Pasqual High School,AO-76437,-,-,,,,,,Alex Tapia,,,
+10/10/25,10/13/25,MP: Jacumba,AO-76438,-,-,122,122,0,,,Alex Tapia,Kenny Conner,100,TRUE
+10/10/25,10/13/25,MP: Campo,AO-76439,-,-,111,111,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/10/25,10/13/25,Lifeline Community Services,AO-76456,Blanket Only,,,,,,,,,,
+,,Saturday,,,,,,,,,,,,TRUE
+10/11/25,10/13/25,La Maestra,AO-76372,,,,,,,,Brandon Chiang,,,
+10/11/25,10/13/25,Faith Lutheran,AO-76403,,,,,,,,Brandon Chiang,,,
+10/11/25,10/13/25,Armed Service YMCA Camp Pendleton,AO-76370,-,-,,,,,,Brandon Chiang,,,
+10/11/25,10/13/25,SP: Teofilo Mendoza Elementary,AO-76209,,,,,,,,Brandon Chiang,,,
+,,Monday,,,,,,,,,,,,TRUE
+10/13/25,10/14/25,SP: Rosa Parks,AO-76211,-,-,83,83,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/13/25,10/14/25,SP: STARPAL - Colina del Sol Park,AO-76215,-,-,78,78,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/13/25,10/14/25,SP: El Cajon Valley High,AO-76216,-,-,-,-,-,,,Brandon Chiang,,,
+10/13/25,10/14/25,SP: Edison Elementary,AO-76235,,,98,98,0,,,Michael Hartin,,,TRUE
+10/13/25,10/14/25,Salvation Army Chula Vista,AO-76393,Produce Only,,,,,,,,,,
+10/13/25,10/14/25,Foundry Food Pantry,AO-76400,Produce Only,,,,,,,,,,
+10/13/25,10/14/25,Cuyamaca College,AO-76402,,,159,159,0,,,Brandon Chiang,,,TRUE
+10/13/25,10/14/25,La Maestra,AO-76412,-,-,72,-,-,,,Eric,,,
+10/13/25,10/14/25,Sherman Heights Community Center,AO-76415,-,-,-,--,-,,,Brandon Chiang,,,
+10/13/25,10/14/25,MiraCosta Oceanside,AO-76419,-,-,280,-,-,,,Jim A.,,,
+10/13/25,10/14/25,Venture Church (#Lovethe760),AO-76424,,,56,,,,,Brandon Chiang,,,
+10/13/25,10/14/25,UCSD PB/ Normal Heights,AO-76434,-,-,-,-,-,,,Brandon Chiang,,,
+10/13/25,10/14/25,MP: Ranchita,AO-76440,,,71,,,,,,,,
+10/13/25,10/14/25,MP: Butterfield,AO-76441,,,111,,,,,Brandon Chiang,,,
+10/13/25,10/14/25,SP: Warner Springs,AO-76443,-,-,60,60,0,,,Jim A.,,,TRUE
+10/13/25,10/14/25,MP: Oceanside,AO-76474,,,275,,,,,,,,
+10/13/25,10/14/25,I Am My Brothers Keeper,AO-76445,-,-,48,48,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+,,Tuesday,,,,,,,,,,,,TRUE
+10/14/25,10/14/25,Church of the Nazarene,AO-76418,,,,,,,,Brandon Chiang,,,TRUE
+10/14/25,10/14/25,Alpha Project,AO-76394,-,-,170,170,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/14/25,10/14/25,SP: Monte Vista  High School,AO-76212,,,37,,,,,Brandon Chiang,,,TRUE
+10/14/25,10/14/25,Christian Church of Lemon Grove,AO-76420,-,-,144,-,-,,,Brandon Chiang,,,TRUE
+10/14/25,10/14/25,BP: Howard Gardner Community School,AO-76278,,,,,,,,Denise,,,TRUE
+10/14/25,10/15/25,SD South Bay SDA,,-,-,123,123,-,,,Alex Tapia,,,TRUE
+10/14/25,10/15/25,SP: Hancock,AO-76252,,,135,135,,,,Linard,,,
+10/14/25,10/15/25,SP: Hancock Elementary,AO-76252,-,-,-,-,-,,,Linard,,,TRUE
+10/14/25,10/15/25,SP: Porter Elementary,AO-76257,-,-,102,102,0,,,Denise,Kenny Conner,100,TRUE
+10/14/25,10/15/25,SP: Hamilton Elementary,AO-76258,-,-,102,102,-,,,Linard,,,TRUE
+10/14/25,10/15/25,SP: Feaster Charter School,AO-76261,-,-,40,40,-,,,Linard,,,TRUE
+10/14/25,10/15/25,MP: Alpine,,-,-,166,166,-,,,Linard,,,TRUE
+10/14/25,10/15/25,MP: Rincon,,-,-,43,43,-,,,Linard,,,TRUE
+10/14/25,10/15/25,MP: Valley Center,,-,-,176,176,-,,,Linard,,,TRUE
+10/14/25,10/15/25,Comm. Resource Center,,-,-,25,25,-,,,Linard,,,TRUE
+10/14/25,10/15/25,City Heights Assembly of God,AO-76421,-,-,29,29,0,,,Denise,Kenny Conner,100,TRUE
+10/14/25,10/15/25,Miramar College,AO-76429,-,-,101,101,-,,,Eric,,,TRUE
+10/14/25,10/15/25,MP: San Marcos,,-,-,367,367,-,,,Brandon Chiang,,,TRUE
+10/14/25,10/15/25,Rock Church- City Heights,AO-76431,-,-,-,-,-,,,Brandon Chiang,,,TRUE
+10/14/25,10/15/25,Easterseals Southern California,AO-76447,-,-,91,91,-,,,Eric,,,TRUE
+10/14/25,10/15/25,SP: Pauma School,AO-76478,,,70,70,,,,,,,
+10/14/25,10/15/25,MP: San Pasqual,AO-76471,,,60,60,,,,,,,
+10/14/25,10/15/25,SP lindo Park Elementary,AO-76480,,,61,61,,,,Michael Hartin,,,
+10/14/25,10/15/25,St. Rose of Lima,AO-76455,-,-,48,48,-,,,Brandon Chiang,,,TRUE
+10/14/25,10/15/25,MP: One Safe Place,AO-76509,-,-,66,66,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+,,Wednesday 10/15/25,,,,,,,,,,,,TRUE
+10/15/25,10/15/25,FSD Marketplace,AO-76356,,,,,,,,Imad,,,TRUE
+10/15/25,10/15/25,BP: Palomar High,AO-76279,,,,,,,,Imad,,,TRUE
+10/15/25,10/15/25,SP: NHA Head Start,AO-76263,,,81,81,,,,Brandon Chiang,,,TRUE
+10/15/25,10/16/25,SP: Joli-Ann Leichtag Elementary,AO-76520,-,-,52,52,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/15/25,10/16/25,Meridian Baptist,AO-76482,-,-,70,70,0,,,Jim A.,Kenny Conner,100,TRUE
+10/15/25,10/16/25,SP: Vista Innovation Early Education,AO-76535,-,-,121,121,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/15/25,10/16/25,St. Andrews,AO-76449,-,-,184,184,0,,,Jim A.,Kenny Conner,100,TRUE
+10/15/25,10/16/25,ASI of CSUSM,AO-76446,-,-,211,211,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/15/25,10/16/25,Support The Enlisted Project,AO-76425,-,-,168,168,0,,,Alex Tapia,Kenny Conner,100,TRUE
+10/15/25,10/16/25,SP: Knox Middle School,AO-76265,-,-,51,51,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/15/25,10/16/25,MP: Descanso,,,,122,122,,,,Jim A.,,,TRUE
+10/15/25,10/16/25,MP: Potrero,AO-76508,-,-,123,123,0,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/15/25,10/16/25,SD Mesa College,AO-76469,-,-,156,156,0,,,Alex Tapia,Kenny Conner,100,TRUE
+10/15/25,10/16/25,La Maestra,AO-76467,-,-,61,61,0,,,Jim A.,Kenny Conner,100,TRUE
+10/15/25,10/16/25,SP Pacific View Leadership,AO-76274,,,69,69,0,,,Andrew Marquez,,,
+10/15/25,10/16/25,SP: STARPAL,AO-76276,,,53,53,0,,,Andrew Marquez,,,
+10/15/25,10/16/25,TACO,AO-76514,,,56,56,,,,Alex Tapia,,,
+,,Trinity Lutheran,AO-76436,,,80,80,,,,Brandon Chiang,,,
+,,Iglesia Casa De Alabanza,AO-76444,,,80,80,,,,Alex Tapia,,,
+,,SP: EES Preschool Vista,AO-76535,,,121,121,,,,Brandon Chiang,,,
+10/15/25,10/16/25,LJC Ministries,,-,-,100,100,,,,Brandon Chiang,,,
+,,Thursday 10/16/25,,,,,,,,,,,,TRUE
+10/16/25,10/16/25,FSD Marketplace,AO-76575,-,-,80,80,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/16/25,10/17/25,Shepherds Pantry,AO-76470,-,-,25,25,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/16/25,10/17/25,Shadow Mt. Cares,AO-76537,-,-,184,184,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/16/25,10/17/25,Bridge of Hope,AO-76538,-,-,9,9,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/16/25,10/17/25,Journey Community Church,AO-76503,-,-,84,84,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/16/25,10/17/25,SP: Harborside Elementary,AO-76305,-,-,47,47,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/16/25,10/17/25,Southport Christian Center,AO-76506,-,-,152,152,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/16/25,10/17/25,Imperial Beach Neighborhood Center,AO-76524,-,-,84,84,,,,Transportation,Kenny Conner,100,TRUE
+10/16/25,10/17/25,Villa Escondido,AO-76457,-,-,38,38,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/16/25,10/17/25,Support The Enlisted Project,AO-76594,-,-,43,43,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/16/25,10/17/25,SP: Lexington Elementary,AO-76306,-,-,118,118,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/16/25,10/17/25,EF Gateway Village,AO-76563,-,-,130,130,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/16/25,10/17/25,Community Partnership Events,AO-76603,-,-,139,139,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/16/25,10/17/25,Our Lady of Mt. Carmel Church,AO-76492,-,-,156,156,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/16/25,10/17/25,Food for Life,AO-76539,-,-,12,12,,,,Alex Tapia,Kenny Conner,100,TRUE
+10/16/25,10/17/25,Church of the Nazarene,AO-76510,-,-,90,90,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/16/25,10/17/25,SP: Preuss School,AO-76545,,,28,28,,,,Brandon Chiang,,,
+10/16/25,10/18/25,Ocean View Chruch,AO-76529,,,94,94,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/16/25,10/18/25,South Bay Food Pantry,AO-76540,,,65,65,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/16/25,10/17/25,FSD Marketplace,AO-76580,-,-,81,81,,,,Alex Tapia,Kenny Conner,100,TRUE
+,,Friday 10/17/25,,,,,,,,,,,,TRUE
+10/17/25,10/18/25,Neighborhood Healthcare,AO-76515,-,-,56,56,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/17/25,10/18/25,FSD Market,AO-76628,,,61,61,,,,Linard,Kenny Conner,100,TRUE
+10/17/25,10/20/25,SP: Teofilo Mendoza Elementary,AO-76310,-,-,80,80,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/17/25,10/20/25,SP: Berry Elementary,AO-76308,-,-,45,45,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/17/25,10/20/25,La Maestra Community Health,AO-76532,-,-,86,86,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/17/25,10/20/25,San Diego City College,AO-76523,,,93,93,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/17/25,10/20/25,Faith Tabernacle,AO-76600,-,-,107,107,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/17/25,10/20/25,Fallbrook SDA,AO-76578,,,48,48,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/17/25,10/20/25,Fallbrook Food Pantry,AO-76544,,,164,164,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/17/25,10/20/25,MP: Boulevard,AO76527,,,151,151,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/17/25,10/20/25,SP: Clover Flat Elementary,AO-75526,-,-,111,111,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/17/25,10/20/25,Armed Services YMCA Camp Pendleton,AO-76555,,,86,86,,,,Linard,Kenny Conner,100,TRUE
+10/17/25,10/20/25,Jewish Family Service,AO-76528,,,145,145,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/17/25,10/20/25,Mission San Luis Rey,AO-76582,,,356,356,,,,Brandon Chiang,,,
+10/17/25,10/20/25,SP: Orange Glen High,AO-76576,,,95,95,,,,Brandon Chiang,,,
+10/17/25,10/20/25,SP: San Pasqual High,AO-76579,,,93,93,,,,Brandon Chiang,,,
+10/17/25,10/20/25,SP: Dewey Elementary,AO-76583,,,75,75,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/17/25,10/20/25,SP: Pendleton Elementary,AO-76309,,,52,52,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/17/25,10/20/25,TSA Liberty Station,AO-76651,,,414,414,,,,Linard,Kenny Conner,100,TRUE
+10/17/25,10/21/25,Rock Church El Cajon,AO-76521,,,102,102,,,,Linard,,,
+10/17/25,10/21/25,Versa @ PSCDC,AO-76607,,,18,18,,,,Linard,Kenny Conner,100,TRUE
+10/17/25,10/21/25,I Am My Bro. Keeper,AO-76605,,,56,56,,,,AJ Enriquez,,,
+10/17/25,10/21/25,UCSD PB/Normal Heights,AO-76546,,,44,44,,,,AJ Enriquez,,,
+10/17/25,10/21/25,SP: Hoover High,AO-76324,,,195,195,,,,Linard,,,
+,,Saturday 10/18/25,,,,,,,,,,,,TRUE
+10/18/25,10/21/25,SP: Borrego Springs,AO-76597,,,300,300,,,,Noraddin,,,
+10/18/25,10/21/25,SP: Valley High,AO-76587,,,72,72,,,,Noraddin,,,
+10/18/25,10/21/25,MP: Downtown Fallbrook,AO-76623,,,72,72,,,,Noraddin,,,
+10/18/25,10/21/25,MP: Pauma,AO76596,,,285,285,,,,Jim A.,,,
+,,Monday 10/20/25,,,,,,,,,,,,TRUE
+10/20/25,10/20/25,FSD Market,AO-76665,,,48,48,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/20/25,10/21/25,SP: Pro Kids First,AO-76624,,,57,57,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/20/25,10/21/25,SP: Escondido High School,AO-76630,,,50,50,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/20/25,10/21/25,Church of Nazarene,AO-76556,,,70,70,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/20/25,10/21/25,MP: City Heights,AO-76326,,,48,48,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/20/25,10/21/25,San Marcos SDA,AO-76551,,,21,21,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/20/25,10/21/25,La Maestra,AO-76553,,,51,51,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/20/25,10/21/25,Ventrue CHurch,AO-76602,,,12,12,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/20/25,10/21/25,North Park Apostolic,AO-76552,,,69,69,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/20/25,10/21/25,MP: Mesa Grande,AO-76559,,,26,26,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/20/25,10/22/25,Restoration Ranch,AO-76581,,,53,53,,,,AJ Enriquez,,,
+10/20/25,10/22/25,Mountain View Community Church,AO-76574,,,54,54,,,,AJ Enriquez,,,
+10/20/25,10/22/25,SP: Lemon Crest Elementary,AO-76648,,,49,49,,,,AJ Enriquez,,,
+10/20/25,10/22/25,MP Julian,AO-76642,,,124,124,,,,Brandon Chiang,,,
+10/20/25,10/22/25,MP Shelter Valley,AO-76640,,,55,55,,,,Brandon Chiang,,,
+10/20/25,10/22/25,SP: San Marcos Elementary,AO-76631,,,190,190,,,,Michael Hartin,,,
+10/20/25,10/22/25,Ocean Beach Emergency,AO-76557,,,30,30,,,,Brandon Chiang,,,
+10/20/25,10/22/25,SP: Paradise Hills Elementary,AO-76330,,,79,79,,,,Brandon Chiang,,,
+10/20/25,10/22/25,St. Rose of Lima,AO-76601,,,47,47,,,,Brandon Chiang,,,
+10/20/25,10/22/25,City Heights Assembly of God,AO-76658,,,26,26,,,,AJ Enriquez,,,
+10/20/25,10/22/25,People Assisting The Homeless PATH,AO-76577,,,24,24,,,,AJ Enriquez,,,
+10/20/25,10/22/25,SP: Our lady's School,AO-76327,,,103,103,,,,AJ Enriquez,,,
+10/20/25,10/22/25,Vererans Village,AO-76589,,,82,82,,,,AJ Enriquez,,,
+10/20/25,10/22/25,Mission Village,AO-76604,,,34,34,,,,AJ Enriquez,,,
+10/20/25,10/22/25,SP: Libby Elementary,AO-76634,,,114,114,,,,Michael Hartin,,,
+10/20/25,10/22/25,SP: Lincoln Middle School,AO76633,,,176,176,,,,Michael Hartin,,,
+10/20/25,10/22/25,CPE VFW Don Diego,AO-76661,,,30,30,,,,Michael Hartin,,,
+10/20/25,10/21/25,SP: Guajome Park Academy,AO-76635,,,51,51,,,,Michael Hartin,,,
+10/20/25,10/21/25,SP Mount Miguel High School,AO-76329,,,41,41,,,,Michael Hartin,,,
+,,Tuesday 10/21/25,,,,,,,,,,,,TRUE
+10/21/25,10/22/25,CPE 11th Marine,AO-76691,,,21,21,,,,AJ Enriquez,,,
+10/21/25,10/22/25,MP: One Safe Place,AO-76672,,,45,45,,,,AJ Enriquez,,,
+10/21/25,10/22/25,MiraCosta,AO-76679,,,96,96,,,,Brandon Chiang,,,
+10/21/25,10/21/25,FSD Market Place,AO-76584,,,76,76,,,,Michael Hartin,,,
+10/21/25,10/21/25,BP Julian Elementary,AO-76673,,,26,26,,,,AJ Enriquez,,,
+10/21/25,10/23/25,Ocean View Church,AO76653,,,75,75,,,,AJ Enriquez,Kenny Conner,,
+10/21/25,10/23/25,Rock Church Chula Vista,AO-76637,,,123,123,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/21/25,10/23/25,La Maestra,AO-76626,,,82,82,,,,Brandon Chiang,Kenny Conner,,
+10/21/25,10/23/25,SP: Imperial Beach Charter School,AO-76343,,,96,96,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/21/25,10/23/25,MP Guatay,AO-76656,,,141,141,,,,Michael Hartin,Kenny Conner,100,TRUE
+10/21/25,10/23/25,SP: Bostonia Global Elementary,AO-76342,,,65,65,,,,Michael Hartin,,,
+10/21/25,10/23/25,Meridian Baptist,AO-76647,,,68,68,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/21/25,10/23/25,Journey Community Church,AO-76655,,,27,27,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/21/25,10/23/25,SP: Millenial Tech Middle School,AO-76344,,,98,98,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/21/25,10/23/25,Jeff & Deni Jacobs CDC,AO-76676,,,90,90,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/21/25,10/23/25,FDSRC (Fourth District Senior Res. Center,AO-76641,,,128,128,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/21/25,10/23/25,ASI of CSUSM,AO-76606,,,104,104,,,,Michael Hartin,,,
+10/21/25,10/23/25,ASI of CSUSM,AO-76606,,,62,62,,,,AJ Enriquez,,,
+10/21/25,10/23/25,St. Andrews,AO-76649,,,182,182,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/21/25,10/22/25,CPE: LuvWorx,AO-76718,,,38,38,,,,Brandon Chiang,,,
+,,Wednesday 10/22/25,,,,,,,,,,,,TRUE
+10/21/25,10/23/25,CPE Cookouts & Camaraderie,AO-76701,,,14,14,,,,AJ Enriquez,,,TRUE
+10/21/25,10/23/25,MP De Luz,AO-76706,,,60,60,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/21/25,10/23/25,SP: Orange Clen Elementary,AO-76703,,,34,34,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/21/25,10/23/25,SP: Pablo Tac Elementary,AO-76702,,,47,47,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/21/25,10/23/25,SP: Boyce Child Dev. Center,AO-76705,,,41,41,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/21/25,10/23/25,SP: Clothier Child Dev. Center,AO-76704,,,41,41,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/21/25,10/24/25,CPE: Hallo Wellness Fair,AO-76729,,,30,30,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/22/25,10/24/25,Shepherd's Pantry,AO-76659,,,39,39,,,,Michael Hartin,,,
+10/22/25,10/24/25,Shadow Mountain Cares,AO-76689,,,149,149,,,,Michael Hartin,,,
+10/22/25,10/24/25,MT. Manna,AO-76664,,,109,109,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/22/25,10/24/25,Food for Life,AO-76680,,,23,23,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/22/25,10/24/25,SP: Loma Verde Elementary,AO-76346,,,85,85,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/22/25,10/24/25,Bridge of Hope,AO-76667,,,45,45,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/22/25,10/24/25,Southport Christian,AO-76662,,,88,88,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/22/25,10/24/25,Church of Nazarene,AO-76666,,,90,90,,,,AJ Enriquez,,,
+10/22/25,10/24/25,Masjidul Taqwa,AO-76693,,,160,160,,,,AJ Enriquez,,,
+10/22/25,10/24/25,EF: Village At Serra Mesa,AO-76670,,,97,97,,,,Brandon Chiang,,,
+10/22/25,10/24/25,MP: Bonsall,AO-76708,,,223,223,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/22/25,10/24/25,SP: Lincoln High School,AO-76347,,,88,92,,,,AJ Enriquez,,,
+10/22/25,10/24/25,CPE Pathway to Success,AO-76712,,,40,40,,,,AJ Enriquez,,,
+10/22/25,10/25/25,South bay Food Pantry,AO-76692,,,62,62,,,,Brandon Chiang,,,
+,,Thursday 10/23/25,,,,,,,,,,,,TRUE
+10/23/25,10/23/25,FSD Market,AO-76741,,,89,89,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/23/25,10/25/25,Christ Community Church Love Acts,AO-76663,,,73,73,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/23/25,10/25/25,Courage to Call,AO-76728,,,108,108,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/23/25,10/27/25,Southwestern College,AO-76671,,,72,72,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/23/25,10/27/25,Friendships for Hope,AO-76668,,,2,2,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/23/25,10/27/25,SP: Bayside STEAM,AO-76364,,,87,87,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/23/25,10/27/25,Vista Teen Outreach,AO-76675,,,45,45,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/23/25,10/27/25,Faith Lutheran,AO-76711,,,54,54,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/23/25,10/27/25,Armed Services YMCA Camp Pendleton,AO-76733,,,61,61,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/23/25,10/27/25,Fallbrook Food Pantry,AO-76690,,,201,201,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/23/25,10/27/25,MP: Campo,AO-76727,,,211,211,,,,AJ Enriquez,,,
+10/23/25,10/27/25,MP: Jacumba,AO-76725,,,231,231,,,,AJ Enriquez,,,
+10/23/25,10/27/25,Jewish Family Service,AO-76686,,,108,108,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/23/25,10/27/25,SP: Edison Elementary,AO-76735,,,55,55,,,,Brandon Chiang,,,
+10/23/25,10/27/25,Faith Tabernacle,AO-76713,,,119,119,,,,Brandon Chiang,,,
+10/23/25,10/27/25,SP: San Diego High,AO-76737,,,28,28,,,,Brandon Chiang,,,
+10/23/25,10/27/25,La Maestra,AO-76732,,,28,28,,,,Brandon Chiang,,,
+,,Friday 10/24/25,,,,,,,,,,,,TRUE
+10/24/25,10/24/25,FSD Market,AO-76742,,,73,73,,,,Brandon Chiang,,,
+10/24/25,10/25/25,Courage to Call,AO-76777,,,155,155,,,,Brandon Chiang,,,
+10/24/25,10/28/25,Alpha Project,AO-76719,,,47,47,,,,AJ Enriquez,,,
+10/24/25,10/28/25,UCSD PB/Normal Heights,AO-76724,,,30,30,,,,AJ Enriquez,,,
+10/24/25,10/28/25,Sherman Heights Comm Development,AO-76750,,,6,6,,,,AJ Enriquez,,,
+10/24/25,10/28/25,Venture Church,AO-76740,,,12,12,,,,Brandon Chiang,,,
+10/24/25,10/28/25,MiraCosta Oceanside,AO-76760,,,53,53,,,,Brandon Chiang,,,
+10/24/25,10/28/25,MP: Oceanside,AO-76765,,,140,222,,,,Derrick,,,
+10/24/25,10/28/25,MP: Oceanside,AO-76765,,,82,82,,,,Brandon Chiang,,,
+10/24/25,10/28/25,SP: Rosa Parks Elementary,AO-76367,,,106,106,,,,Brandon Chiang,,,
+10/24/25,10/28/25,I Am My Brother's Keeper,AO-76759,,,52,52,,,,Brandon Chiang,,,
+10/24/25,10/28/25,La Maestra,AO-76734,,,78,78,,,,Brandon Chiang,,,
+10/24/25,10/28/25,MP: Vista,AO-76766,,,415,415,,,,Brandon Chiang,,,
+10/24/25,10/28/25,MP: Butterfield,AO-76754,,,102,102,,,,AJ Enriquez,,,
+10/24/25,10/28/25,SP: Warner Ssprings,AO-76755,,,98,98,,,,AJ Enriquez,,,
+10/24/25,10/28/25,MP: Ranchita,AO-76756,,,107,107,,,,AJ Enriquez,,,
+10/24/25,10/28/25,MP: Santa Ysabel,AO-76757,,,85,85,,,,AJ Enriquez,,,
+,,Monday 10/27/25,,,,,,,,,,,,TRUE
+10/27/25,10/27/25,FSD Marketplace,AO-76776,,,113,113,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/27/25,10/28/25,SP: El Cajon Valley High,AO-76368,,,85,85,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/27/25,10/28/25,SP: Monte Vista High School,AO-76366,,,50,50,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/27/25,10/28/25,City Heights Comm Development,AO-76746,,,91,91,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/27/25,10/28/25,SP: Darnall Charter School,AO-76365,,,49,49,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/27/25,10/28/25,Church of  the Nazarene,AO-76730,,,55,55,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/27/25,10/28/25,MP: Ramona,AO-76778,,,72,72,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/27/25,10/29/25,SP: Nativity Prep Academy,AO-76328,,,45,45,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/27/25,10/29/25,City Heights Assembly of God,AO-76731,,,12,12,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/27/25,10/29/25,SP: Hancock Elementary,AO-76739,,,104,104,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/27/25,10/29/25,Community Resource Center,AO-76748,,,12,12,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/27/25,10/29/25,St. Rose of Lima,AO-76752,-,-,37,37,,,,AJ Enriquez,Michael Hartin,100,TRUE
+10/27/25,10/29/25,Community Partnership Events: Veteran's Affairs,AO-76797,-,-,84,84,,,,AJ Enriquez,Michael Hartin,100,TRUE
+,,Tuesday 10/28/25,,,,,,,,,,,,TRUE
+10/28/25,10/30/25,ASI of CSUSM,AO-76736,-,-,183,183,,,,Brandon Chiang,Michael Hartin,100,TRUE
+10/28/25,10/30/25,SP Harborside Elementary,AO-76411,-,-,92,92,,,,Brandon Chiang,Michael Hartin,100,TRUE
+10/28/25,10/30/25,La Maestra,AO-76768,-,-,23,30,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/28/25,10/30/25,Meridian Baptist,AO-76775,,,12,12,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/28/25,10/30/25,St. Andrews Episcopal,AO-76779,,,129,129,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/28/25,10/30/25,Oceanside Sanctuary,AO-76767,,,89,89,,,,Brandon Chiang,Michael Hartin,100,TRUE
+10/28/25,10/30/25,Iglesia Casa De Alabanza,AO-76798,,,51,51,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/28/25,10/30/25,Community Partnership Events (1st Medical Battalion),AO-76805,,,237,237,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/28/25,10/30/25,SP: Conway Academy,AO-76809,,,50,50,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/28/25,10/30/25,Interfaith Community Services - Escondido,AO-76814,,,104,104,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/28/25,10/31/25,Shadow Mountain Cares,AO-76819,,,152,152,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/28/25,10/31/25,Paradise Valley SDA,AO-76836,,,37,37,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/28/25,10/31/25,Shepherd's Pantry (Bethlehem Food Pantry),AO-76793,,,30,30,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/28/25,10/31/25,Southport Christian Center,AO-76799,,,114,114,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/28/25,10/31/25,Bridge of Hope,AO-76800,,,20,20,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/28/25,10/31/25,Food For Life,AO-76801,,,10,10,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/28/25,10/31/25,The Community Food Connection,AO-76812,,,,,,,,,,,
+10/28/25,10/31/25,Good Shepherd Community Projects,AO-76816,,,27,27,,,,Brandon Chiang,Kenny Conner,100,TRUE
+,,Wednesday 10/29/25,,,,,,,,,,,,TRUE
+10/29/25,10/29/25,FSD Marketplace,AO-76807,,,88,88,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/29/25,11/01/25,TT: Feeding San Diego 1/2,AO-76791,,,463,463,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/29/25,11/01/25,TT: Feeding San Diego 2/2,AO-76862,,,117,117,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/29/25,11/03/25,Jewish Family Services,AO-76810,,,150,150,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/29/25,11/03/25,La Maestra,AO-76811,,,50,50,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/29/25,11/03/25,Faith Tabernacle,AO-76815,,,85,85,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/29/25,11/03/25,Armed Services YMCA,AO-76833,,,51,51,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/29/25,11/03/25,SP: Berry Elementary,AO-76838,,,41,41,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/29/25,11/03/25,SP: Teofilo Mendoza,AO-76839,,,87,87,,,,Andrew Marquez,Kenny Conner,100,TRUE
+10/29/25,11/03/25,SP: Pendleton Elementary,AO-76841,,,53,53,,,,Brandon Chiang,Kenny Conner,100,TRUE
+,,Thursday 10/30/25,,,,,,,,,,,,TRUE
+10/30/25,10/30/25,FSD Marketplace,AO-76808,,,57,57,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/30/25,11/03/25,Mission San Luis Rey Food Pantry,AO-76879,,,177,177,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/30/25,11/03/25,SP: Clover Flat Elementary,AO-76904,,,74,74,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/30/25,11/03/25,MP: Boulevard,AO-76903,,,65,65,,,,Brandon Chiang,,,
+10/30/25,11/03/25,SP: Dewey Elementary,AO-76958,,,42,42,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/30/25,11/03/25,SP: San Pasqual High,AO-76947,,,47,47,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/30/25,11/03/25,SP: Orange Glen High School,AO-76945,,,47,47,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/30/25,11/03/25,Fallbrook SDA,AO-76861,,,41,41,,,,AJ Enriquez,Kenny Conner,100,TRUE
+,,Friday 10/31/25,,,,,,,,,,,,TRUE
+10/31/25,11/01/25,TT: Feeding San Diego,AO-76988,,,462,462,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/31/25,11/03/25,Fallbrook Food Pantry,AO-76884,,,240,240,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/31/25,11/04/25,SP: Borrego Springs,AO-76910,,,149,149,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/31/25,11/04/25,SP: Monte Vista High School,AO-76876,,,23,23,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/31/25,11/04/25,SP: El Cajon Valley High,AO-76874,,,65,65,,,,Brandon Chiang,Kenny Conner,100,TRUE
+10/31/25,11/04/25,MP: Lakeside,AO-76907,,,76,76,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/31/25,11/04/25,SP: Valley High,AO-77016,,,31,31,,,,AJ Enriquez,Kenny Conner,100,TRUE
+10/31/25,11/04/25,HC: UCSD PB/NC,AO-76852,,,42,42,,,,AJ Enriquez,,,
+10/31/25,11/04/25,La Maestra,AO-76880,,,40,40,,,,AJ Enriquez,,,
+10/31/25,11/04/25,Venture,AO-76883,,,30,30,,,,AJ Enriquez,,,
+10/31/25,11/04/25,I am my Brothers Keeper,AO-76843,,,43,43,,,,AJ Enriquez,,,
+10/31/25,11/04/25,Church of Nazarene,,,,21,21,,,,AJ Enriquez,,,
+,,Monday 11/3/25,,,,,,,,,,,,TRUE
+11/03/25,11/04/25,MP: Mesa Grande,AO-76912,,,16,16,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/03/25,11/04/25,Easterseals,AO-76909,,,79,79,,,,Brandon Chiang,,,
+11/03/25,11/04/25,CPE: Mental Health Resource Fair,AO-77061,,,54,54,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/03/25,11/04/25,North Park Apostolic Church,AO-76850,,,53,53,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/03/25,11/04/25,SP: Siatech South Bay,AO-76951,,,19,19,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/03/25,11/04/25,SP: Escondido High School,AO-77019,,,38,38,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/03/25,11/04/25,BP: Howard Gardner Community,AO-76992,,,44,44,,,,Brandon Chiang,,,
+11/03/25,11/04/25,MiraCosta Oceanside,AO-76847,,,86,86,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/03/25,11/04/25,MP Pauma,AO-76908,,,166,166,,,,Brandon Chiang,,,
+11/03/25,11/04/25,MP: Downtown Fallbrook,AO-77017,,,30,30,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/03/25,11/04/25,Convicted4Christ,AO-76851,,,34,34,,,,Brandon Chiang,,,
+11/03/25,11/05/25,San Diego South Bay SDA Church,AO-77011,,,83,83,,,,AJ Enriquez,Michael Hartin,100,TRUE
+11/03/25,11/05/25,SP: Hoover High School,AO-76985,,,154,154,,,,Brandon Chiang,,,
+11/03/25,11/05/25,Veterans Village of San Diego (MEM),AO-77065,,,78,78,,,,AJ Enriquez,,,
+11/03/25,11/05/25,Community Resource Center (CRC),AO-77029,,,7,7,,,,AJ Enriquez,,,
+11/03/25,11/05/25,SP: Lindo Park Elementary,AO-76918,,,62,62,,,,Brandon Chiang,,,
+11/03/25,11/05/25,City Heights Assembly of God,AO-76863,,,15,15,,,,Brandon Chiang,,,
+11/03/25,11/04/25,MP: San Marcos,AO-77062,,,35,35,,,,AJ Enriquez,,,
+,,Tuesday 11/4/25,,,,,,,,,,,,TRUE
+11/04/25,11/04/25,FSD Market Place,AO-76886,,,58,58,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/04/25,11/05/25,MP: San Marcos,AO-77062,,,209,209,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/04/25,11/05/25,City of Hope International,AO-76959,,,119,119,,,,Michael Hartin,Kenny Conner,100,TRUE
+,11/05/25,City of Hope,,,,36,36,,,,Brandon Chiang,,,
+11/04/25,11/05/25,SP: Porter Elementary,AO-76987,,,103,103,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/04/25,11/05/25,SP: Hamilton Elementary,AO-76989,,,103,103,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/04/25,11/05/25,St. Rose of Lima,AO-76963,,,40,40,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/04/25,11/05/25,SP: Chaparral High School,AO-76954,,,34,34,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/04/25,11/05/25,MP: Alpine,AO-76913,,,178,178,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/04/25,11/05/25,Miramar College,AO-77130,,,68,68,,,,AJ Enriquez,,,
+11/04/25,11/05/25,MP: Rincon,AO-76914,,,38,38,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/04/25,11/05/25,MP: San Pasqual,AO-76915,,,36,36,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/04/25,11/05/25,MP: Valley Center,AO-76916,,,163,163,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/04/25,11/05/25,SP: Pauma School,AO-76917,,,62,62,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/04/25,11/05/25,SP: Nativity Prep Academy,AO-76991,,,40,40,,,,AJ Enriquez,,,
+11/04/25,11/06/25,SPJoliAnn Leichtag,AO-76982,,,30,30,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/04/25,11/06/25,Rock Church Point Loma,AO-77010,,,40,40,,,,Brandon Chiang,,,
+,,Wednesday 11/5/25,,,,,,,,,,,,TRUE
+11/05/25,11/05/25,FSD Market,AO-76887,,,46,46,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/05/25,11/06/25,SP: Pablo Tac,AO-77110,,,32,32,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/05/25,11/06/25,ASI of CSUSM,AO-77015,,,137,137,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/05/25,11/05/25,BP: Palomar High School,AO-77071,,,31,31,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/05/25,11/06/25,Journey,AO-77067,,,30,30,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/05/25,11/06/25,Meridian Baptist,AO-77012,,,11,11,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/05/25,11/06/25,San Diego Fil-AM,AO-77008,,,188,188,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/05/25,11/06/25,MP: Descanso,AO-77127,,,170,170,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/05/25,11/06/25,MP: Potrero,AO-77129,,,107,107,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/05/25,11/06/25,SP: Knox,AO-77066,,,32,32,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/05/25,11/06/25,LJC Ministries,AO-77078,,,68,68,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/05/25,11/06/25,EF: Airport Authority,AO-77150,,,200,200,,,,Linard,,,
+11/05/25,11/06/25,McAlister,AO-77037,,,33,33,,,,AJ Enriquez,,,
+11/05/25,11/06/25,Samoa,AO-77080,,,10,10,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/05/25,11/06/25,Trinity Lutheran,AO-76962,,,45,45,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/05/25,11/06/25,La Maestra,AO-76949,,,18,18,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/05/25,11/06/25,CRC Sis. of Mercy,AO-77097,,,5,5,,,,Brandon Chiang,,,
+11/05/25,11/06/25,Iglesia Casa De Alabanza,AO-77114,,,6,6,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/05/25,11/06/25,Interfaith,AO-77117,,,168,168,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/05/25,11/06/25,SP: Pacific View Leadership,AO77070,,,55,55,,,,Brandon Chiang,,,
+11/05/25,11/06/25,SP: Imperial Beach Charter School,AO-77068,,,57,57,,,,Brandon Chiang,,,
+11/05/25,11/06/25,TACO,AO-77069,,,28,28,,,,Brandon Chiang,,,
+11/05/25,11/06/25,Christ Comm. Church/Love Acts,AO-77058,,,134,134,,,,AJ Enriquez,Kenny Conner,100,TRUE
+,,Thursday 11/6/25,,,,,,,,,,,,TRUE
+11/06/25,11/06/25,FSD Marketplace,AO-76888,,,100,100,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/06/25,11/07/25,FSD Marketplace,AO-76889,,,66,66,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/06/25,11/07/25,SP Penn Elementary,AO-76955,,,52,52,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/06/25,11/07/25,Masjidul Taqwa,AO-77118,,,189,189,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/06/25,11/07/25,Alpha Project,AO-77137,,,19,19,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/06/25,11/07/25,Shadow Mountain Cares,AO-77113,,,321,321,,,,Brandon Chiang,Kenny Conner,100,TRUE
+11/06/25,11/07/25,Shepherd's Pantry,AO-77077,,,99,99,,,,Brandon Chiang,,,
+11/06/25,11/07/25,SP: Harborside Elementary,AO-77098,,,44,44,,,,AJ Enriquez,Kenny Conner,100,TRUE
+11/06/25,11/07/25,STEP,AO-76854,,,138,138,,,,AJ Enriquez,,,
+11/06/25,11/07/25,SP Whitman Elementary,AO-76980,,,31,31,,,,AJ Enriquez,,,
+11/06/25,11/07/25,SP: Lexington Elementary,AO-77099,,,93,93,,,,AJ Enriquez,,,
+11/06/25,11/07/25,Southport Christian Center,AO-77119,,,206,206,,,,Brandon Chiang,,,
+11/06/25,11/07/25,Bridge of Hope,AO-77072,,,55,55,,,,Brandon Chiang,,,
+11/06/25,11/07/25,Imperial Beach Neighborhood,AO-77081,,,93,93,,,,Brandon Chiang,,,
+11/06/25,11/07/25,MP: Fallbrook,AO-77034,,,390,390,,,,Isaiah/Jordon,,,
+11/06/25,11/07/25,CPE MCCS Luiseno Park,AO-77149,,,236,236,,,,Isaiah/Jordon,,,
+11/06/25,11/07/25,SVdp St. Stevens,AO-77095,,,140,140,,,,AJ Enriquez,,,
+11/06/25,11/07/25,Food For Life,AO-77106,,,20,20,,,,AJ Enriquez,,,
+11/06/25,11/07/25,CPE: Mayor of Oceanside,AO-77170,,,102,102,,,,AJ Enriquez,,,
+,,Friday 11/7/25,,,,,,,,,,,,TRUE
+11/06/25,11/07/25,Church of Nazarene,AO-77082,,,55,55,,,,Brandon Chiang,,,
+11/07/25,11/08/25,CPE: Mental Health Resource,AO-77061,,,54,54,,,,Brandon Chiang,,,
+11/07/25,11/08/25,Coourage to Call,AO-77156,,,64,64,,,,Brandon Chiang,,,
+11/07/25,11/08/25,Courage to Call,AO77215,,,39,39,,,,AJ Enriquez,,,
+11/07/25,11/08/25,EF: FSD,AO-77173,,,400,400,,,,AJ Enriquez,,,
+11/07/25,11/08/25,EF: FSD,AO-77236,,,119,119,,,,Bill McLeod,,,
+11/07/25,11/10/25,Black Tech,AO-77181,,,22,22,,,,Brandon Chiang,,,
+11/07/25,11/10/25,Templo Evangelico,AO-77096,,,21,21,,,,Brandon Chiang,,,
+11/07/25,11/10/25,Southwestern College,AO-77104,,,66,66,,,,Brandon Chiang,,,
+11/07/25,11/10/25,Freindships for Hope,AO-77100,,,95,95,,,,Brandon Chiang,,,
+11/07/25,11/10/25,SP: Bayside STEAM,AO-77133,,,94,94,,,,Brandon Chiang,,,
+11/07/25,11/10/25,Turning Point Home,AO-77115,,,15,15,,,,AJ Enriquez,,,
+11/07/25,11/10/25,SP: Fallbrook STEM,AO-76977,,,39,39,,,,AJ Enriquez,,,
+11/07/25,11/10/25,Fallbrook Food Pantry,AO-77147,,,40,40,,,,AJ Enriquez,,,
+11/07/25,11/10/25,JFS,AO-77108,,,126,126,,,,AJ Enriquez,,,
+11/07/25,11/10/25,MP: Campo,AO-77154,,,230,230,,,,Brandon Chiang,,,
+11/07/25,11/10/25,Faith Lutheran,AO-77145,,,38,38,,,,AJ Enriquez,,,
+11/07/25,11/10/25,TrueCare San Marcos,AO-77105,,,10,10,,,,AJ Enriquez,,,
+,,Saturday 11/8/25,,,,,,,,,,,,TRUE
+11/08/25,11/10/25,MP: Jacumba,AO-77153,,,189,189,,,,Brandon Chiang,,,
+11/08/25,11/10/25,Faith Tabernacle,AO- 77177,,,65,65,,,,AJ Enriquez,,,
+11/08/25,11/10/25,YMCA Camp Pendleton,AO-77159,,,50,50,,,,AJ Enriquez,,,
+11/08/25,11/10/25,SP Edison,AO-77214,,,43,43,,,,Brandon Chiang,,,
+11/08/25,11/10/25,EF: Airport Authority,AO-77152,,,157,157,,,,Brandon Chiang,,,
+11/08/25,11/10/25,Veterans Village,AO-77102,,,180,180,,,,AJ Enriquez,,,
+11/08/25,11/10/25,La Maestra,AO-77076,,,55,55,,,,Brandon Chiang,,,
+11/08/25,11/10/25,CPE: VA Office,AO-77185,,,84,84,,,,AJ Enriquez,,,
+11/08/25,11/11/25,I Am My Brothers Keeper,AO-77191,,,41,41,,,,AJ Enriquez,,,
+11/08/25,11/11/25,La Maestra,AO-77128,,,61,61,,,,AJ Enriquez,,,
+11/08/25,11/11/25,Salvation Army Chula Vista,AO-77136,,,71,71,,,,AJ Enriquez,,,
+11/08/25,11/11/25,Alpha Project,AO-77174,,,102,107,,,,AJ Enriquez,,,
+,,Monday 11/10/2025,,,,1694,,,,,,,,TRUE
+11/10/25,11/11/25,The Foundry,AO-77134,,,45,45,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/10/25,11/11/25,MP: Butterfield,AO-77183,,,102,102,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/10/25,11/11/25,MP: Ranchita,AO-77178,,,133,133,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/10/25,11/11/25,SP Warner,AO-77180,,,113,113,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/10/25,11/11/25,Cuyamaca College,AO-77139,,,119,119,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/10/25,11/11/25,MP: Oceanside,AO-77220,,,181,181,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/10/25,11/11/25,Christian Church of Lemon Grove,AO-77146,,,116,116,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/10/25,11/11/25,31st. SDA Church,AO-77204,,,18,18,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/10/25,11/11/25,VFW Don Diego,AO-77103,,,160,160,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/10/25,11/11/25,Church of Nazarene,AO-77157,,,52,52,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/10/25,11/11/25,UCSD PB/Normal Heights,AO-77151,,,19,19,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/10/25,11/11/25,MiraCosta Oceanside,AO-77132,,,81,81,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/10/25,11/11/25,Venture Church,AO-77176,,,33,33,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/10/25,11/11/25,FSD Marketplace,AO-76890,,,60,60,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/10/25,11/12/25,MP: Julian,AO-76926,,,182,182,,,,Brandon Chiang,,,
+11/10/25,11/12/25,MP: Shelter Valley,AO-76935,,,92,92,,,,"""T""",Kenny Conner,,TRUE
+11/10/25,11/12/25,SP: San Marcos Elementary,AO-77014,,,153,153,,,,"""T""",,,
+11/10/25,11/12/25,St. Rose of Lima,AO-77155,,,35,35,,,,AJ Enriquez,,,
+,,Tuesday 11/11/25,,,,1748,,,,,,,,TRUE
+11/11/25,11/12/25,Backcountry Communities Thriving,AO-77224,,,13,13,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/11/25,11/11/25,BP: Julian Elementary,AO-76946,,,24,24,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/11/25,11/12/25,SP: Castle Park Middle,AO-76957,,,214,214,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/11/25,11/12/25,Mission Village Christian,AO-77158,,,16,16,,,,T Callahan,Kenny Conner,,TRUE
+11/11/25,11/12/25,MP: One Safe Place,AO-77033,,,51,51,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/11/25,11/12/25,SP: Paradise Hills Elementary,AO-76993,,,65,65,,,,T Callahan,Kenny Conner,,TRUE
+11/11/25,11/12/25,SP: Lemon Crest Elementary,AO-77218,,,39,39,,,,T Callahan,Kenny Conner,,TRUE
+11/11/25,11/12/25,Ocean Beach Emergency,AO-77190,,,30,30,,,,T Callahan,Kenny Conner,,TRUE
+11/11/25,11/12/25,SP: Lincoln Middle School,AO-76986,,,136,136,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/11/25,11/12/25,Salvation Army Oceanside,AO-77171,,,2,2,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/11/25,11/12/25,Mission San Luis Rey,AO-77206,,,183,183,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/11/25,11/12/25,SP: Libby Elementary,AO-76984,,,62,62,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/11/25,11/12/25,STEP Camp Pendleton,AO-76856,,,156,156,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/11/25,11/12/25,SP: Mount Miguel High,AO-77195,,,23,23,,,,T Callahan,Kenny Conner,,TRUE
+11/11/25,11/12/25,SP: Nativity Prep,AO-76960,,,40,40,,,,T Callahan,Kenny Conner,,TRUE
+11/11/25,11/13/25,La Maestra,AO-77189,,,30,30,,,,T Callahan,Kenny Conner,,TRUE
+11/11/25,11/13/25,MP: Guatay,AO-77247,,,137,137,,,,T Callahan,Kenny Conner,,TRUE
+11/11/25,11/13/25,Bayview Baptist Church,AO-77225,,,226,226,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/11/25,11/12/25,FSD Marketplace,AO-76891,,,59,59,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/11/25,11/13/25,SP Mann Middle School,AO-76994,,,41,41,,,,T Callahan,,,
+11/11/25,11/13/25,SP: Hilltop Child Development,AO-76972,,,72,72,,,,T Callahan,,,
+11/11/25,11/13/25,SP: Millennial Tech,AO-77231,,,70,70,,,,AJ Enriquez,,,
+11/11/25,11/13/25,New Hope SDA,AO-77263,,,59,59,,,,AJ Enriquez,,,
+,,Wednesday 11/12/25,,,,2181,,,,,,,,TRUE
+11/12/25,11/13/25,Meridian Baptist,AO-77219,,,9,9,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/12/25,11/13/25,CPE Naval Medical Center,AO-77232,,,288,288,,,,AJ Enriquez,,,TRUE
+11/12/25,11/13/25,SP: STARPAL,AO-77047,,,75,75,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/12/25,11/13/25,STEP,AO-76857,,,421,421,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/12/25,11/13/25,STEP,AO-77205,,,75,75,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/12/25,11/13/25,SP: Boyce,AO-77275,,,44,44,,,,T Callahan,Kenny Conner,,TRUE
+11/12/25,11/13/25,SP: Clothier Child Dev,AO-77289,,,44,44,,,,T Callahan,Kenny Conner,,TRUE
+11/12/25,11/13/25,SP: Orange Glen Elementary,AO-76996,,,23,23,,,,T Callahan,Kenny Conner,,TRUE
+11/12/25,11/13/25,ASI of CSUSM,AO-77175,,,190,190,,,,T Callahan,Kenny Conner,,TRUE
+11/12/25,11/13/25,SP: North Terrace Elementary,AO-76990,,,65,65,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/12/25,11/13/25,Oceanside Sanctuary,AO-77222,,,31,31,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/12/25,11/13/25,SP: Clairemont Canyons,AO-76970,,,43,43,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/12/25,11/13/25,Iglesia Casa De Alabanza,AO-77262,,,141,141,,,,T Callahan,,,TRUE
+11/12/25,11/13/25,McAlister,AO-77265,,,30,30,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/12/25,11/13/25,EF: TSA Liberty Station,AO-77322,,,139,139,,,,T Callahan,Kenny Conner,,TRUE
+11/12/25,11/14/25,FSD Marketplace,AO-76894,,,57,57,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/12/25,11/14/25,Us 4 Warriors,AO-77276,,,90,80,,,,T Callahan,Kenny Conner,,TRUE
+11/12/25,11/14/25,SP: Kempton,AO-76997,,,66,66,,,,T Callahan,,,TRUE
+11/12/25,11/14/25,SP: Rolando Park,AO-77000,,,37,37,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/12/25,11/14/25,CPE Community Rescue Team,AO-77300,,,109,109,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/12/25,11/14/25,SP: Loma Verde Elementary,AO-77001,,,72,72,,,,AJ Enriquez,,,
+11/12/25,11/14/25,Journey Community Church,AO-77230,,,132,132,,,,Brandon Chiang,,,
+,,Thursday 11/13/25,,,,2976,,,,,,,,TRUE
+11/13/25,11/14/25,Food for Life,AO-77284,,,7,7,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/13/25,11/14/25,FCC Ramona,AO-77233,,,213,213,,,,AJ Enriquez,Kenny Conner,,
+11/13/25,11/14/25,Good Shephard,AO-77261,,,15,15,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/13/25,11/14/25,Bridge of Hope,AO-77203,,,77,77,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/13/25,11/14/25,Southport Christian,AO-77245,,,89,89,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/13/25,11/14/25,Shadow Mountain,AO-77283,,,159,159,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/13/25,11/14/25,Shephard's Pantry,AO-77246,,,60,60,,,,T Callahan,Kenny Conner,,TRUE
+11/13/25,11/14/25,Church of Nazarene,AO-77288,,,56,66,,,,T Callahan,Kenny Conner,,TRUE
+11/13/25,11/14/25,North County LGBTQ,AO-77254,,,72,72,,,,T Callahan,Kenny Conner,,TRUE
+11/13/25,11/14/25,MP Bonsall,AO-77021,,,173,173,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/13/25,11/14/25,SP Lincoln,AO-77272,,,65,65,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/13/25,11/14/25,Our Lady of Mt. Carmel,AO-77255,,,137,137,,,,Brandon Chiang,,,TRUE
+11/13/25,11/14/25,CPE deliver to Volunteer Depart,AO-77294,,,34,34,,,,T Callahan,Kenny Conner,,TRUE
+11/13/25,11/14/25,CPE El Cajon Family Health Del with Van,AO-77320,,,17,17,,,,T Callahan,Kenny Conner,,TRUE
+11/13/25,11/15/25,South Bay Food Pantry,AO-77286,,,70,70,,,,Jordan,,,TRUE
+11/13/25,11/15/25,HD B.E.S.T. Holiday Kits and Frozen,AO-77064,,,467,67,400 kits,,,Jordan,,,TRUE
+11/13/25,11/15/25,Ocean View Church,AO-77287,,,144,144,,,,T Callahan,,,
+11/13/25,11/15/25,ASI of CSUSM,AO-77267,,,260,260,,,,T Callahan,,,
+11/13/25,11/15/25,Neighborhood Healthcare,AO-77268,,,260,260,,,,Isaiah,,,
+11/13/25,11/15/25,TT: Feeding San Diego,AO-77273,,,550,550,,,,Jordon,,,
+11/13/25,11/13/25,FSD Market Place,AO76892,,,51,51,,,,Brandon Chiang,,,
+,,Friday 11/14/25,,,,1694,,,,,,,,TRUE
+11/14/25,11/17/25,La Maestra,AO-77291,,,40,40,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/14/25,11/17/25,SP: Teofilo Mendoza Elementary,AO-77004,,,92,92,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/14/25,11/17/25,SP: Berry Elementary,AO-77003,,,53,53,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/14/25,11/17/25,Friendships for  Hope,AO-77264,,,60,60,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/14/25,11/17/25,SP: Bayside STEAM,AO-77004,,,105,105,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/14/25,11/17/25,Fallbrook SDA,AO-77292,,,88,88,,,,T Callahan,Kenny Conner,,TRUE
+11/14/25,11/17/25,Fallbrook Food Pantry,AO-77310,,,134,134,,,,T Callahan,Kenny Conner,,TRUE
+11/14/25,11/17/25,Templo Evangelico Maranatha,AO-77266,,,23,23,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/14/25,11/17/25,Mission San Luis Rey,AO-77307,,,417,417,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/14/25,11/17/25,SP: Clover Flat Elementary,AO-76938,,,131,131,,,,T Callahan,Kenny Conner,,TRUE
+11/14/25,11/17/25,MP: Boulevard,AO-76920,,,102,102,,,,T Callahan,Kenny Conner,,TRUE
+11/14/25,11/17/25,JFS,AO-77277,,,147,147,,,,T Callahan,Kenny Conner,,TRUE
+11/14/25,11/17/25,CPE Reality Changers,AO-77297,,,38,38,,,,T Callahan,Kenny Conner,,TRUE
+11/14/25,11/17/25,SP: Edison Elementary,AO-76968,,,41,41,,,,T Callahan,Kenny Conner,,TRUE
+11/14/25,11/17/25,SD City College,AO-77271,,,127,127,,,,T Callahan,Kenny Conner,,TRUE
+11/14/25,11/17/25,SP: Orange Glen High,AO-76999,,,96,96,,,,Brandon Chiang,Kenny Conner,,TRUE
+,,Saturday 11/15/25,,,,2133,,,,,,,,TRUE
+11/15/25,11/17/25,SP: Pendleton Elementary,AO-77022,,,60,60,,,,AJ Enriquez,,,
+11/15/25,11/17/25,SP: San Pasqual High,AO-77111,,,71,71,,,,Brandon Chiang,,,
+11/15/25,11/17/25,Black Tech Link,AO-77312,,,77,77,,,,Brandon Chiang,,,
+11/15/25,11/17/25,SP: Dewey Elementary,AO-76967,,,45,45,,,,AJ Enriquez,,,
+11/15/25,11/18/25,PSCDC Versa,AO-77341,,,24,24,,,,AJ Enriquez,,,
+11/15/25,11/18/25,Rock Church El Cajon,AO-77285,,,100,100,,,,T Callahan,,,
+11/15/25,11/18/25,SP: Borrego Springs High,AO-76937,,,424,424,,,,T Callahan,,,
+11/15/25,11/18/25,SP Hoover High,AO-77024,,,123,123,,,,AJ Enriquez,,,
+11/15/25,11/18/25,I Am My Bor. Keeper,AO-77321,,,53,53,,,,AJ Enriquez,,,
+11/15/25,11/18/25,La Maestra,AO-77352,,,21,30,missing 9,,,AJ Enriquez,,,
+11/15/25,11/18/25,SP: Rosa Parks Elementary,AO-77023,,,71,71,,,,T Callahan,,,
+11/15/25,11/18/25,MP Pauma,AO-76928,,,799,799,,,,Brandon Chiang,,,
+11/15/25,11/18/25,MP Downtown Fallbrook,AO-77030,,,60,60,,,,T Callahan,,,
+11/15/25,11/18/25,Foundry,AO-77309,,,50,50,,,,T Callahan,,,
+11/15/25,11/18/25,Venture Church,AO-77326,,,20,20,,,,AJ Enriquez,,,
+11/15/25,11/18/25,UCSD PB/NC,AO-77325,,,20,20,,,,AJ Enriquez,,,
+11/15/25,11/18/25,SP: Pro Kids First,AO-77013,,,23,23,,,,AJ Enriquez,,,
+11/15/25,11/18/25,SP: Escondido High,AO-76975,,,92,92,,,,Brandon Chiang,,,
+,,Monday 11/17/25,,,,2810,,,,,,,,TRUE
+11/17/25,11/18/25,Vista Teen Outreach,AO-77308,,,48,48,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/17/25,11/18/25,SP: Valley High,AO-77112,,,72,72,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/17/25,11/18/25,San Marcos SDA,AO-77371,,,37,37,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/17/25,11/18/25,North Park Apostolic,AO-77306,,,37,37,,,,T Callahan,Kenny Conner,,TRUE
+11/17/25,11/18/25,Church of Nazarene,AO-77311,,,51,51,,,,T Callahan,Kenny Conner,,TRUE
+11/17/25,11/18/25,MP: City Heights,AO-77026,,,48,48,,,,T Callahan,Kenny Conner,,TRUE
+11/17/25,11/18/25,SP El Cajon Valley High,AO-77025,,,53,53,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/17/25,11/18/25,MP: Mesa Grande,AO-76944,,,20,20,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/17/25,11/18/25,SP Jeff and Deni Jacobs,AO-76974,,,65,65,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/17/25,11/18/25,Salvation Army Chula Vista,AO-77296,,,112,112,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/17/25,11/21/25,BP: Julian Elementary,AO-77362,,,22,22,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/17/25,11/20/25,BP: Howard Gardner,AO-77347,,,45,45,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/17/25,11/19/25,MT. View Community,AO-77351,,,52,52,,,,T Callahan,Kenny Conner,,TRUE
+11/17/25,11/19/25,MP: San Marcos,AO-77036,,,175,175,,,,T Callahan,Kenny Conner,,TRUE
+11/17/25,11/19/25,City Heights Assembly,AO-77314,,,25,25,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/17/25,11/19/25,STEP Holiday Event MCRD,AO-76859,,,316,316,,,,AJ Enriquez,,,
+11/17/25,11/19/25,SP: Lindo Park Elementary,AO-76940,,,298,298,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/17/25,11/19/25,MP: Alpine,AO-76919,,,416,416,,,,Brandon Chiang,,,
+11/17/25,11/19/25,SP: NHA Head Start,AO-77035,,,48,48,,,,T Callahan,Kenny Conner,,TRUE
+11/17/25,11/19/25,ST. Rose of Lima,AO-77335,,,147,147,,,,T Callahan,,,
+11/17/25,11/18/25,EF: Navy Medical Center,AO-77376,,,645,645,,,,T Callahan,,,
+11/17/25,11/19/25,Veteran's Village,AO-77369,,,78,78,,,,AJ Enriquez,,,
+,,Tuesday 11/18/25,,,,2284,,,,,,,,TRUE
+11/18/25,11/19/25,SP: Porter Elementary,AO-77027,,,92,92,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/18/25,11/19/25,Mission Village Christian,AO-77328,,,19,19,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/18/25,11/19/25,SP: Feaster Charter School,AO-77028,,,33,33,,,,T Callahan,Kenny Conner,,TRUE
+11/18/25,11/19/25,STEP Camp Pendleton,AO-76858,,,186,186,,,,T Callahan,Kenny Conner,,TRUE
+11/18/25,11/19/25,SD South Bay SDA,AO-77324,,,105,105,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/18/25,11/19/25,SP Lemon Crest,AO-76939,,,96,96,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/18/25,11/19/25,Miramar College,AO-77346,,,86,86,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/18/25,11/19/25,Easterseals,AO-77336,,,164,164,,,,AJ Enriquez,,,
+11/18/25,11/19/25,SP: Libby Elementary,AO-77391,,,95,95,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/18/25,11/19/25,MiraCosta College,AO-77343,,,80,80,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/18/25,11/19/25,SP: San Marcos Elementary,AO-77390,,,161,161,,,,AJ Enriquez,Kenny Conner,,TRUE
+11/18/25,11/19/25,UCSD Re-Link,AO-77329,,,243,243,,,,T Callahan,Kenny Conner,,TRUE
+11/18/25,11/19/25,SP: Hamilton Elementary,AO-77032,,,78,78,,,,T Callahan,,,
+11/18/25,11/19/25,MP: Rincon,AO-76932,,,120,120,,,,Brandon Chiang,,,
+11/18/25,11/19/25,MP San Pasqual,AO-76933,,,124,124,,,,Brandon Chiang,,,
+11/18/25,11/19/25,MP Valley Center,AO-76936,,,375,375,,,,Brandon Chiang,,,
+11/18/25,11/19/25,SP: Pauma,AO-76941,,,125,125,,,,Brandon Chiang,Kenny Conner,,TRUE
+11/18/25,11/19/25,CPE: African American Support Group,AO-77360,,,13,13,,,,T Callahan,Kenny Conner,,TRUE
+11/18/25,11/19/25,CPE: ACVSPTA,AO-77397,,,57,57,,,,T Callahan,Kenny Conner,,
+11/18/25,11/19/25,BP: Palomar High School,AO-77364,,,32,32,,,,T Callahan,Kenny Conner,,TRUE
+,,Wednesday 11/19/2025,,,,2631,,,,,,,,TRUE
+11/19/25,11/19/25,HD: AD 77,AO-77056,,,335,355,KITS,,,Jim A.,,,TRUE
+11/19/25,11/20/25,MP: De Luz,AO-77396,,,66,66,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/19/25,11/20/25,SP: Conway Academy,AO-76973,,,35,35,,,,T Callahan,Michael Hartin,,TRUE
+11/19/25,11/20/25,ASI of CSUSM,AO-77323,,,130,130,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/19/25,11/20/25,Rock Church San Marcos,AO-77344,,,32,32,,,,T Callahan,Michael Hartin,,TRUE
+11/19/25,11/20/25,SP: Vista Innovation,AO-76976,,,84,84,,,,Temp,Michael Hartin,,TRUE
+11/19/25,11/20/25,SP: Joli Ann Leichtag,AO-77399,,,44,44,,,,T Callahan,Michael Hartin,,TRUE
+11/19/25,11/20/25,SP: Greenfield Middle,AO-77212,,,44,100,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/19/25,11/20/25,Bostonia Global Elementary,AO-77043,,,107,107,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/19/25,11/20/25,McAlister,AO-77408,,,25,25,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/19/25,11/20/25,Rock Church Chula Vista,AO-77353,,,61,61,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/19/25,11/20/25,San Ysidro Health,AO-77395,,,6,6,,,,Temp,Michael Hartin,,TRUE
+11/19/25,11/20/25,SD Freedom Ranch,AO-77330,,,16,16,,,,Temp,Michael Hartin,,TRUE
+11/19/25,11/20/25,MP:  Potrero,AO-76929,,,351,351,,,,T Callahan,Michael Hartin,,TRUE
+11/19/25,11/20/25,MP: Descnaso,AO-76923,,,279,279,,,,T Callahan,Michael Hartin,,TRUE
+11/19/25,11/20/25,La Maestra,AO-77374,,,30,30,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/19/25,11/20/25,SD Mesa College,AO-77355,,,54,54,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/19/25,11/20/25,SP: Knox Middle School,AO-77039,,,82,82,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/19/25,11/20/25,FDSRC,AO-77357,,P-0092,169,169,pulled 10 needed 11,,added 1 case,T Callahan,Michael Hartin,,TRUE
+11/19/25,11/20/25,Rock Church Point Loma,AO-77382,,,41,41,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/19/25,11/20/25,SP: Millenial Tech Middle School,AO-77044,,,155,155,,,,AJ Enriquez,Michael Hartin,,TRUE
+11/19/25,11/20/25,SP: Lemon Grove,AO-77041,,,120,120,,,,AJ Enriquez,Michael Hartin,,TRUE
+11/19/25,11/20/25,Trinity Lutheran,AO-77318,,,60,60,,,,AJ Enriquez,Michael Hartin,,TRUE
+11/19/25,11/20/25,Samoa Lutheran Ministries,AO-77365,,,5,5,,,,AJ Enriquez,Michael Hartin,,TRUE
+11/19/25,11/20/25,LJC Ministries,AO-77385,,,125,125,,,,AJ Enriquez,Michael Hartin,,TRUE
+11/20/25,11/20/25,Iglesia Casa De Alabanza,AO-77415,,,35,35,,,,Temp,Michael Hartin,,TRUE
+11/20/25,11/20/25,ST. Andrews,AO-77342,,,140,140,,,,Temp,Michael Hartin,,TRUE
+,,Thursday 11/20/25,,,,2925,,,,,,,,TRUE
+11/20/25,11/20/25,SP: Pablo Tac,AO-77002,,,35,35,,,,Brandon Chiang,,,TRUE
+11/20/25,11/20/25,SP: Pacific View  Leadership,AO-77040,,,136,136,,,,Brandon Chiang,,,TRUE
+11/20/25,11/20/25,SP: Imperial Beach Charter,AO-77048,,,183,183,,,,Brandon Chiang,,,TRUE
+11/20/25,11/20/25,SP: Morse High School,AO-77050,,,219,219,,,,AJ Enriquez,,,TRUE
+11/20/25,11/20/25,TACO,AO-77405,,,12,12,,,,AJ Enriquez,,,TRUE
+11/20/25,11/20/25,SP: STARPAL Memorial,AO-77049,,,89,89,,,,AJ Enriquez,,,TRUE
+11/20/25,11/20/25,SP: San Diego High,AO-77410,,,42,42,,,,Temp,,,TRUE
+11/20/25,11/20/25,STEP - MCAS Miramar,AO-77358,,,129,129,,,,Temp,,,TRUE
+11/20/25,11/20/25,SP: Monte Vista High,AO-77045,,,67,67,,,,Temp,Michael Hartin,,TRUE
+11/20/25,11/21/25,Shepherd's Pantry,AO-77373,,,19,19,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/20/25,11/21/25,Community Food Connection,AO-77387,,,20,20,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/20/25,11/21/25,Shadow Mountain Cares,AO-77411,,,252,252,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/20/25,11/21/25,Imperial Beach Neighborhood,AO-77386,,,40,40,,,,AJ Enriquez,Michael Hartin,,TRUE
+11/20/25,11/21/25,Bridge of Hope,AO-77381,,,65,65,Short 4 Oat Milk,,Add 4 to Pallet,AJ Enriquez,Kenny Conner,,TRUE
+11/20/25,11/21/25,Masjidul Taqua,AO-77406,,,125,125,,,,AJ Enriquez,Michael Hartin,,TRUE
+11/20/25,11/21/25,SP: Harborside Elementary,AO-77051,,,114,114,,,,AJ Enriquez,Michael Hartin,,TRUE
+11/20/25,11/21/25,SP: Lexington Elementary,AO-77052,,,222,222,,,,Temp,Michael Hartin,,TRUE
+11/20/25,11/21/25,Logan Heights,AO-77367,,,99,99,,,,Temp,Michael Hartin,,TRUE
+11/20/25,11/21/25,SVdp St. Stephens,AO-77409,,,188,188,,,,Isaiah,,,
+11/20/25,11/21/25,Senior Villa Escondido,AO-77349,,,21,21,,,,Jordan,Michael Hartin,,TRUE
+11/20/25,11/21/25,Mt. Manna,AO-77384,,,159,159,,,,Jordan,,,
+11/20/25,11/21/25,Church of Nazarene,AO-77398,,,95,95,,,,Jordan,,,
+11/20/25,11/21/25,SP: Darnell Charter,AO-77054,,,60,60,,,,Brandon Chiang,Michael Hartin,,
+11/20/25,11/21/25,Southport Christian,AO-77378,,,100,100,,,,AJ Enriquez,Michael Hartin,,
+11/20/25,11/21/25,SP: Mount Miguel High,AO-76961,,,63,63,,,,Isaiah,,,
+11/20/25,11/21/25,SP: Lincoln High,AO-77053,,,156,156,,,,Brandon Chiang,Michael Hartin,,
+11/20/25,11/21/25,Food for Life,AO-77422,,,8,8,,,,AJ Enriquez,,,
+11/20/25,11/21/25,MP: One Safe Place,AO-77031,,,45,45,,,,AJ Enriquez,,,
+11/20/25,11/21/25,CPE: PTL,AO-77299,,,7,7,,,,Jordan,Michael Hartin,,TRUE
+11/20/25,11/21/25,Ramona Food & Clothes,AO-77375,,,138,138,,,,Jordan,Michael Hartin,,TRUE
+11/02/25,11/21/25,CPE CalAIM,AO-77403,,,17,17,,,,,,,
+,,Friday 11/21/25,,,,2456,,,,,,,,
+11/21/25,11/21/25,FSD Marketplace,AO-77453,,,24,24,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/20/25,11/21/25,SP: Preuss School/UCSD,AO-76978,,,82,82,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/21/25,11/22/25,Courage to Call,AO-77427,,,265,265,,,,AJ Enriquez,Michael Hartin,,TRUE
+11/21/25,11/22/25,CPE Camp Pendleton,AO-77430,,,378,378,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/21/25,11/22/25,South Bay Food Pantry,AO-77417,,,75,75,,,,AJ Enriquez,Michael Hartin,,TRUE
+11/21/25,11/22/25,San Ysidro Health,AO-77401,,,332,332,,,,Will,Michael Hartin,,TRUE
+11/21/25,11/22/25,CPE: First Steps Family Support,AO-77439,,,107,107,,,,Will,Michael Hartin,,TRUE
+11/21/25,11/22/25,Christ Community Church,AO-77379,,,130,130,,,,Will,Michael Hartin,,TRUE
+11/21/25,11/22/25,HD: Chula Vista,AO-77005,,,Kits,Kits,,,,AJ Enriquez,Michael Hartin,,TRUE
+11/21/25,11/22/25,HD: B.E.S.T.,AO-77452,,,7,7,,,,Ross,Michael Hartin,,TRUE
+11/21/25,11/24/25,Templo Evangelico Maranatha,AO-77393,,,21,21,,,,Ross,Michael Hartin,,TRUE
+11/21/25,11/24/25,Fallbrook Food Pantry,AO-77435,,,148,148,,,,Will,Michael Hartin,,TRUE
+11/21/25,11/24/25,JFS,AO-77414,,,71,71,,,,Ross,Michael Hartin,,TRUE
+11/21/25,11/24/25,MP: Campo,AO-76922,,,334,334,,,,Brandon Chiang,Michael Hartin,,TRUE
+11/21/25,11/24/25,MP: Jacumba,AO-76925,,,290,290,,,,AJ Enriquez,Michael Hartin,,TRUE
+11/21/25,11/24/25,SP: Clothier Child Dev.,AO-77441,,,30,30,,,,Ross,Michael Hartin,,TRUE
+11/21/25,11/24/25,CPE: Blue Star Naval Base PL,AO-77431,,,162,213,51 cases pulled by Brandon,,,AJ Enriquez,Michael Hartin,,TRUE
+,,Saturday 11/22/25,,,,436,,,,,,,,
+11/22/25,11/24/25,Vista Teen Ourtreach,AO-77394,,,85,85,,,,Brandon Chiang,,,TRUE
+11/22/25,11/24/25,La Maestra,AO-77404,,,65,65,,,,Brandon Chiang,,,
+11/22/25,11/24/25,SP: Boyce Child Dev.,AO-77440,,,90,90,,,,Brandon Chiang,,,
+11/22/25,11/24/25,PATH,AO-77425,,,50,50,,,,Brandon Chiang,,,
+11/22/25,11/24/25,Faith Tabernacle,AO-77416,,,98,98,,,,Brandon Chiang,,,
+11/22/25,11/24/25,Faith Lutheran,AO-77421,,,48,48,,,,Brandon Chiang,,,
+,,Monday 11/24/25,,,,3263,,,,,,,,
+11/24/25,11/25/25,Naval Medical Center,AO-77432,,,662,662,,,,Brandon Chiang,,,
+11/24/25,11/25/25,MP: Ramona,AO-76930,,,191,191,,,,Will,,,
+11/24/25,11/25/25,Shepherd's Pantry,AO-77455,,,53,53,,,,Ross,,,
+11/24/25,11/25/25,I Am My Brothers Keeper,AO-77443,,,59,59,,,,Ross,,,
+11/24/25,11/25/25,HD: National City,AO-77057,,,72,72,plus 400 kits,,,Ross,,,
+11/24/25,11/25/25,Alpha Project,AO-77451,,,130,130,,,,AJ Enriquez,,,
+11/24/25,11/25/25,MP: Guatay,AO-76924,,,318,318,,,,AJ Enriquez,,,
+11/24/25,11/25/25,MP: Oceanside,AO-77038,,,425,425,,,,Will,,,
+11/24/25,11/25/25,MP: Butterfield,AO-76921,,,169,169,,,,Brandon Chiang,,,
+11/24/25,11/25/25,MP: Ranchita,AO-76931,,,191,191,,,,Brandon Chiang,,,
+11/24/25,11/25/25,SP: Warner Elementary,AO-76942,,,159,159,,,,Ross,,,
+11/24/25,11/25/25,MP: Santa Ysabel,AO-76934,,,124,124,,,,Ross,,,
+11/24/25,11/25/25,Journey Community Church,AO-77429,,,141,141,,,,Will,,,
+11/24/25,11/25/25,VFW Don Diego,AO-77458,,,35,35,,,,Ross,,,
+11/24/25,11/25/25,MP: Vista,AO-77042,,,147,147,,,,AJ Enriquez,,,
+11/24/25,11/25/25,La Maestra,AO-77437,,,60,60,,,,Ross,,,
+11/24/25,11/25/25,City Heights Community,AO-77434,,,94,94,,,,Ross,,,
+11/24/25,11/25/25,Foundry,AO-77428,,,35,35,,,,Ross,,,
+11/24/25,11/25/25,CPE Parent Engagement Night,AO-77493,,,80,80,Del to Volunteers,,,Brandon Chiang,,,
+11/25/25,11/25/25,Church of Nazarene,AO-77424,,,118,118,,,,Transportation,,,
+,,Tuesday 11/25/25,,,,3312,,,,,,,,
+11/25/25,11/25/25,FSD Marketplace,AO-76899,,,113,113,,,,Brandon Chiang,,,TRUE
+11/25/25,12/01/25,La Maestra,AO-77541,,,45,45,,,,Ross,,,TRUE
+11/25/25,12/01/25,SP: Teofilo Mendoza Elementary,AO-77506,,,195,195,,,,Brandon Chiang,,,TRUE
+11/25/25,12/01/25,Fallbrook SDA,AO-77545,,,110,110,,,,Will,,,TRUE
+11/25/25,12/01/25,Fallbrook Food Pantry,AO-77546,,,272,272,,,,AJ Enriquez,,,
+11/25/25,12/01/25,JFS,AO-77526,,,119,119,,,,Ross,,,
+11/25/25,12/01/25,SP: Berry Elementary,AO-77500,,,156,156,,,,AJ Enriquez,,,
+11/25/25,12/01/25,SP: Clover Flat Elementary,AO-77505,,,185,185,,,,Will,,,
+11/25/25,12/01/25,MP Boulevard,AO-77501,,,289,289,,,,Brandon Chiang,,,
+11/25/25,12/01/25,SP: Pendleton Elementary,AO-77507,,,161,161,,,,Ross,,,
+11/25/25,12/01/25,CPE: 7th College UCSD,AO-77503,,,156,156,,,,AJ Enriquez,,,
+11/25/25,12/01/25,Mission San Luis Rey,AO-77528,,,243,243,,,,Brandon Chiang,,,
+11/25/25,12/01/25,SP: Dewey Elementary,AO-77353,,,55,65,2 items missing 5 units each,,,Ross,,,
+11/25/25,12/01/25,Turning Point,AO-77548,,,29,29,,,,AJ Enriquez,,,
+11/25/25,12/01/25,Faith Tabernacle,AO-77540,,,105,105,,,,Will,,,
+11/25/25,12/02/25,SP: Hoover High School,AO-77513,,,199,199,,,,Ross,,,
+11/25/25,12/02/25,MP: Lakeside,AO-76927,,,207,207,,,,AJ Enriquez,,,TRUE
+11/25/25,12/02/25,MP: Pauma,AO-77547,,,205,205,,,,Will,,,TRUE
+11/25/25,12/02/25,Sam Marcos SDA,AO-77552,,,33,33,,,,Will,,,TRUE
+11/25/25,12/02/25,SP: Borrego Springs,AO-77549,,,278,288,,,,Brandon Chiang,,,TRUE
+11/25/25,12/02/25,I am my Brother's Keeper,AO-77572,,,147,147,,,,AJ Enriquez,,,
+,,Monday 12/1/25,,,,1825,,,,,,,,
+12/01/25,12/02/25,BP: Howard Gardner,AO-77533,,,156,156,Deliver to Volunteers,,,Ross,,,TRUE
+12/01/25,12/02/25,HC: UCSD PB/NC,AO-77600,,,27,27,,,,Brandon Chiang,,,TRUE
+12/01/25,12/02/25,SP: Valley High,AO-77591,,,39,39,,,,Brandon Chiang,,,TRUE
+12/01/25,12/02/25,Foundry,AO-77581,,,51,51,,,,AJ Enriquez,,,TRUE
+12/01/25,12/02/25,MP: Downtown Fallbrook,AO-77594,,,39,39,,,,AJ Enriquez,,,TRUE
+12/01/25,12/02/25,SP: Escondido High,AO-77596,,,49,49,,,,AJ Enriquez,,,TRUE
+12/01/25,12/02/25,SP: SIATech South Bay,AO-77511,,,44,44,,,,Ross,,,TRUE
+12/01/25,12/02/25,La Maestra,AO-77543,,,45,45,,,,Will,,,TRUE
+12/01/25,12/02/25,SP: Our Lady's School,AO-77055,,,150,150,,,,AJ Enriquez,,,TRUE
+12/01/25,12/02/25,MiraCosta College,AO-77556,,,144,144,,,,Brandon Chiang,,,TRUE
+12/01/25,12/02/25,Venture Church,AO-77575,,,25,25,,,,Will,,,TRUE
+12/01/25,12/02/25,CPE: Parent Engagement Night,AO-77493,,,80,80,,,,AJ Enriquez,,,TRUE
+12/01/25,12/02/25,North Apostolic,AO-77578,,,27,27,,,,Ross,,,TRUE
+12/01/25,12/02/25,Church of Nazarene,AO-77576,,,150,150,,,,Will,,,TRUE
+12/01/25,12/02/25,San Ysidro Health: MCHC,AO-77538,,,70,70,,,,Ross,,,TRUE
+12/01/25,12/02/25,MP: Mesa Grande,AO-77550,,,43,43,,,,Brandon Chiang,,,TRUE
+12/01/25,12/03/25,City Heights Assembly of God,AO-77602,,,8,8,,,,Will,,,
+12/01/25,12/03/25,MP: Julian,AO-77571,,,102,102,,,,Ross,,,TRUE
+12/01/25,12/03/25,MP: Shelter Valley,AO-77551,,,144,144,,,,Brandon Chiang,,,TRUE
+12/01/25,12/03/25,Easterseals,AO-77603,,,138,138,,,,Will,,,TRUE
+12/01/25,12/03/25,SP: Lindo Park Elementary,AO-77554,,,294,294,,,,AJ Enriquez,,,TRUE
+,,Tuesday 12/2/25,,,,2600,,,,,,,,
+12/02/25,12/03/25,City of Hope International,AO-77607,,,55,55,,,,Ross,,,TRUE
+12/02/25,12/03/25,SP: Porter Elementary,AO-77529,,,153,153,,,,Brandon Chiang,,,TRUE
+12/02/25,12/03/25,SP: Hancock Elementary,AO-77626,,,120,120,,,,AJ Enriquez,,,TRUE
+12/02/25,12/03/25,MP: San Marcos,AO-77621,,,205,205,,,,Ross,,,TRUE
+12/02/25,12/03/25,SP: Chaparral High School,AO-77530,,,185,185,,,,AJ Enriquez,,,TRUE
+12/02/25,12/03/25,MP: Alpine,AO-77553,,,423,423,,,,Will,,,TRUE
+12/02/25,12/03/25,SP: Hamilton Elementary,AO-77531,,,151,151,,,,Brandon Chiang,,,TRUE
+12/02/25,12/03/25,St. Rose of Lima,AO-77628,,,24,24,,,,AJ Enriquez,,,TRUE
+12/02/25,12/03/25,Miramar College,AO-77574,,,99,99,,,,Will,,,TRUE
+12/02/25,12/03/25,MP: Rincon,AO-77570,,,126,126,,,,AJ Enriquez,,,TRUE
+12/02/25,12/03/25,MP: San Pasqual,AO-77569,,,140,140,,,,Ross,,,TRUE
+12/02/25,12/03/25,MP: Valley Center,AO-77568,,,331,331,,,,Brandon Chiang,,,TRUE
+12/02/25,12/03/25,CPE: Cox Communications,AO-77237,,,83,83,,,,Will,,,TRUE
+12/02/25,12/03/25,SD South Bay SDA Church,AO-77606,,,96,96,,,,Brandon Chiang,,,TRUE
+12/02/25,12/03/25,SP: Hamilton Elementary,AO-77531,,,147,147,,,,Brandon Chiang,,,TRUE
+12/02/25,12/03/25,SP: Nativity Prep Academy,AO-77532,,,118,118,,,,AJ Enriquez,,,TRUE
+12/02/25,12/03/25,SP: Pauma School,AO-77555,,,144,144,,,,AJ Enriquez,,,TRUE
+,,Wednesday 12/3/25,,,,,,,,,,,,
+12/03/25,12/04/25,Journey Community Church,AO-77599,,,180,180,,,,Brandon Chiang,,,
+12/03/25,12/04/25,Meridian Baptist Church,AO-77608,,,21,21,,,,Brandon Chiang,,,
+12/03/25,12/04/25,SP: Pablo Tac,AO-77646,,,35,35,,,,Brandon Chiang,,,
+12/03/25,12/04/25,ASI of CSUSM,AO-77544,,,,141,,,,Brandon Chiang,,,
+12/03/25,12/04/25,SP: Joli-Ann Leichtag Elementary,AO-77644,,,,40,,,,Brandon Chiang,,,
+12/03/25,12/04/25,SD Filipino Am. SDA Church,AO-77601,,,173,173,,,,AJ Enriquez,,,TRUE
+12/03/25,12/04/25,MP: Portrero,AO-77623,,,148,148,,,,AJ Enriquez,,,
+12/03/25,12/04/25,MP: Descanso,AO-77627,,,,72,,,,AJ Enriquez,,,
+12/03/25,12/04/25,TACO,AO-77640,,,,22,,,,AJ Enriquez,,,
+12/03/25,12/04/25,La Maestra Community Health,AO-77604,,,,45,,,,AJ Enriquez,,,
+12/03/25,12/04/25,Christ Community Church (Love Acts),AO-77615,,,,96,,,,AJ Enriquez,,,
+12/03/25,12/04/25,SP: Pacific View Leadership Event,AO-77537,,,,214,,,,AJ Enriquez,,,
+12/03/25,12/04/25,Trinity Lutheran Church,AO-77577,,,146,146,,,,Ross,,,
+12/03/25,12/04/25,"McAlister, Inc",AO- 77618,,,20,20,,,,Ross,,,
+12/03/25,12/04/25,SP: Knox Middle School,AO- 77534,,,122,122,,,,Ross,,,
+12/03/25,12/04/25,LJC Ministries,AO- 77669,,,,126,,,,Ross,,,
+12/03/25,12/04/25,CPE: Ross Elementary,AO-77586,,,,34,,,,Ross,,,
+12/03/25,12/04/25,SP: Imperial Beach Charter School,AO-77536,,,35,35,,,,Will,,,
+12/03/25,12/04/25,Iglesia Casa De Alabanza,AO-77642,,,116,116,,,,Will,,,

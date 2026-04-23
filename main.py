@@ -1,31 +1,42 @@
 import os
 from nicegui import ui
 
-def nav():
-    with ui.row():
-        ui.button('Home', on_click=lambda: ui.navigate.to('/'))
-        ui.button('Ceres6', on_click=lambda: ui.navigate.to('/ceres6'))
-        ui.button('KPI', on_click=lambda: ui.navigate.to('/kpi'))
-        ui.button('Trends', on_click=lambda: ui.navigate.to('/trends'))
+def navbar():
+    with ui.header().classes('items-center justify-between bg-blue-600 text-white px-6'):
+        ui.label('FluffyApp').classes('text-xl font-bold')
+        with ui.row():
+            ui.button('Home',          on_click=lambda: ui.navigate.to('/')).props('flat color=white')
+            ui.button('Ceres6 Search', on_click=lambda: ui.navigate.to('/ceres6')).props('flat color=white')
+            ui.button('KPI',           on_click=lambda: ui.navigate.to('/kpi')).props('flat color=white')
+            ui.button('Order Trends',  on_click=lambda: ui.navigate.to('/order-trends')).props('flat color=white')
 
 @ui.page('/')
 def home():
-    nav()
-    ui.label('Home').classes('text-h4')
+    navbar()
+    from pages.home import render
+    render()
 
 @ui.page('/ceres6')
 def ceres6():
-    nav()
-    ui.label('Ceres6').classes('text-h4')
+    navbar()
+    from pages.ceres6_search import render
+    render()
 
 @ui.page('/kpi')
 def kpi():
-    nav()
-    ui.label('KPI').classes('text-h4')
+    navbar()
+    from pages.kpi import render
+    render()
 
-@ui.page('/trends')
-def trends():
-    nav()
-    ui.label('Trends').classes('text-h4')
+@ui.page('/order-trends')
+def order_trends():
+    navbar()
+    from pages.order_trends import render
+    render()
 
-ui.run(host='0.0.0.0', port=int(os.getenv('PORT', '8080')))
+ui.run(
+    host='0.0.0.0',
+    port=int(os.environ.get('PORT', 8080)),
+    reload=False,
+    title='FluffyApp'
+)
