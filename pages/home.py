@@ -2,22 +2,20 @@ from nicegui import ui
 
 
 def render():
-    with ui.column().classes("w-full max-w-4xl mx-auto px-6 py-8 gap-6"):
+    with ui.column().classes("w-full mx-auto px-4 py-4 gap-6"):
         # Hero
         with ui.row().classes("items-center gap-3"):
-            ui.label("🥑").style("font-size: 2.5rem;")
             ui.label("Welcome to Fluffy!").style(
-                "font-size: 2rem; font-weight: 700; color: var(--q-primary);"
-            )
+                "font-size: 2.5rem; font-weight: 700; color: var(--q-primary);")
 
         ui.label(
-            "Fluffy is an all-in-one interface designed specifically for Feeding San Diego."
-        ).style("font-size: 1.05rem; font-weight: 550; color: var(--q-accent);")
+            "Fluffy is an all-in-one reporting interface designed specifically for Feeding San Diego."
+        ).style("font-size: 1.2rem; font-weight: 600; color: var(--q-secondary);")
 
         ui.separator()
 
-        ui.label("What can Fluffy do?").style(
-            "font-size: 1.2rem; font-weight: 600; color: var(--q-primary);"
+        ui.label("What can Fluffy currently do?").style(
+            "font-size: 1.5rem; font-weight: 600; color: var(--q-primary);"
         )
 
         # Feature cards
@@ -48,21 +46,22 @@ def render():
             ),
         ]
 
-        with ui.grid(columns=1).classes("w-full gap-4"):
+        with ui.grid(columns=3).classes("w-full gap-4"):
             for icon, title, route, description in features:
                 with ui.card().classes("w-full cursor-pointer hover:shadow-lg transition-shadow").style(
-                    "border-radius: 12px; border-left: 4px solid var(--q-accent);"
+                    "padding: 1rem; border-radius: 8px; border-left: 4px solid var(--q-primary);"
                 ) as card:
                     with ui.row().classes("items-start gap-4 p-2"):
-                        ui.label(icon).style("font-size: 2rem; min-width: 2.5rem;")
+                        ui.label(icon).style(
+                            "font-size: 2rem; min-width: 2.5rem;")
                         with ui.column().classes("gap-1"):
                             ui.label(title).style(
-                                "font-size: 1.1rem; font-weight: 600; color: var(--q-primary);"
-                            )
-                            ui.label(description).style("color: var(--q-accent); line-height: 1.5;")
+                                "font-size: 1.2rem; font-weight: 600; color: var(--q-secondary);")
+                            ui.label(description).style(
+                                "font-size: 0.90rem; font-weight: 500; color: var(--q-primary); line-height: 1.5;")
                             ui.button(
                                 f"Open {title} →",
                                 on_click=lambda r=route: ui.navigate.to(r),
                             ).props("flat").style(
-                                "color: var(--q-primary); font-weight: 600; padding: 0; margin-top: 4px;"
+                                "color: var(--q-primary); font-weight: 600; padding: 1rem; margin-top: 4px;"
                             )

@@ -26,10 +26,8 @@ def navbar():
         "background: var(--q-primary); box-shadow: 0 2px 8px rgba(0,0,0,0.3);"
     ):
         with ui.row().classes("items-center gap-3"):
-            ui.label("🥑").style("font-size: 1.6rem;")
-            ui.label("Fluffy").style(
-                "font-size: 1.4rem; font-weight: 700; color: white; letter-spacing: 0.04em;"
-            )
+            ui.label("🥑").style("font-size: 1.8rem; font-weight: 700;")
+    
         if is_logged_in():
             with ui.row().classes("items-center gap-1"):
                 for label, route in [
@@ -39,12 +37,13 @@ def navbar():
                     ("KPI Showcase", "/kpi"),
                 ]:
                     ui.button(label, on_click=lambda r=route: ui.navigate.to(r)).props(
-                        "flat color=white"
-                    )
+                        "flat color=white").style("font-size: 1.0rem; font-weight: 600;")
+                    
                 ui.separator().props("vertical").style(
-                    "background: rgba(255,255,255,0.3); height:30px;"
-                )
-                ui.button("Log out", on_click=do_logout).props("flat color=white")
+                    "background: rgba(255,255,255,0.3); height:45px;")
+                
+                ui.button("Log out", on_click=do_logout).props(
+                    "flat color=white").style("font-size: 1.0rem; font-weight: 600;")
 
 
 # ---------- Auth actions ----------
@@ -104,20 +103,20 @@ def _render_login():
         "min-height: 70vh; width: 100%;"
     ):
         with ui.card().style(
-            "width: 360px; padding: 2rem; border-radius: 16px;"
+            "width: 400px; padding: 1rem; border-radius: 8px;"
             "box-shadow: 0 4px 24px rgba(0,0,0,0.12);"
         ):
             with ui.column().classes("items-center gap-4 w-full"):
-                ui.label("🥑").style("font-size: 3rem;")
-                ui.label("Welcome to Fluffy").style(
-                    "font-size: 1.4rem; font-weight: 700; color: var(--q-primary);"
+                ui.label("🥑").style("font-size: 3rem; font-weight: 700;")
+                ui.label("Fluffy").style(
+                    "font-size: 1.8rem; font-weight: 700; color: var(--q-primary);"
                 )
                 ui.label("Feeding San Diego's internal toolkit").style(
-                    "font-size: 0.85rem; font-weight: 550; color: var(--q-accent); text-align: center;"
+                    "font-size: 1.1rem; font-weight: 550; color: var(--q-accent); text-align: center;"
                 )
                 ui.separator()
                 ui.button("Log in", on_click=_do_login).props("unelevated color=primary").style(
-                    "width: 100%; font-size: 1rem; font-weight: 600; border-radius: 8px; padding: 10px;"
+                    "width: 100%; font-size: 1.2rem; font-weight: 600; border-radius: 8px; padding: 10px;"
                 )
 
 

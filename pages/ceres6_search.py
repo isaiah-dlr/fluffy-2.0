@@ -120,13 +120,12 @@ def render():
     with ui.column().classes("w-full max-w-4xl mx-auto px-6 py-8 gap-6"):
         # Header
         with ui.row().classes("items-center gap-3"):
-            ui.label("🔍").style("font-size: 2rem;")
             ui.label("Ceres6 Report / Field Query").style(
-                "font-size: 1.8rem; font-weight: 700; color: #1a3a5c;"
+                "font-size: 2.0rem; font-weight: 700; color: var(--q-primary);"
             )
 
         ui.label('Ask something like: "Where can I find agency delivery zone codes?"').style(
-            "color: #555; font-style: italic;"
+            "color: var(--q-accent); font-style: italic;"
         )
 
         if df is None:
@@ -144,20 +143,20 @@ def render():
             question_input = ui.input(
                 label="Your question",
                 placeholder='e.g. "Where can I find donor contact info?"',
-            ).classes("flex-1").style("min-width: 280px;")
+            ).classes("flex-1").style("color: var(--q-primary); min-width: 280px;")
 
             top_k_select = ui.select(
                 label="Results to show",
                 options=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
                 value=3,
-            ).style("min-width: 140px;")
+            ).style("color: var(--q-primary); min-width: 140px;")
 
         def do_search():
             results_container.clear()
             q = question_input.value.strip()
             if not q:
                 with results_container:
-                    ui.label("Please enter a question above.").style("color: #888;")
+                    ui.label("Please enter a question above.").style("color: var(--q-primary);")
                 return
 
             q_norm = normalize(q)
@@ -176,14 +175,14 @@ def render():
                 # Best answer highlight
                 best_row = best[0][2]
                 with ui.card().classes("w-full").style(
-                    "border-radius: 12px; border-left: 4px solid #1a7a3a; background: #f0fff4;"
+                    "border-radius: 8px; border-left: 4px solid #1a7a3a; background: #f0fff4;"
                 ):
                     with ui.column().classes("gap-1 p-2"):
                         ui.label("✅ Best Match").style(
                             "font-size: 0.8rem; font-weight: 700; color: #1a7a3a; text-transform: uppercase;"
                         )
                         ui.label(str(best_row[COL_COMMON])).style(
-                            "font-size: 1.15rem; font-weight: 700; color: #1a3a5c;"
+                            "font-size: 1.2rem; font-weight: 700; color: var(--q-primary);"
                         )
                         with ui.row().classes("gap-6 flex-wrap"):
                             for label, col in [
@@ -193,26 +192,26 @@ def render():
                             ]:
                                 with ui.column().classes("gap-0"):
                                     ui.label(label).style(
-                                        "font-size: 0.75rem; color: #666; text-transform: uppercase;"
+                                        "font-size: 0.85rem; color: #666; text-transform: uppercase;"
                                     )
                                     ui.label(str(best_row[col])).style(
-                                        "font-family: monospace; font-size: 0.9rem; color: #222;"
+                                        "font-family: monospace; font-size: 1.0rem; color: var(--q-secondary);"
                                     )
 
                 ui.separator()
                 ui.label(f"Top {top_k} Matches").style(
-                    "font-weight: 600; color: #1a3a5c; font-size: 1rem;"
+                    "font-weight: 600; color: var(--q-primary); font-size: 1.2rem;"
                 )
 
                 for rank, (s, why, row) in enumerate(best, start=1):
-                    with ui.card().classes("w-full").style("border-radius: 10px;"):
+                    with ui.card().classes("w-full").style("border-radius: 8px;"):
                         with ui.row().classes("items-start gap-4 p-1"):
                             ui.label(f"#{rank}").style(
                                 "font-size: 1.2rem; font-weight: 700; color: #aaa; min-width: 2rem;"
                             )
                             with ui.column().classes("gap-1 flex-1"):
                                 ui.label(str(row[COL_COMMON])).style(
-                                    "font-weight: 600; color: #1a3a5c;"
+                                    "font-weight: 600; color: var(--q-primary);"
                                 )
                                 with ui.row().classes("gap-6 flex-wrap"):
                                     for label, col in [
@@ -225,7 +224,7 @@ def render():
                                                 "font-size: 0.7rem; color: #888; text-transform: uppercase;"
                                             )
                                             ui.label(str(row[col])).style(
-                                                "font-family: monospace; font-size: 0.85rem;"
+                                                "font-family: monospace; font-size: 0.85rem; color: var(--q-secondary);"
                                             )
 
         ui.button("Search", on_click=do_search).props("unelevated").style(
