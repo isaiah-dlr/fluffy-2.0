@@ -6,7 +6,8 @@ static_dir = Path(__file__).parent / "static"
 
 if static_dir.exists():
     app.add_static_files("/static", str(static_dir))
-    ui.add_head_html('<link rel="stylesheet" href="/static/global.css">')
+    ui.add_head_html('<link rel="stylesheet" href="/static/global.css">',
+                     shared = True)
 
 # ---------- Auth state ----------
 def is_logged_in() -> bool:
@@ -20,13 +21,7 @@ def apply_theme():
         secondary="#de7c00",
         accent="#4e5b31",
     )
-    ui.add_head_html("""
-        <style>
-            body { background: #ffffff; color: #98b8ad; }
-        </style>
-    """)
-
-
+    
 # ---------- Shared navbar ----------
 def navbar():
     with ui.header().classes("items-center justify-between px-6 py-3").style(

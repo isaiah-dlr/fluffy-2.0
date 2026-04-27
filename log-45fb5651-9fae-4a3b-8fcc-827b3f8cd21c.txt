@@ -1,0 +1,331 @@
+starting build "45fb5651-9fae-4a3b-8fcc-827b3f8cd21c"
+
+FETCHSOURCE
+From https://github.com/isaiah-dlr/fluffy-2.0
+ * branch            602a813d386707e271e001cf929bc607f894976b -> FETCH_HEAD
+HEAD is now at 602a813 Visual Overhaul to Member Order Trends + global css style creation
+GitCommit:
+602a813d386707e271e001cf929bc607f894976b
+BUILD
+Starting Step #0
+Step #0: Already have image (with digest): gcr.io/cloud-builders/docker
+Step #0: Sending build context to Docker daemon  39.31MB
+Step #0: Step 1/6 : FROM python:3.11-slim
+Step #0: 3.11-slim: Pulling from library/python
+Step #0: 3531af2bc2a9: Pulling fs layer
+Step #0: 91ff8760033c: Pulling fs layer
+Step #0: f3ba2250c524: Pulling fs layer
+Step #0: 7ccd73948dde: Pulling fs layer
+Step #0: 7ccd73948dde: Verifying Checksum
+Step #0: 7ccd73948dde: Download complete
+Step #0: 91ff8760033c: Verifying Checksum
+Step #0: 91ff8760033c: Download complete
+Step #0: f3ba2250c524: Verifying Checksum
+Step #0: f3ba2250c524: Download complete
+Step #0: 3531af2bc2a9: Verifying Checksum
+Step #0: 3531af2bc2a9: Download complete
+Step #0: 3531af2bc2a9: Pull complete
+Step #0: 91ff8760033c: Pull complete
+Step #0: f3ba2250c524: Pull complete
+Step #0: 7ccd73948dde: Pull complete
+Step #0: Digest: sha256:6d85378d88a19cd4d76079817532d62232be95757cb45945a99fec8e8084b9c2
+Step #0: Status: Downloaded newer image for python:3.11-slim
+Step #0:  ---> 1eee6fcc4d86
+Step #0: Step 2/6 : WORKDIR /app
+Step #0:  ---> Running in d23525ea8405
+Step #0: Removing intermediate container d23525ea8405
+Step #0:  ---> 0ef2d1895a5b
+Step #0: Step 3/6 : COPY requirements.txt .
+Step #0:  ---> 2dab94ffdd12
+Step #0: Step 4/6 : RUN pip install --no-cache-dir -r requirements.txt
+Step #0:  ---> Running in 9124124d1a58
+Step #0: Collecting pandas (from -r requirements.txt (line 2))
+Step #0:   Downloading pandas-3.0.2-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+Step #0:      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.5/79.5 kB 5.0 MB/s eta 0:00:00
+Step #0: Collecting numpy (from -r requirements.txt (line 3))
+Step #0:   Downloading numpy-2.4.4-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Step #0: Collecting plotly (from -r requirements.txt (line 4))
+Step #0:   Downloading plotly-6.7.0-py3-none-any.whl.metadata (8.6 kB)
+Step #0: Collecting scikit-learn (from -r requirements.txt (line 5))
+Step #0:   Downloading scikit_learn-1.8.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+Step #0: Collecting openpyxl (from -r requirements.txt (line 6))
+Step #0:   Downloading openpyxl-3.1.5-py2.py3-none-any.whl.metadata (2.5 kB)
+Step #0: Collecting nicegui[plotly] (from -r requirements.txt (line 1))
+Step #0:   Downloading nicegui-3.11.1-py3-none-any.whl.metadata (11 kB)
+Step #0: Collecting Pygments<3.0.0,>=2.20.0 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Step #0: Collecting aiofiles>=23.1.0 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading aiofiles-25.1.0-py3-none-any.whl.metadata (6.3 kB)
+Step #0: Collecting aiohttp>=3.13.4 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading aiohttp-3.13.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Step #0: Collecting certifi>=2024.7.4 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading certifi-2026.4.22-py3-none-any.whl.metadata (2.5 kB)
+Step #0: Collecting docutils>=0.19.0 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading docutils-0.22.4-py3-none-any.whl.metadata (15 kB)
+Step #0: Collecting fastapi!=0.123.5,>=0.109.1 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading fastapi-0.136.1-py3-none-any.whl.metadata (28 kB)
+Step #0: Collecting h11>=0.16.0 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Step #0: Collecting httpx>=0.24.0 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Step #0: Collecting ifaddr>=0.2.0 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading ifaddr-0.2.0-py3-none-any.whl.metadata (4.9 kB)
+Step #0: Collecting itsdangerous<3,>=2.1.2 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Step #0: Collecting jinja2<4,>=3.1.6 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Step #0: Collecting lxml>=6.1.0 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading lxml-6.1.0-cp311-cp311-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (4.0 kB)
+Step #0: Collecting lxml-html-clean>=0.4.4 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading lxml_html_clean-0.4.4-py3-none-any.whl.metadata (2.4 kB)
+Step #0: Collecting markdown2!=2.4.11,>=2.4.7 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading markdown2-2.5.5-py3-none-any.whl.metadata (2.1 kB)
+Step #0: Collecting orjson>=3.11.5 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading orjson-3.11.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (41 kB)
+Step #0:      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.0/42.0 kB 215.3 MB/s eta 0:00:00
+Step #0: Collecting pydantic-core>=2.35.0 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading pydantic_core-2.46.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Step #0: Collecting python-dotenv>=1.2.2 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading python_dotenv-1.2.2-py3-none-any.whl.metadata (27 kB)
+Step #0: Collecting python-engineio>=4.12.0 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading python_engineio-4.13.1-py3-none-any.whl.metadata (2.3 kB)
+Step #0: Collecting python-multipart>=0.0.26 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading python_multipart-0.0.27-py3-none-any.whl.metadata (2.1 kB)
+Step #0: Collecting python-socketio>=5.14.0 (from python-socketio[asyncio-client]>=5.14.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading python_socketio-5.16.1-py3-none-any.whl.metadata (3.3 kB)
+Step #0: Collecting starlette>=0.49.1 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading starlette-1.0.0-py3-none-any.whl.metadata (6.3 kB)
+Step #0: Collecting tinycss2<2,>=1.4.0 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading tinycss2-1.5.1-py3-none-any.whl.metadata (3.0 kB)
+Step #0: Collecting typing-extensions>=4.0.0 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Step #0: Collecting uvicorn>=0.22.0 (from uvicorn[standard]>=0.22.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading uvicorn-0.46.0-py3-none-any.whl.metadata (6.7 kB)
+Step #0: Collecting watchfiles>=0.18.1 (from nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading watchfiles-1.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Step #0: Collecting python-dateutil>=2.8.2 (from pandas->-r requirements.txt (line 2))
+Step #0:   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Step #0: Collecting narwhals>=1.15.1 (from plotly->-r requirements.txt (line 4))
+Step #0:   Downloading narwhals-2.20.0-py3-none-any.whl.metadata (15 kB)
+Step #0: Collecting packaging (from plotly->-r requirements.txt (line 4))
+Step #0:   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Step #0: Collecting scipy>=1.10.0 (from scikit-learn->-r requirements.txt (line 5))
+Step #0:   Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Step #0:      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 kB 42.2 MB/s eta 0:00:00
+Step #0: Collecting joblib>=1.3.0 (from scikit-learn->-r requirements.txt (line 5))
+Step #0:   Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Step #0: Collecting threadpoolctl>=3.2.0 (from scikit-learn->-r requirements.txt (line 5))
+Step #0:   Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Step #0: Collecting et-xmlfile (from openpyxl->-r requirements.txt (line 6))
+Step #0:   Downloading et_xmlfile-2.0.0-py3-none-any.whl.metadata (2.7 kB)
+Step #0: Collecting aiohappyeyeballs>=2.5.0 (from aiohttp>=3.13.4->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Step #0: Collecting aiosignal>=1.4.0 (from aiohttp>=3.13.4->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Step #0: Collecting attrs>=17.3.0 (from aiohttp>=3.13.4->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Step #0: Collecting frozenlist>=1.1.1 (from aiohttp>=3.13.4->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading frozenlist-1.8.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (20 kB)
+Step #0: Collecting multidict<7.0,>=4.5 (from aiohttp>=3.13.4->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading multidict-6.7.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Step #0: Collecting propcache>=0.2.0 (from aiohttp>=3.13.4->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading propcache-0.4.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (13 kB)
+Step #0: Collecting yarl<2.0,>=1.17.0 (from aiohttp>=3.13.4->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading yarl-1.23.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+Step #0:      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.6/79.6 kB 249.6 MB/s eta 0:00:00
+Step #0: Collecting pydantic>=2.9.0 (from fastapi!=0.123.5,>=0.109.1->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading pydantic-2.13.3-py3-none-any.whl.metadata (108 kB)
+Step #0:      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 108.8/108.8 kB 78.7 MB/s eta 0:00:00
+Step #0: Collecting typing-inspection>=0.4.2 (from fastapi!=0.123.5,>=0.109.1->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Step #0: Collecting annotated-doc>=0.0.2 (from fastapi!=0.123.5,>=0.109.1->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading annotated_doc-0.0.4-py3-none-any.whl.metadata (6.6 kB)
+Step #0: Collecting anyio (from httpx>=0.24.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading anyio-4.13.0-py3-none-any.whl.metadata (4.5 kB)
+Step #0: Collecting httpcore==1.* (from httpx>=0.24.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Step #0: Collecting idna (from httpx>=0.24.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading idna-3.13-py3-none-any.whl.metadata (8.0 kB)
+Step #0: Collecting MarkupSafe>=2.0 (from jinja2<4,>=3.1.6->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Step #0: Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas->-r requirements.txt (line 2))
+Step #0:   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Step #0: Collecting simple-websocket>=0.10.0 (from python-engineio>=4.12.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading simple_websocket-1.1.0-py3-none-any.whl.metadata (1.5 kB)
+Step #0: Collecting bidict>=0.21.0 (from python-socketio>=5.14.0->python-socketio[asyncio-client]>=5.14.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading bidict-0.23.1-py3-none-any.whl.metadata (8.7 kB)
+Step #0: Collecting webencodings>=0.4 (from tinycss2<2,>=1.4.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading webencodings-0.5.1-py2.py3-none-any.whl.metadata (2.1 kB)
+Step #0: Collecting click>=7.0 (from uvicorn>=0.22.0->uvicorn[standard]>=0.22.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading click-8.3.3-py3-none-any.whl.metadata (2.6 kB)
+Step #0: Collecting httptools>=0.6.3 (from uvicorn[standard]>=0.22.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading httptools-0.7.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+Step #0: Collecting pyyaml>=5.1 (from uvicorn[standard]>=0.22.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Step #0: Collecting uvloop>=0.15.1 (from uvicorn[standard]>=0.22.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading uvloop-0.22.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (4.9 kB)
+Step #0: Collecting websockets>=10.4 (from uvicorn[standard]>=0.22.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading websockets-16.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.8 kB)
+Step #0: Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi!=0.123.5,>=0.109.1->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Step #0: Collecting wsproto (from simple-websocket>=0.10.0->python-engineio>=4.12.0->nicegui[plotly]->-r requirements.txt (line 1))
+Step #0:   Downloading wsproto-1.3.2-py3-none-any.whl.metadata (5.2 kB)
+Step #0: Downloading pandas-3.0.2-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (11.3 MB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.3/11.3 MB 180.6 MB/s eta 0:00:00
+Step #0: Downloading numpy-2.4.4-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 219.8 MB/s eta 0:00:00
+Step #0: Downloading plotly-6.7.0-py3-none-any.whl (9.9 MB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 197.9 MB/s eta 0:00:00
+Step #0: Downloading scikit_learn-1.8.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.1 MB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.1/9.1 MB 206.3 MB/s eta 0:00:00
+Step #0: Downloading openpyxl-3.1.5-py2.py3-none-any.whl (250 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 250.9/250.9 kB 286.0 MB/s eta 0:00:00
+Step #0: Downloading aiofiles-25.1.0-py3-none-any.whl (14 kB)
+Step #0: Downloading aiohttp-3.13.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.8 MB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 275.2 MB/s eta 0:00:00
+Step #0: Downloading certifi-2026.4.22-py3-none-any.whl (135 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 kB 249.1 MB/s eta 0:00:00
+Step #0: Downloading docutils-0.22.4-py3-none-any.whl (633 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 633.2/633.2 kB 279.1 MB/s eta 0:00:00
+Step #0: Downloading fastapi-0.136.1-py3-none-any.whl (117 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.7/117.7 kB 257.3 MB/s eta 0:00:00
+Step #0: Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Step #0: Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 226.9 MB/s eta 0:00:00
+Step #0: Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 225.0 MB/s eta 0:00:00
+Step #0: Downloading ifaddr-0.2.0-py3-none-any.whl (12 kB)
+Step #0: Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Step #0: Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 261.0 MB/s eta 0:00:00
+Step #0: Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 309.1/309.1 kB 299.0 MB/s eta 0:00:00
+Step #0: Downloading lxml-6.1.0-cp311-cp311-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (5.2 MB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 228.9 MB/s eta 0:00:00
+Step #0: Downloading lxml_html_clean-0.4.4-py3-none-any.whl (14 kB)
+Step #0: Downloading markdown2-2.5.5-py3-none-any.whl (56 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.2/56.2 kB 197.3 MB/s eta 0:00:00
+Step #0: Downloading narwhals-2.20.0-py3-none-any.whl (449 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 449.4/449.4 kB 307.4 MB/s eta 0:00:00
+Step #0: Downloading orjson-3.11.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (133 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.6/133.6 kB 222.7 MB/s eta 0:00:00
+Step #0: Downloading pydantic_core-2.46.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 126.9 MB/s eta 0:00:00
+Step #0: Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 227.3 MB/s eta 0:00:00
+Step #0: Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 285.0 MB/s eta 0:00:00
+Step #0: Downloading python_dotenv-1.2.2-py3-none-any.whl (22 kB)
+Step #0: Downloading python_engineio-4.13.1-py3-none-any.whl (59 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.8/59.8 kB 214.4 MB/s eta 0:00:00
+Step #0: Downloading python_multipart-0.0.27-py3-none-any.whl (29 kB)
+Step #0: Downloading python_socketio-5.16.1-py3-none-any.whl (82 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.1/82.1 kB 222.0 MB/s eta 0:00:00
+Step #0: Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 227.3 MB/s eta 0:00:00
+Step #0: Downloading starlette-1.0.0-py3-none-any.whl (72 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.7/72.7 kB 160.2 MB/s eta 0:00:00
+Step #0: Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Step #0: Downloading tinycss2-1.5.1-py3-none-any.whl (28 kB)
+Step #0: Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 202.6 MB/s eta 0:00:00
+Step #0: Downloading uvicorn-0.46.0-py3-none-any.whl (70 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.9/70.9 kB 223.1 MB/s eta 0:00:00
+Step #0: Downloading watchfiles-1.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (456 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 456.1/456.1 kB 288.4 MB/s eta 0:00:00
+Step #0: Downloading et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+Step #0: Downloading nicegui-3.11.1-py3-none-any.whl (19.8 MB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.8/19.8 MB 216.7 MB/s eta 0:00:00
+Step #0: Downloading packaging-26.2-py3-none-any.whl (100 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.2/100.2 kB 257.9 MB/s eta 0:00:00
+Step #0: Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+Step #0: Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Step #0: Downloading annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+Step #0: Downloading anyio-4.13.0-py3-none-any.whl (114 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.4/114.4 kB 261.6 MB/s eta 0:00:00
+Step #0: Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 202.0 MB/s eta 0:00:00
+Step #0: Downloading bidict-0.23.1-py3-none-any.whl (32 kB)
+Step #0: Downloading click-8.3.3-py3-none-any.whl (110 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.5/110.5 kB 252.2 MB/s eta 0:00:00
+Step #0: Downloading frozenlist-1.8.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (231 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 231.1/231.1 kB 286.7 MB/s eta 0:00:00
+Step #0: Downloading httptools-0.7.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (456 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 456.6/456.6 kB 294.1 MB/s eta 0:00:00
+Step #0: Downloading idna-3.13-py3-none-any.whl (68 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.6/68.6 kB 254.1 MB/s eta 0:00:00
+Step #0: Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Step #0: Downloading multidict-6.7.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (246 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 246.3/246.3 kB 234.3 MB/s eta 0:00:00
+Step #0: Downloading propcache-0.4.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (210 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 210.0/210.0 kB 258.0 MB/s eta 0:00:00
+Step #0: Downloading pydantic-2.13.3-py3-none-any.whl (471 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.0/472.0 kB 275.9 MB/s eta 0:00:00
+Step #0: Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 286.8 MB/s eta 0:00:00
+Step #0: Downloading simple_websocket-1.1.0-py3-none-any.whl (13 kB)
+Step #0: Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Step #0: Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Step #0: Downloading uvloop-0.22.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.8 MB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 235.2 MB/s eta 0:00:00
+Step #0: Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Step #0: Downloading websockets-16.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (184 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 184.6/184.6 kB 302.5 MB/s eta 0:00:00
+Step #0: Downloading yarl-1.23.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (102 kB)
+Step #0:    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 102.7/102.7 kB 258.3 MB/s eta 0:00:00
+Step #0: Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Step #0: Downloading wsproto-1.3.2-py3-none-any.whl (24 kB)
+Step #0: Installing collected packages: webencodings, ifaddr, websockets, uvloop, typing-extensions, tinycss2, threadpoolctl, six, pyyaml, python-multipart, python-dotenv, Pygments, propcache, packaging, orjson, numpy, narwhals, multidict, MarkupSafe, markdown2, lxml, joblib, itsdangerous, idna, httptools, h11, frozenlist, et-xmlfile, docutils, click, certifi, bidict, attrs, annotated-types, annotated-doc, aiohappyeyeballs, aiofiles, yarl, wsproto, uvicorn, typing-inspection, scipy, python-dateutil, pydantic-core, plotly, openpyxl, lxml-html-clean, jinja2, httpcore, anyio, aiosignal, watchfiles, starlette, simple-websocket, scikit-learn, pydantic, pandas, httpx, aiohttp, python-engineio, fastapi, python-socketio, nicegui
+Step #0: Successfully installed MarkupSafe-3.0.3 Pygments-2.20.0 aiofiles-25.1.0 aiohappyeyeballs-2.6.1 aiohttp-3.13.5 aiosignal-1.4.0 annotated-doc-0.0.4 annotated-types-0.7.0 anyio-4.13.0 attrs-26.1.0 bidict-0.23.1 certifi-2026.4.22 click-8.3.3 docutils-0.22.4 et-xmlfile-2.0.0 fastapi-0.136.1 frozenlist-1.8.0 h11-0.16.0 httpcore-1.0.9 httptools-0.7.1 httpx-0.28.1 idna-3.13 ifaddr-0.2.0 itsdangerous-2.2.0 jinja2-3.1.6 joblib-1.5.3 lxml-6.1.0 lxml-html-clean-0.4.4 markdown2-2.5.5 multidict-6.7.1 narwhals-2.20.0 nicegui-3.11.1 numpy-2.4.4 openpyxl-3.1.5 orjson-3.11.8 packaging-26.2 pandas-3.0.2 plotly-6.7.0 propcache-0.4.1 pydantic-2.13.3 pydantic-core-2.46.3 python-dateutil-2.9.0.post0 python-dotenv-1.2.2 python-engineio-4.13.1 python-multipart-0.0.27 python-socketio-5.16.1 pyyaml-6.0.3 scikit-learn-1.8.0 scipy-1.17.1 simple-websocket-1.1.0 six-1.17.0 starlette-1.0.0 threadpoolctl-3.6.0 tinycss2-1.5.1 typing-extensions-4.15.0 typing-inspection-0.4.2 uvicorn-0.46.0 uvloop-0.22.1 watchfiles-1.1.1 webencodings-0.5.1 websockets-16.0 wsproto-1.3.2 yarl-1.23.0
+Step #0: [91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Step #0: [0m[91m
+Step #0: [notice] A new release of pip is available: 24.0 -> 26.1
+Step #0: [notice] To update, run: pip install --upgrade pip
+Step #0: [0mRemoving intermediate container 9124124d1a58
+Step #0:  ---> 8314fd4a1384
+Step #0: Step 5/6 : COPY . .
+Step #0:  ---> 86cb9e86f929
+Step #0: Step 6/6 : CMD ["python", "Start.py"]
+Step #0:  ---> Running in 145d486292da
+Step #0: Removing intermediate container 145d486292da
+Step #0:  ---> 215052bc45d9
+Step #0: Successfully built 215052bc45d9
+Step #0: Successfully tagged gcr.io/fsd-fluffy-app/fluffy:latest
+Finished Step #0
+Starting Step #1
+Step #1: Already have image (with digest): gcr.io/cloud-builders/docker
+Step #1: Using default tag: latest
+Step #1: The push refers to repository [gcr.io/fsd-fluffy-app/fluffy]
+Step #1: 34a745f757e8: Preparing
+Step #1: 8d8ddc9577b8: Preparing
+Step #1: 47820650bda2: Preparing
+Step #1: df8b84976b7b: Preparing
+Step #1: 2360b28b4660: Preparing
+Step #1: 248c30140986: Preparing
+Step #1: fa1aec823035: Preparing
+Step #1: 6d7c150df58d: Preparing
+Step #1: fa1aec823035: Layer already exists
+Step #1: 6d7c150df58d: Layer already exists
+Step #1: 2360b28b4660: Layer already exists
+Step #1: 248c30140986: Layer already exists
+Step #1: 47820650bda2: Pushed
+Step #1: df8b84976b7b: Pushed
+Step #1: 34a745f757e8: Pushed
+Step #1: 8d8ddc9577b8: Pushed
+Step #1: latest: digest: sha256:9f08b5a1ef77306b2bb21b174c795c09ea601d03c294fc779575316c5e55c35e size: 1997
+Finished Step #1
+Starting Step #2
+Step #2: Already have image (with digest): gcr.io/cloud-builders/gcloud
+Step #2: Deploying container to Cloud Run service [fluffy] in project [fsd-fluffy-app] region [us-west2]
+Step #2: Deploying...
+Step #2: Setting IAM Policy..............warning
+Step #2: Creating Revision......................................................................................................................................................................................................................................................................................................................................................................................................failed
+Step #2: Deployment failed
+Step #2:   Setting IAM policy failed, try "gcloud beta run services add-iam-policy-binding --region=us-west2 --member=allUsers --role=roles/run.invoker fluffy"
+Step #2: ERROR: (gcloud.run.deploy) The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.
+Step #2: 
+Step #2: Logs URL: https://console.cloud.google.com/logs/viewer?project=fsd-fluffy-app&resource=cloud_run_revision/service_name/fluffy/revision_name/fluffy-00011-hlr&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22fluffy%22%0Aresource.labels.revision_name%3D%22fluffy-00011-hlr%22 
+Step #2: For more troubleshooting guidance, see https://cloud.google.com/run/docs/troubleshooting#container-failed-to-start
+Finished Step #2
+ERROR
+ERROR: build step 2 "gcr.io/cloud-builders/gcloud" failed: step exited with non-zero status: 1

@@ -63,20 +63,17 @@ def get_df():
     except Exception as e:
         return None, str(e)
 
-
 # ---------- NiceGUI render ----------
 def render():
-    with ui.column().classes("w-full max-w-7xl mx-auto px-6 py-8 gap-6"):
-        with ui.row().classes("items-center gap-3"):
-            ui.label("📈").style("font-size: 2rem;")
+    with ui.column().classes("w-full mx-auto px-4 py-4 gap-6"):
+        with ui.column().classes("gap-3"):
             ui.label("Member Distribution Trends Calculator").style(
-                "font-size: 1.8rem; font-weight: 700; color: var(--q-color-primary);"
-            )
+                "font-size: 2.5rem; font-weight: 700; color: var(--q-primary);")
 
-        ui.label(
+            ui.label(
             "Calculate trends in member or regional distribution over time, with optional "
-            "prior fiscal year comparison. Download a copy of the report for further analysis."
-        ).style("color: #555;")
+            "prior fiscal year comparison. Download a copy of the report for further analysis.").style(
+                "color: var(--q-secondary); font-size: 1.25rem; font-style: italic;")
 
         df, err = get_df()
         if err or df is None:
@@ -102,12 +99,14 @@ def render():
         max_date = pd.to_datetime(df["date"].max()).date()
 
         # ---- CONTROLS ----
-        ui.label("Report Controls").style("font-size: 1.2rem; font-weight: 600; color: var(--q-color-primary);")
+        ui.label("Report Controls").style(
+            f"font-size: 1.2rem; font-weight: 600; color: var(--q-primary);"
+        )
 
         with ui.grid(columns=3).classes("w-full gap-4"):
             mode_radio = ui.radio(
                 ["Agency", "Region"], value="Agency", on_change=lambda e: _update_entity_options(e.value)
-            ).props("inline")
+            ).props("inline").style(f"color: var(--q-secondary); font-size: 1rem; font-weight: 600;")   
 
             entity_values_agency = sorted(df["entity_agency"].dropna().astype(str).unique().tolist())
             entity_values_region = sorted(df["entity_region"].dropna().astype(str).unique().tolist())
@@ -156,47 +155,103 @@ def render():
             ).style("min-width: 220px;")
 
         ui.separator()
-        ui.label("Time Window").style("font-size: 1.2rem; font-weight: 600; color: var(--q-color-primary);")
+        ui.label("Time Window").style(
+            f"font-size: 1.2rem; font-weight: 600; color: var(--q-primary);"
+        )
 
         window_mode_radio = ui.radio(
             ["Date Range", "Anchor + Period Lookback"], value="Date Range"
-        ).props("inline").style("margin-bottom: 1rem; color: var(--q-secondary);")
-
+        ).props("inline").style(f"margin-bottom: 1rem; color: var(--q-secondary); font-size: 1rem; font-weight: 600;")
+        
         with ui.row().classes("w-full gap-4 flex-wrap items-end"):
-            with ui.input("Start Date", value = str(min_date)).classes("w-36 compact=date") as start_date_input:
-                with ui.menu().props("no-parent-event") as menu:
-                    with ui.date(value = str(min_date).bind_value(start_date_input)):
-                                 ui.button("Close", on_click=menu.close).props("flat dense")
 
-            with ui.input("End Date", value = str(max_date)).classes("w-36 compact=date") as end_date_input:
-                with ui.menu().props("no-parent-event") as menu:
-                    with ui.date(value = str(max_date).bind_value(end_date_input)):
-                                 ui.button("Close", on_click=menu.close).props("flat dense")
+            # --- Start Date ---
+            with ui.column().classes("gap-1"):
+                ui.label("Start Date").classes("text-sm font-medium text-gray-600")
+                with ui.input(value=str(min_date)).classes("w-44 compact-date") as start_date_input:
+                    with ui.menu().props("no-parent-event").classes("date-menu") as start_menu:
+                        start_calendar = ui.date(
+                            value=str(min_date),
+                            on_change=lambda e: (
+                                start_date_input.set_value(e.value),
+                                start_menu.close()
+                            )
+                        )
+                    start_date_input.on("click", start_menu.open)
 
-            with ui.input("Anchor Date", value = str(max_date)).classes("w-36 compact=date").style("display: none;") as anchor_date_input:
-                with ui.menu().props("no-parent-event") as menu:
-                    with ui.date(value = str(max_date).bind_value(anchor_date_input)):
-                                 ui.button("Close", on_click=menu.close).props("flat dense")
+            # --- End Date ---
+            with ui.column().classes("gap-1"):
+                ui.label("End Date").classes("text-sm font-medium text-gray-600")
+                with ui.input(value=str(max_date)).classes("w-44 compact-date") as end_date_input:
+                    with ui.menu().props("no-parent-event").classes("date-menu") as end_menu:
+                        end_calendar = ui.date(
+                            value=str(max_date),
+                            on_change=lambda e: (
+                                end_date_input.set_value(e.value),
+                                end_menu.close()
+                            )
+                        )
+                    end_date_input.on("click", end_menu.open)
 
+            # --- Anchor Date ---
+            with ui.column().classes("gap-1") as anchor_date_col:
+                ui.label("Anchor Date").classes("text-sm font-medium text-gray-600")
+                with ui.input(value=str(max_date), placeholder="2020-10-01").classes("w-44 compact-date") as anchor_date_input:
+                    with ui.menu().props("no-parent-event").classes("date-menu") as anchor_menu:
+                        anchor_calendar = ui.date(
+                            value=str(max_date),
+                            on_change=lambda e: (
+                                anchor_date_input.set_value(e.value),
+                                anchor_menu.close()
+                            )
+                        )
+                    anchor_date_input.on("click", anchor_menu.open)
+
+            # --- Lookback periods (hidden initially) ---
             lookback_input = ui.number(
-                "Previous Periods", 
+                "Periods to Look Back",
                 value=3,
                 min=0,
                 max=52,
-                step=1
-                ).classes("w-40").style("display: none;")
+                step=1,
+            ).classes("w-52")
 
-        yoy_toggle = ui.checkbox("Include prior fiscal year same-dates?", value=False).style("color: var(--q-secondary); margin-top: 0.5rem;")
+        yoy_toggle = ui.checkbox("Include prior fiscal year same-dates?", value=False).style(
+            f"color: var(--q-secondary); margin-top: 0.5rem; font-size: 1rem; font-weight: 600;"
+        )
 
-        def _toggle_window_mode(e):
-            is_range = e.value == "Date Range"
+        # ---- Window mode toggle ----
+        def _toggle_window_mode(e=None):
+            """Show/hide date inputs depending on the selected window mode.
 
-            start_date_input.style("display: block;" if is_range else "display: none;")
-            end_date_input.style("display: block;" if is_range else "display: none;")
-            anchor_date_input.style("display: none;" if is_range else "display: block;")
-            lookback_input.style("display: none;" if is_range else "display: block;")
-        
-        window_mode_radio.on("update:modelValue", _toggle_window_mode)
+            Handles three call signatures:
+              • called with no argument (initial render)              → read widget value directly
+              • called from on_change with a ValueChangeEventArguments → use e.value
+              • called from 'update:model-value' Vue event             → use e.args (may be a list)
+            """
+            if e is None:
+                selected_value = window_mode_radio.value
+            elif hasattr(e, "value"):
+                # ValueChangeEventArguments (NiceGUI on_change)
+                selected_value = e.value
+            elif hasattr(e, "args"):
+                # GenericEventArguments from a raw Vue event binding.
+                # e.args can be the bare string OR a list like [new_val, old_val].
+                raw = e.args
+                selected_value = raw[0] if isinstance(raw, (list, tuple)) else raw
+            else:
+                selected_value = str(e)
+
+            is_range = selected_value == "Date Range"
+
+            # Toggle visibility of the four inputs
+            start_date_input.set_visibility(is_range)
+            end_date_input.set_visibility(is_range)
+            anchor_date_input.set_visibility(not is_range)
+            lookback_input.set_visibility(not is_range)
+
+        window_mode_radio.on("update:model-value", _toggle_window_mode)
+        _toggle_window_mode()   # apply correct initial state without relying on an event object
 
         ui.separator()
 
@@ -232,10 +287,14 @@ def render():
                         end_date=pd.Timestamp(end_date_input.value),
                     )
                 else:
+                    # lookback_input.value is a float from ui.number — convert safely
+                    raw_lookback = lookback_input.value
+                    lookback_periods = int(raw_lookback) if raw_lookback is not None else 3
+
                     window = resolve_window(
                         dff, granularity=granularity, mode=mode,
                         anchor_date=pd.Timestamp(anchor_date_input.value),
-                        lookback_periods=int(lookback_input.value),
+                        lookback_periods=lookback_periods,
                     )
             except Exception as e:
                 with output_container:
@@ -312,9 +371,9 @@ def render():
 
                 with output_container:
                     # 1. Summary Table
-                    ui.label("1. Summary Table").style("font-size: 1.1rem; font-weight: 600; color: #1a3a5c;")
+                    ui.label("1. Summary Table").style(f"font-size: 1.1rem; font-weight: 600; color: var(--q-primary);")
                     ui.label("Alert (****) triggers on a ±20% change vs the immediate previous period.").style(
-                        "font-size: 0.82rem; color: #666;"
+                        "font-size: 0.82rem; color: var(--q-secondary);"
                     )
                     cols = [{"headerName": c, "field": c, "sortable": True, "filter": True} for c in y1_disp.columns]
                     rows = y1_disp.to_dict("records")
@@ -330,11 +389,11 @@ def render():
 
                     # 2. Charts
                     ui.label("2. Trend Figures by Agency/Region").style(
-                        "font-size: 1.1rem; font-weight: 600; color: #1a3a5c;"
+                        f"font-size: 1.2rem; font-weight: 600; color: var(--q-primary);"
                     )
                     chart_html_frags = []
                     for entity_id, g in epd.groupby("entity_id"):
-                        ui.label(str(entity_id)).style("font-weight: 600; color: #444;")
+                        ui.label(str(entity_id)).style("font-weight: 600; color: var(--q-secondary);")
                         fig = make_entity_chart(g, granularity=granularity, include_prior=include_prior)
                         ui.plotly(fig).classes("w-full")
                         chart_html_frags.append(fig.to_html(full_html=False, include_plotlyjs="cdn"))
@@ -343,7 +402,7 @@ def render():
 
                     # 3. Narrative
                     ui.label("3. Executive Summary").style(
-                        "font-size: 1.1rem; font-weight: 600; color: #1a3a5c;"
+                        f"font-size: 1.1rem; font-weight: 600; color: var(--q-primary);"
                     )
                     narrative = ""
                     if len(epd):
@@ -356,7 +415,7 @@ def render():
 
                     # 4. Download
                     ui.label("4. Downloadable HTML Report").style(
-                        "font-size: 1.1rem; font-weight: 600; color: #1a3a5c;"
+                        f"font-size: 1.1rem; font-weight: 600; color: var(--q-primary);"
                     )
                     inputs_summary = {
                         "Report Level": mode,
@@ -384,7 +443,7 @@ def render():
                     ui.label(f"⚠️ Error generating report: {e}").style("color: red;")
 
         ui.button("Generate Report", on_click=run_report).props("unelevated").style(
-            "background: #1a3a5c; color: white; font-weight: 600; border-radius: 8px;"
+            f"background: var(--q-primary); color: white; font-weight: 600; border-radius: 8px;"
         )
 
         output_container

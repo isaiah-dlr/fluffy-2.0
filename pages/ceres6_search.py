@@ -117,16 +117,15 @@ def load_data() -> pd.DataFrame | None:
 def render():
     df = load_data()
 
-    with ui.column().classes("w-full max-w-4xl mx-auto px-6 py-8 gap-6"):
+    with ui.column().classes("w-full mx-auto px-4 py-4 gap-6"):
         # Header
-        with ui.row().classes("items-center gap-3"):
+        with ui.column().classes("gap-3"):
             ui.label("Ceres6 Report / Field Query").style(
-                "font-size: 2.0rem; font-weight: 700; color: var(--q-primary);"
+                "font-size: 2.5rem; font-weight: 700; color: var(--q-primary);"
             )
 
-        ui.label('Ask something like: "Where can I find agency delivery zone codes?"').style(
-            "color: var(--q-accent); font-style: italic;"
-        )
+            ui.label('Ask something like: "Where can I find agency delivery zone codes?"').style(
+            "color: var(--q-secondary); font-size: 1.25rem; font-style: italic;")
 
         if df is None:
             ui.label("⚠️ Could not load Ceres6 Cheatsheet CSV. Check data path.").style(

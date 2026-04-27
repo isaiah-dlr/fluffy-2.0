@@ -37,13 +37,17 @@ VIEW_OPTIONS = [
 
 
 def render():
-    with ui.column().classes("w-full max-w-6xl mx-auto px-6 py-8 gap-6"):
+    with ui.column().classes("w-full mx-auto px-4 py-4 gap-6"):
         # Header
-        with ui.row().classes("items-center gap-3"):
-            ui.label("🎯").style("font-size: 2rem;")
+        with ui.column().classes("gap-3"):
             ui.label("KPI Fulfillment Showcase").style(
-                "font-size: 1.8rem; font-weight: 700; color: var(--q-primary);"
-            )
+                "font-size: 2.5rem; font-weight: 700; color: var(--q-primary);")
+
+            ui.label(
+                "A prototype showcase for analyzing key performance metrics — daily and weekly "
+                "case or pallet movement over time. Designed to help operations continuously "
+                "identify pain points and improve on them."
+            ).style("font-size: 1.25rem; color: var(--q-secondary); font-style: italic;")
 
         master = get_master()
         if master is None:
@@ -65,9 +69,9 @@ def render():
         ui.separator()
 
         # Tabs
-        with ui.tabs().classes("w-full") as tabs:
-            tab_model = ui.tab("KPI Model")
-            tab_method = ui.tab("Parameters & Preparation")
+        with ui.tabs().classes("w-full big-tabs") as tabs:
+            tab_model = ui.tab("KPI Model").classes("big-tabs)")
+            tab_method = ui.tab("Parameters & Preparation").classes("big-tabs)")
 
         with ui.tab_panels(tabs, value=tab_model).classes("w-full"):
 
@@ -76,23 +80,40 @@ def render():
                 with ui.column().classes("w-full gap-5"):
 
                     ui.label("Model Controls").style(
-                        "font-size: 1.2rem; font-weight: 600; color: var(--q-primary);"
+                        "font-size: 1.2rem; font-weight: 700; color: var(--q-primary);"
                     )
 
                     # Controls row
-                    
-                    # Controls row
                     with ui.row().classes("w-full gap-4 flex-wrap items-end"):
-                        with ui.input("Start Date", value = str(min_date)).classes("w-36 compact=date") as start_date_input:
-                            with ui.menu().props("no-parent-event") as menu:
-                                with ui.date(value = str(min_date).bind_value(start_date_input)):
-                                            ui.button("Close", on_click=menu.close).props("flat dense")
 
-                        with ui.input("End Date", value = str(max_date)).classes("w-36 compact=date") as end_date_input:
-                            with ui.menu().props("no-parent-event") as menu:
-                                with ui.date(value = str(max_date).bind_value(end_date_input)):
-                                            ui.button("Close", on_click=menu.close).props("flat dense")
-                    
+                        # --- Start Date ---
+                        with ui.column().classes("gap-1"):
+                            ui.label("Start Date").classes("text-sm font-medium text-gray-600")
+                            with ui.input(value=str(min_date)).classes("w-44 compact-date") as start_date_input:
+                                with ui.menu().props("no-parent-event").classes("date-menu") as start_menu:
+                                    start_calendar = ui.date(
+                                        value=str(min_date),
+                                        on_change=lambda e: (
+                                            start_date_input.set_value(e.value),
+                                            start_menu.close()
+                                        )
+                                    )
+                                start_date_input.on("click", start_menu.open)
+
+                        # --- End Date ---
+                        with ui.column().classes("gap-1"):
+                            ui.label("End Date").classes("text-sm font-medium text-gray-600")
+                            with ui.input(value=str(max_date)).classes("w-44 compact-date") as end_date_input:
+                                with ui.menu().props("no-parent-event").classes("date-menu") as end_menu:
+                                    end_calendar = ui.date(
+                                        value=str(max_date),
+                                        on_change=lambda e: (
+                                            end_date_input.set_value(e.value),
+                                            end_menu.close()
+                                        )
+                                    )
+                                end_date_input.on("click", end_menu.open)
+
                     with ui.row().classes("w-full gap-4 flex-wrap"):
                         period_select = ui.select(
                             label="Period Level",
@@ -109,7 +130,7 @@ def render():
                         mode_radio = ui.radio(
                             ["Overall", "By Employee"],
                             value="Overall",
-                        ).props("inline")
+                        ).props("inline").style(f"color: var(--q-secondary); font-size: 1rem; font-weight: 700;")
 
                     employee_select = ui.select(
                         label="Select Employees (only for By Employee mode)",
@@ -202,9 +223,9 @@ def render():
 
             # ---- METHODOLOGY TAB ----
             with ui.tab_panel(tab_method):
-                with ui.column().classes("w-full gap-4 max-w-3xl"):
+                with ui.column().classes("w-full gap-5"):
                     ui.label("Data Preparation & Cleaning Pipeline").style(
-                        "font-size: 1.3rem; font-weight: 700; color: var(--q-primary);"
+                        "font-size: 1.2rem; font-weight: 700; color: var(--q-primary);"
                     )
 
                     sections = [

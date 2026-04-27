@@ -1,25 +1,64 @@
+body {
+    background: #ffffff;
+    color: #1f2933;
+}
+
+:root {
+    --q-primary: #005487;
+    --q-secondary: #de7c00;
+    --q-accent: #4e5b31;
+}
+
+.brand-primary {
+    color: var(--q-primary);
+}
+
+.brand-secondary {
+    color: var(--q-secondary);
+}
+
+.brand-accent {
+    color: var(--q-accent);
+}
+
+.page-title {
+    color: var(--q-primary);
+    font-weight: 700;
+}
+
+.section-label {
+    color: var(--q-secondary);
+    font-weight: 600;
+}
+
 .compact-date .q-field__control {
-    height: 40px;
-    min-height: 40px;
-    border-radius: 10px;
+    height: 42px;
+    min-height: 42px;
 }
 
 .compact-date .q-field__native {
-    font-size: 0.85rem;
     padding-top: 0;
     padding-bottom: 0;
+    font-size: 0.95rem;
 }
 
 .compact-date .q-field__label {
-    font-size: 0.75rem;
+    display: none;
 }
 
-.compact-input .q-field__control {
-    height: 40px;
-    min-height: 40px;
-    border-radius: 10px;
+.date-menu {
+    overflow: visible;
 }
 
-.compact-input .q-field__native {
-    font-size: 0.85rem;
+.big-tabs .q-tab__label {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+}
+
+.big-tabs .q-tab {
+    color: var(--q-secondary);
+}
+
+.big-tabs .q-tab--active {
+    color: var(--q-primary);
 }
