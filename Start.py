@@ -1,9 +1,12 @@
+from nicegui import app, ui
 import os
-from nicegui import ui, app
+from pathlib import Path
 
-app.add_static_files("/static", "static")
+static_dir = Path(__file__).parent / "static"
 
-ui.add_head_html('<link rel="stylesheet" href="/static/global.css">')
+if static_dir.exists():
+    app.add_static_files("/static", str(static_dir))
+    ui.add_head_html('<link rel="stylesheet" href="/static/global.css">')
 
 # ---------- Auth state ----------
 def is_logged_in() -> bool:

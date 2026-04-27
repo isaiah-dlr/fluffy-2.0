@@ -42,7 +42,7 @@ def render():
         with ui.row().classes("items-center gap-3"):
             ui.label("🎯").style("font-size: 2rem;")
             ui.label("KPI Fulfillment Showcase").style(
-                "font-size: 1.8rem; font-weight: 700; color: #1a3a5c;"
+                "font-size: 1.8rem; font-weight: 700; color: var(--q-primary);"
             )
 
         master = get_master()
@@ -76,21 +76,23 @@ def render():
                 with ui.column().classes("w-full gap-5"):
 
                     ui.label("Model Controls").style(
-                        "font-size: 1.1rem; font-weight: 600; color: #1a3a5c;"
+                        "font-size: 1.2rem; font-weight: 600; color: var(--q-primary);"
                     )
 
                     # Controls row
-                    with ui.grid(columns=2).classes("w-full gap-4"):
-                        start_date_input = ui.date(
-                            value=str(min_date)
-                        ).style("width: 100%;")
-                        ui.label("Start Date").style("font-size: 0.75rem; color: #666;")
+                    
+                    # Controls row
+                    with ui.row().classes("w-full gap-4 flex-wrap items-end"):
+                        with ui.input("Start Date", value = str(min_date)).classes("w-36 compact=date") as start_date_input:
+                            with ui.menu().props("no-parent-event") as menu:
+                                with ui.date(value = str(min_date).bind_value(start_date_input)):
+                                            ui.button("Close", on_click=menu.close).props("flat dense")
 
-                        end_date_input = ui.date(
-                            value=str(max_date)
-                        ).style("width: 100%;")
-                        ui.label("End Date").style("font-size: 0.75rem; color: #666;")
-
+                        with ui.input("End Date", value = str(max_date)).classes("w-36 compact=date") as end_date_input:
+                            with ui.menu().props("no-parent-event") as menu:
+                                with ui.date(value = str(max_date).bind_value(end_date_input)):
+                                            ui.button("Close", on_click=menu.close).props("flat dense")
+                    
                     with ui.row().classes("w-full gap-4 flex-wrap"):
                         period_select = ui.select(
                             label="Period Level",
@@ -113,7 +115,7 @@ def render():
                         label="Select Employees (only for By Employee mode)",
                         options=employees,
                         multiple=True,
-                        value=employees,
+                        value=[],
                     ).classes("w-full")
 
                     chart_container = ui.column().classes("w-full gap-4")
@@ -192,7 +194,7 @@ def render():
                                 ui.label(f"⚠️ Error running analysis: {e}").style("color: red;")
 
                     ui.button("Run Analysis", on_click=run_analysis).props("unelevated").style(
-                        "background: #1a3a5c; color: white; font-weight: 600; border-radius: 8px;"
+                        "background: var(--q-primary); color: white; font-weight: 600; border-radius: 8px;"
                     )
 
                     chart_container
@@ -202,7 +204,7 @@ def render():
             with ui.tab_panel(tab_method):
                 with ui.column().classes("w-full gap-4 max-w-3xl"):
                     ui.label("Data Preparation & Cleaning Pipeline").style(
-                        "font-size: 1.3rem; font-weight: 700; color: #1a3a5c;"
+                        "font-size: 1.3rem; font-weight: 700; color: var(--q-primary);"
                     )
 
                     sections = [
@@ -228,37 +230,37 @@ def render():
 
                     for title, items in sections:
                         with ui.card().classes("w-full").style("border-radius: 10px;"):
-                            ui.label(title).style("font-weight: 600; color: #1a3a5c;")
+                            ui.label(title).style("font-weight: 600; color: var(--q-primary);")
                             for item in items:
                                 with ui.row().classes("items-center gap-2"):
-                                    ui.label("•").style("color: #1a7a3a;")
+                                    ui.label("•").style("color: var(--q-accent);")
                                     ui.label(item)
 
                     with ui.card().classes("w-full").style("border-radius: 10px;"):
-                        ui.label("Merge Logic").style("font-weight: 600; color: #1a3a5c;")
+                        ui.label("Merge Logic").style("font-weight: 600; color: var(--q-primary);")
                         ui.label("All datasets are merged using a normalized Order Number key.")
 
                     with ui.card().classes("w-full").style("border-radius: 10px;"):
-                        ui.label("Feature Engineering").style("font-weight: 600; color: #1a3a5c;")
+                        ui.label("Feature Engineering").style("font-weight: 600; color: var(--q-primary);")
                         for item in [
                             "Order Size Tier model (scaled composite index)",
                             "Pallet Effort multiplier model",
                             "Employee productivity metrics",
                         ]:
                             with ui.row().classes("items-center gap-2"):
-                                ui.label("•").style("color: #1a7a3a;")
+                                ui.label("•").style("color: var(--q-accent);")
                                 ui.label(item)
 
                     ui.separator()
                     ui.label("Cleaned Master Dataset Preview (first 50 rows)").style(
-                        "font-weight: 600; color: #1a3a5c;"
+                        "font-weight: 600; color: var(--q-primary);"
                     )
                     _render_dataframe(master.head(50))
 
 
 def _render_dataframe(df: pd.DataFrame, title: str = ""):
     if title:
-        ui.label(title).style("font-weight: 600; color: #1a3a5c; font-size: 1rem;")
+        ui.label(title).style("font-weight: 600; color: var(--q-primary); font-size: 1rem;")
 
     cols = [{"headerName": c, "field": c, "sortable": True, "filter": True} for c in df.columns]
     rows = df.astype(str).to_dict("records")
