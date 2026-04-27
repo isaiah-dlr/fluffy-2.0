@@ -1,0 +1,25 @@
+.compact-date .q-field__control {
+    height: 40px;
+    min-height: 40px;
+    border-radius: 10px;
+}
+
+.compact-date .q-field__native {
+    font-size: 0.85rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.compact-date .q-field__label {
+    font-size: 0.75rem;
+}
+
+.compact-input .q-field__control {
+    height: 40px;
+    min-height: 40px;
+    border-radius: 10px;
+}
+
+.compact-input .q-field__native {
+    font-size: 0.85rem;
+}

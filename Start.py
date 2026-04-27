@@ -1,6 +1,10 @@
 import os
 from nicegui import ui, app
 
+app.add_static_files("/static", "static")
+
+ui.add_head_html('<link rel="stylesheet" href="/static/global.css">')
+
 # ---------- Auth state ----------
 def is_logged_in() -> bool:
     return app.storage.user.get("logged_in", False)

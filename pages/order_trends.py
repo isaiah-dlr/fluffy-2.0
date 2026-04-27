@@ -70,7 +70,7 @@ def render():
         with ui.row().classes("items-center gap-3"):
             ui.label("📈").style("font-size: 2rem;")
             ui.label("Member Distribution Trends Calculator").style(
-                "font-size: 1.8rem; font-weight: 700; color: #1a3a5c;"
+                "font-size: 1.8rem; font-weight: 700; color: var(--q-color-primary);"
             )
 
         ui.label(
@@ -102,7 +102,7 @@ def render():
         max_date = pd.to_datetime(df["date"].max()).date()
 
         # ---- CONTROLS ----
-        ui.label("Report Controls").style("font-size: 1.1rem; font-weight: 600; color: #1a3a5c;")
+        ui.label("Report Controls").style("font-size: 1.2rem; font-weight: 600; color: var(--q-color-primary);")
 
         with ui.grid(columns=3).classes("w-full gap-4"):
             mode_radio = ui.radio(
@@ -156,34 +156,46 @@ def render():
             ).style("min-width: 220px;")
 
         ui.separator()
-        ui.label("Time Window").style("font-size: 1.1rem; font-weight: 600; color: #1a3a5c;")
+        ui.label("Time Window").style("font-size: 1.2rem; font-weight: 600; color: var(--q-color-primary);")
 
         window_mode_radio = ui.radio(
             ["Date Range", "Anchor + Period Lookback"], value="Date Range"
-        ).props("inline")
+        ).props("inline").style("margin-bottom: 1rem; color: var(--q-secondary);")
 
-        with ui.row().classes("w-full gap-4 flex-wrap"):
-            start_date_input = ui.date(value=str(min_date))
-            ui.label("Start Date").style("font-size: 0.75rem; color: #666; align-self: flex-end;")
-            end_date_input = ui.date(value=str(max_date))
-            ui.label("End Date").style("font-size: 0.75rem; color: #666; align-self: flex-end;")
+        with ui.row().classes("w-full gap-4 flex-wrap items-end"):
+            with ui.input("Start Date", value = str(min_date)).classes("w-36 compact=date") as start_date_input:
+                with ui.menu().props("no-parent-event") as menu:
+                    with ui.date(value = str(min_date).bind_value(start_date_input)):
+                                 ui.button("Close", on_click=menu.close).props("flat dense")
 
-            anchor_date_input = ui.date(value=str(max_date)).style("display: none;")
-            anchor_label = ui.label("Anchor Date").style("font-size: 0.75rem; color: #666; display: none;")
-            lookback_input = ui.number(label="Previous Periods", value=3, min=0, max=260, step=1).style(
-                "min-width: 160px; display: none;"
-            )
+            with ui.input("End Date", value = str(max_date)).classes("w-36 compact=date") as end_date_input:
+                with ui.menu().props("no-parent-event") as menu:
+                    with ui.date(value = str(max_date).bind_value(end_date_input)):
+                                 ui.button("Close", on_click=menu.close).props("flat dense")
 
-        yoy_toggle = ui.checkbox("Include prior fiscal year same-dates?", value=False)
+            with ui.input("Anchor Date", value = str(max_date)).classes("w-36 compact=date").style("display: none;") as anchor_date_input:
+                with ui.menu().props("no-parent-event") as menu:
+                    with ui.date(value = str(max_date).bind_value(anchor_date_input)):
+                                 ui.button("Close", on_click=menu.close).props("flat dense")
+
+            lookback_input = ui.number(
+                "Previous Periods", 
+                value=3,
+                min=0,
+                max=52,
+                step=1
+                ).classes("w-40").style("display: none;")
+
+        yoy_toggle = ui.checkbox("Include prior fiscal year same-dates?", value=False).style("color: var(--q-secondary); margin-top: 0.5rem;")
 
         def _toggle_window_mode(e):
             is_range = e.value == "Date Range"
+
             start_date_input.style("display: block;" if is_range else "display: none;")
             end_date_input.style("display: block;" if is_range else "display: none;")
             anchor_date_input.style("display: none;" if is_range else "display: block;")
-            anchor_label.style("display: none;" if is_range else "display: block;")
             lookback_input.style("display: none;" if is_range else "display: block;")
-
+        
         window_mode_radio.on("update:modelValue", _toggle_window_mode)
 
         ui.separator()
