@@ -99,61 +99,75 @@ def render():
         max_date = pd.to_datetime(df["date"].max()).date()
 
         # ---- CONTROLS ----
-        ui.label("Report Controls").style(
+        ui.label("Report Location Type").style(
             f"font-size: 1.2rem; font-weight: 600; color: var(--q-primary);"
         )
 
+        entity_values_agency = sorted(df["entity_agency"].dropna().astype(str).unique().tolist())
+        entity_values_region = sorted(df["entity_region"].dropna().astype(str).unique().tolist())
+        
+        def _update_entity_options(mode_val):
+            if mode_val == "Agency":
+                entity_select.set_options(
+                    entity_values_agency,
+                    value = entity_values_agency[:1])
+            else:
+                entity_select.set_options(
+                    entity_values_region,
+                    value = entity_values_region[:1]
+                )
+            
         with ui.grid(columns=3).classes("w-full gap-4"):
             mode_radio = ui.radio(
-                ["Agency", "Region"], value="Agency", on_change=lambda e: _update_entity_options(e.value)
-            ).props("inline").style(f"color: var(--q-secondary); font-size: 1rem; font-weight: 600;")   
+                ["Agency", "Region"], value="Agency", 
+                on_change=lambda e: _update_entity_options(e.value)
+            ).props("inline").style(
+                f"color: var(--q-secondary); font-size: 1rem; font-weight: 600;")   
 
-            entity_values_agency = sorted(df["entity_agency"].dropna().astype(str).unique().tolist())
-            entity_values_region = sorted(df["entity_region"].dropna().astype(str).unique().tolist())
             entity_select = ui.select(
                 label="Selected Agency/Region(s)",
                 options=entity_values_agency,
                 multiple=True,
+                with_input=True,
                 value=entity_values_agency[:1],
-            ).classes("col-span-2")
+            ).props("dense options-dense use-chips clearable"
+                    ).classes("col-span-2 entity-select")
 
-        def _update_entity_options(mode_val):
-            if mode_val == "Agency":
-                entity_select.options = entity_values_agency
-                entity_select.value = entity_values_agency[:1]
-            else:
-                entity_select.options = entity_values_region
-                entity_select.value = entity_values_region[:1]
-            entity_select.update()
-
-        with ui.row().classes("w-full gap-4 flex-wrap"):
-            granularity_select = ui.select(
-                label="Time Period",
-                options=["Weekly", "Monthly", "Yearly"],
+        with ui.grid(columns=2).classes("w-full gap-4 flex-wrap"):
+            ui.label("Reporting Cycle").style(
+            f"font-size: 1.2rem; font-weight: 600; color: var(--q-primary);").classes("col-span-2")
+            granularity_select = ui.toggle(
+                ["Weekly", "Monthly", "Yearly"],
                 value="Weekly",
-            ).style("min-width: 160px;")
+            ).props("unelevated spread").classes("col-span-2 q-btn-toggle")
 
             inv_select = ui.select(
                 label="Inventory Posting Group",
                 options=inv_present,
                 multiple=True,
+                with_input=True,
                 value=inv_present,
-            ).style("min-width: 260px;")
+            ).props("dense options-dense use-chips clearable"
+                ).classes("col-span-2 entity-select")
 
             doc_select = ui.select(
                 label="Document Type",
                 options=doc_present,
                 multiple=True,
+                with_input=True,
                 value=doc_present,
-            ).style("min-width: 260px;")
+            ).props("dense options-dense use-chips clearable"
+                ).classes("col-span-2 entity-select")
 
             product_type_select = ui.select(
                 label="Product Type",
                 options=["Produce", "Non-Produce", "Non-Food"],
                 multiple=True,
+                with_input=True,
                 value=["Produce", "Non-Produce", "Non-Food"],
-            ).style("min-width: 220px;")
-
+            ).props("dense options-dense use-chips clearable"
+                ).classes("col-span-2 entity-select")
+            
         ui.separator()
         ui.label("Time Window").style(
             f"font-size: 1.2rem; font-weight: 600; color: var(--q-primary);"
@@ -266,7 +280,7 @@ def render():
                     ui.label("⚠️ Select at least one Agency/Region.").style("color: red;")
                 return
 
-            granularity = granularity_select.value
+            granularity = granularity_select.value or "Weekly"
             mode = mode_radio.value
             window_mode = window_mode_radio.value
 
@@ -352,13 +366,20 @@ def render():
                 y1_disp = y1_disp.drop(columns=[c for c in bucket_cols if c in y1_disp.columns])
 
                 rename_map = {
-                    "entity_id": "Entity", "period_label": "Period", "lbs": "Total Pounds",
-                    "hh_median": "Median HH Size", "hh_max": "Max HH Size",
-                    "hh_median_range": "Median HH (Range)", "hh_max_range": "Max HH (Range)",
-                    "pop_delta_lbs": "Δ Lbs vs Prior Period", "pop_delta_pct": "% Chg vs Prior Period",
-                    "rng_delta_lbs": "Δ Lbs vs Range Avg", "rng_delta_pct": "% Chg vs Range Avg",
+                    "entity_id": "Entity",
+                    "period_label": "Period",
                     "Flag": "Alert",
+                    "lbs": "Total Pounds",
+                    "pop_delta_lbs": "Δ Lbs vs Prior Period",
+                    "pop_delta_pct": "% Chg vs Prior Period",
+                    "rng_delta_lbs": "Δ Lbs vs Range Avg",
+                    "rng_delta_pct": "% Chg vs Range Avg",
+                    "hh_median": "Median HH Size",
+                    "hh_max": "Max HH Size",
+                    "hh_median_range": "Median HH (Range)",
+                    "hh_max_range": "Max HH (Range)",
                 }
+                
                 if include_prior:
                     rename_map |= {
                         "lbs_prior": "Total Lbs (Prior FY)",
@@ -369,31 +390,99 @@ def render():
                     }
                 y1_disp = y1_disp.rename(columns=rename_map)
 
+                base_display_cols = [
+                    "Entity",
+                    "Period",
+                    "Alert",
+                    "Total Pounds",
+                    "Δ Lbs vs Prior Period",
+                    "% Chg vs Prior Period",
+                    "Δ Lbs vs Range Avg",
+                    "% Chg vs Range Avg",
+                ]
+
+                advanced_display_cols = [
+                    "Median HH Size",
+                    "Max HH Size",
+                    "Median HH (Range)",
+                    "Max HH (Range)",
+                ]
+
+                if include_prior:
+                    advanced_display_cols += [
+                        "Total Lbs (Prior FY)",
+                        "% Chg vs Prior (Prior FY)",
+                        "% Chg vs Range (Prior FY)",
+                        "DiD % vs Prior FY (Period)",
+                        "DiD % vs Prior FY (Range)",
+                    ]
+
+                final_display_cols = base_display_cols + advanced_display_cols
+
+                y1_disp = y1_disp[
+                    [c for c in final_display_cols if c in y1_disp.columns]
+                ]
+
                 with output_container:
                     # 1. Summary Table
-                    ui.label("1. Summary Table").style(f"font-size: 1.1rem; font-weight: 600; color: var(--q-primary);")
-                    ui.label("Alert (****) triggers on a ±20% change vs the immediate previous period.").style(
-                        "font-size: 0.82rem; color: var(--q-secondary);"
-                    )
-                    cols = [{"headerName": c, "field": c, "sortable": True, "filter": True} for c in y1_disp.columns]
+                    ui.label("1. Summary Table").classes("order-trend-output")
+                    ui.label("Alert (****) triggers on a ±20% change vs the immediate previous period.").classes("order-trend-label")
+                    
+                    advanced_details = ui.checkbox(
+                        "Show advanced details",
+                        value=False,).style("color: var(--q-secondary); font-size: 1rem; font-weight: 600;")
+                    
+                    hidden_by_default_cols = [
+                        "Median HH Size",
+                        "Max HH Size",
+                        "Median HH (Range)",
+                        "Max HH (Range)",
+                        "Δ Lbs vs Range Avg",
+                        "% Chg vs Range Avg",
+                    ]
+
                     rows = y1_disp.to_dict("records")
-                    ui.aggrid({
-                        "columnDefs": cols,
+
+                    def build_column_defs(show_advanced: bool):
+                        visible_cols = []
+
+                        for c in y1_disp.columns:
+                            if not show_advanced and c in hidden_by_default_cols:
+                                continue
+
+                            visible_cols.append({
+                                "headerName": c,
+                                "field": c,
+                                "sortable": True,
+                                "filter": True,
+                            })
+
+                        return visible_cols
+
+                    grid = ui.aggrid({
+                        "columnDefs": build_column_defs(False),
                         "rowData": rows,
-                        "defaultColDef": {"resizable": True, "minWidth": 90},
+                        "defaultColDef": {
+                            "resizable": True,
+                            "minWidth": 90,
+                        },
                         "pagination": True,
                         "paginationPageSize": 20,
                     }).classes("w-full").style("height: 400px;")
 
+                    def toggle_advanced_details(e):
+                        grid.options["columnDefs"] = build_column_defs(bool(e.value))
+                        grid.update()
+
+                    advanced_details.on_value_change(toggle_advanced_details)
+
                     ui.separator()
 
                     # 2. Charts
-                    ui.label("2. Trend Figures by Agency/Region").style(
-                        f"font-size: 1.2rem; font-weight: 600; color: var(--q-primary);"
-                    )
+                    ui.label("2. Trend Figures by Agency/Region").classes("order-trend-output")
                     chart_html_frags = []
                     for entity_id, g in epd.groupby("entity_id"):
-                        ui.label(str(entity_id)).style("font-weight: 600; color: var(--q-secondary);")
+                        ui.label(str(entity_id)).classes("order-trend-label")
                         fig = make_entity_chart(g, granularity=granularity, include_prior=include_prior)
                         ui.plotly(fig).classes("w-full")
                         chart_html_frags.append(fig.to_html(full_html=False, include_plotlyjs="cdn"))
@@ -401,22 +490,41 @@ def render():
                     ui.separator()
 
                     # 3. Narrative
-                    ui.label("3. Executive Summary").style(
-                        f"font-size: 1.1rem; font-weight: 600; color: var(--q-primary);"
-                    )
+                    ui.label("3. Executive Summary").classes("order-trend-output")                    
                     narrative = ""
+
                     if len(epd):
-                        narrative = build_narrative(epd, granularity=granularity, include_prior=include_prior)
-                        ui.textarea(value=narrative).classes("w-full").props("readonly rows=10")
+                        narrative = build_narrative(
+                            epd,
+                            granularity=granularity,
+                            include_prior=include_prior,
+                        )
+
+                        narrative_lines = narrative.splitlines()
+
+                        with ui.column().classes("w-full gap-2 narrative-output"):
+                            for line in narrative_lines:
+                                clean_line = line.strip()
+
+                                if not clean_line:
+                                    ui.separator().classes("my-2")
+                                    continue
+
+                                # Entity heading line
+                                if not clean_line.startswith("-"):
+                                    ui.label(clean_line).classes("narrative-heading")
+                                
+                                # Bullet lines
+                                else:
+                                    ui.label(clean_line).classes("narrative-bullet")
+
                     else:
                         ui.label("No data available.").style("color: #888;")
-
+                        
                     ui.separator()
 
                     # 4. Download
-                    ui.label("4. Downloadable HTML Report").style(
-                        f"font-size: 1.1rem; font-weight: 600; color: var(--q-primary);"
-                    )
+                    ui.label("4. Downloadable HTML Report").classes('order-trend-output')
                     inputs_summary = {
                         "Report Level": mode,
                         "Selected Entities": ", ".join(selected_entities),
@@ -432,18 +540,17 @@ def render():
                         narrative_text=narrative,
                         title="Distribution Summary Report",
                     )
-                    ui.download(
-                        html_report.encode("utf-8"),
-                        filename="distribution_report.html",
-                        media_type="text/html",
-                    )
+
+                    ui.button("Download HTML Report", on_click=lambda:
+                              ui.download(
+                                html_report.encode("utf-8"),
+                                filename="distribution_report.html",
+                                media_type="text/html",)).classes('button')
 
             except Exception as e:
                 with output_container:
                     ui.label(f"⚠️ Error generating report: {e}").style("color: red;")
 
-        ui.button("Generate Report", on_click=run_report).props("unelevated").style(
-            f"background: var(--q-primary); color: white; font-weight: 600; border-radius: 8px;"
-        )
+        ui.button("Generate Report", on_click=run_report).props("unelevated").classes('button')
 
         output_container

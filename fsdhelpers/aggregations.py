@@ -9,10 +9,8 @@ import pandas as pd
 from . import config
 from .data_prep import Granularity, Mode, ResolvedWindow, week_start_monday, month_start
 
-
 def _entity_col(mode: Mode) -> str:
     return "entity_agency" if mode == "Agency" else "entity_region"
-
 
 def _make_period_key(series: pd.Series, granularity: Granularity) -> pd.Series:
     if granularity == "Weekly":

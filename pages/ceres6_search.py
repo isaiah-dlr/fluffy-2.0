@@ -142,13 +142,13 @@ def render():
             question_input = ui.input(
                 label="Your question",
                 placeholder='e.g. "Where can I find donor contact info?"',
-            ).classes("flex-1").style("color: var(--q-primary); min-width: 280px;")
+            ).classes("flex-1")
 
             top_k_select = ui.select(
                 label="Results to show",
                 options=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
                 value=3,
-            ).style("color: var(--q-primary); min-width: 140px;")
+            ).classes('entity-select')
 
         def do_search():
             results_container.clear()
@@ -226,9 +226,7 @@ def render():
                                                 "font-family: monospace; font-size: 0.85rem; color: var(--q-secondary);"
                                             )
 
-        ui.button("Search", on_click=do_search).props("unelevated").style(
-            "background: #1a3a5c; color: white; font-weight: 600; border-radius: 8px;"
-        )
+        ui.button("Search", on_click=do_search).props("unelevated").classes("button")
 
         # Allow Enter key to trigger search
         question_input.on("keydown.enter", do_search)

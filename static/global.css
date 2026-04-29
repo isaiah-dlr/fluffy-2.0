@@ -62,3 +62,70 @@ body {
 .big-tabs .q-tab--active {
     color: var(--q-primary);
 }
+
+.entity-select .q-chip {
+    background-color: var(--q-primary) !important;
+    color: white !important;
+    font-weight: 600 !important;
+    margin-top: 10px;
+}
+
+.entity-select .q-field__label {
+    font-size: 1.2rem; 
+    font-weight: 600; 
+    color: var(--q-secondary);
+    top: 10px
+}
+
+.entity-select .q-chip .q-icon {
+    color: var(--q-primary) !important;
+}
+
+.entity-select .q-field__native {
+    min-width: 120px;
+}
+
+.button {
+    background: var(--q-primary); 
+    color: white; 
+    font-weight: 600; 
+    border-radius: 8px;
+}
+
+.order-trend-label {
+    font-size: 1.0rem; 
+    font-weight: 600; 
+    color: var(--q-secondary);
+}
+
+.q-btn-toggle .q-field__label {
+    font-size: 1.2rem; 
+    font-weight: 600; 
+    color: var(--q-secondary);
+    top: 10px
+}
+
+.order-trend-output {
+    font-size: 1.2rem; 
+    font-weight: 600; 
+    color: var(--q-primary);
+}
+
+.narrative-output {
+    margin-top: 4px;
+}
+
+.narrative-heading {
+    font-size: 1.0rem !important;
+    font-weight: 600 !important;
+    color: var(--q-secondary) !important;
+    margin-bottom: 0.25rem;
+}
+
+.narrative-bullet {
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    color: var(--q-primary) !important;
+    line-height: 1.5;
+    margin-left: 1rem;
+}
