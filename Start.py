@@ -4,6 +4,11 @@ from pathlib import Path
 
 static_dir = Path(__file__).parent / "static"
 
+asset_dir = Path(__file__).parent / "assets"
+
+if asset_dir.exists():
+    app.add_static_files("/assets", str(asset_dir))
+
 if static_dir.exists():
     app.add_static_files("/static", str(static_dir))
     ui.add_head_html('<link rel="stylesheet" href="/static/global.css">',
@@ -17,7 +22,7 @@ def is_logged_in() -> bool:
 # ---------- Theme (called inside each page) ----------
 def apply_theme():
     ui.colors(
-        primary="#005487",
+        primary="#005387FF",
         secondary="#de7c00",
         accent="#4e5b31",
     )
@@ -28,6 +33,7 @@ def navbar():
         "background: var(--q-primary); box-shadow: 0 2px 8px rgba(0,0,0,0.3);"
     ):
         with ui.row().classes("items-center gap-3"):
+            ui.image(f"{str(asset_dir)}/fsd/fsdlogo.png").style("width: 64px; height: 32px; z-index: 1000;")
             ui.label("🥑").style("font-size: 1.8rem; font-weight: 700;")
     
         if is_logged_in():

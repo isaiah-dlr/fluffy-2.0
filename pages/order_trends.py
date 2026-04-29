@@ -371,7 +371,7 @@ def render():
 
                 with output_container:
                     # 1. Summary Table
-                    ui.label("1. Summary Table").style(f"font-size: 1.1rem; font-weight: 600; color: var(--q-primary);")
+                    ui.label("1. Summary Table").style(f"font-size: 1.2rem; font-weight: 600; color: var(--q-primary);")
                     ui.label("Alert (****) triggers on a ±20% change vs the immediate previous period.").style(
                         "font-size: 0.82rem; color: var(--q-secondary);"
                     )
@@ -402,7 +402,7 @@ def render():
 
                     # 3. Narrative
                     ui.label("3. Executive Summary").style(
-                        f"font-size: 1.1rem; font-weight: 600; color: var(--q-primary);"
+                        f"font-size: 1.2rem; font-weight: 600; color: var(--q-primary);"
                     )
                     narrative = ""
                     if len(epd):
@@ -415,7 +415,7 @@ def render():
 
                     # 4. Download
                     ui.label("4. Downloadable HTML Report").style(
-                        f"font-size: 1.1rem; font-weight: 600; color: var(--q-primary);"
+                        f"font-size: 1.2rem; font-weight: 600; color: var(--q-primary);"
                     )
                     inputs_summary = {
                         "Report Level": mode,

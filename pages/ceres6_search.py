@@ -125,7 +125,7 @@ def render():
             )
 
             ui.label('Ask something like: "Where can I find agency delivery zone codes?"').style(
-            "color: var(--q-secondary); font-size: 1.25rem; font-style: italic;")
+            "color: var(--q-accent); font-size: 1.25rem; font-style: italic;")
 
         if df is None:
             ui.label("⚠️ Could not load Ceres6 Cheatsheet CSV. Check data path.").style(
