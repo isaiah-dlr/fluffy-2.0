@@ -47,7 +47,7 @@ def render():
                 "A prototype showcase for analyzing key performance metrics — daily and weekly "
                 "case or pallet movement over time. Designed to help operations continuously "
                 "identify pain points and improve on them."
-            ).style("font-size: 1.25rem; color: var(--q-secondary); font-style: italic;")
+            ).style("font-size: 1.25rem; color: var(--q-accent); font-style: italic;")
 
         master = get_master()
         if master is None:
@@ -281,7 +281,7 @@ def render():
 
 def _render_dataframe(df: pd.DataFrame, title: str = ""):
     if title:
-        ui.label(title).style("font-weight: 600; color: var(--q-primary); font-size: 1rem;")
+        ui.label(title).style("font-weight: 600; color: var(--q-primary); font-size: 1.2rem;")
 
     cols = [{"headerName": c, "field": c, "sortable": True, "filter": True} for c in df.columns]
     rows = df.astype(str).to_dict("records")

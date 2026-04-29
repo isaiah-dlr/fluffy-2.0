@@ -4,7 +4,7 @@ body {
 }
 
 :root {
-    --q-primary: #005487;
+    --q-primary: #005387;
     --q-secondary: #de7c00;
     --q-accent: #4e5b31;
 }
@@ -56,7 +56,7 @@ body {
 }
 
 .big-tabs .q-tab {
-    color: var(--q-secondary);
+    color: var(--q-primary);
 }
 
 .big-tabs .q-tab--active {
