@@ -78,17 +78,15 @@ def render():
             # ---- MODEL TAB ----
             with ui.tab_panel(tab_model):
                 with ui.column().classes("w-full gap-5"):
-
                     ui.label("Model Controls").style(
-                        "font-size: 1.2rem; font-weight: 700; color: var(--q-primary);"
-                    )
+                        "font-size: 1.2rem; font-weight: 700; color: var(--q-primary);")
 
-                    # Controls row
-                    with ui.row().classes("w-full gap-4 flex-wrap items-end"):
+                    # --- Date Range Selection ---
+                    with ui.row().classes("w-full gap-4 flex-wrap"):
 
                         # --- Start Date ---
                         with ui.column().classes("gap-1"):
-                            ui.label("Start Date").classes("text-sm font-medium text-gray-600")
+                            ui.label("Start Date").classes("section-label")
                             with ui.input(value=str(min_date)).classes("w-44 compact-date") as start_date_input:
                                 with ui.menu().props("no-parent-event").classes("date-menu") as start_menu:
                                     start_calendar = ui.date(
@@ -102,42 +100,52 @@ def render():
 
                         # --- End Date ---
                         with ui.column().classes("gap-1"):
-                            ui.label("End Date").classes("text-sm font-medium text-gray-600")
+                            ui.label("End Date").classes("section-label")
                             with ui.input(value=str(max_date)).classes("w-44 compact-date") as end_date_input:
                                 with ui.menu().props("no-parent-event").classes("date-menu") as end_menu:
                                     end_calendar = ui.date(
                                         value=str(max_date),
                                         on_change=lambda e: (
                                             end_date_input.set_value(e.value),
-                                            end_menu.close()
-                                        )
-                                    )
+                                            end_menu.close()))
                                 end_date_input.on("click", end_menu.open)
 
+                    # --- Analysis Controls ---
                     with ui.row().classes("w-full gap-4 flex-wrap"):
-                        period_select = ui.select(
-                            label="Period Level",
-                            options=["Daily", "Weekly", "Monthly"],
-                            value="Daily",
-                        ).style("min-width: 160px;")
+                        with ui.column().classes("gap-1"):
+                            ui.label("Select Period Level").classes("section-label")
+                            period_select = ui.select(
+                                options=["Daily", "Weekly", "Monthly"],
+                                value="Daily",
+                            ).style("min-width: 160px;")
+                        
+                        with ui.column().classes("gap-1"):
+                            ui.label("Select KPI to Report").classes("section-label")
+                            view_select = ui.select(
+                                label="Select Analysis",
+                                options=VIEW_OPTIONS,
+                                value="Overall Case Movement",
+                            ).style("min-width: 280px;")
 
-                        view_select = ui.select(
-                            label="Select Analysis",
-                            options=VIEW_OPTIONS,
-                            value="Overall Case Movement",
-                        ).style("min-width: 280px;")
+                    # --- Employee Filter & Selection ---    
+                    with ui.row().classes("w-full gap-4 flex-wrap"):
+                        with ui.column().classes("gap-1"):
+                            ui.label("Select Report View").style("color: var(--q-primary); font-size: 1.2rem; font-weight: 600;")
+                            mode_radio = ui.radio(
+                                ["Overall", "By Employee"],
+                                value="Overall",
+                            ).props("inline").style(f"color: var(--q-secondary); font-size: 1rem; font-weight: 600;")
+                        
+                        with ui.column().classes("gap-1"):
+                            ui.label("Employee Filter (only for By Employee mode)").classes("section-label")
 
-                        mode_radio = ui.radio(
-                            ["Overall", "By Employee"],
-                            value="Overall",
-                        ).props("inline").style(f"color: var(--q-secondary); font-size: 1rem; font-weight: 700;")
-
-                    employee_select = ui.select(
-                        label="Select Employees (only for By Employee mode)",
-                        options=employees,
-                        multiple=True,
-                        value=[],
-                    ).classes("w-full")
+                            employee_select = ui.select(
+                                options=employees,
+                                multiple=True,
+                                with_input=True,
+                                value=employees[:1],
+                            ).props("dense options-dense use-chips clearable"
+                                    ).classes("col-span-2 entity-select")
 
                     chart_container = ui.column().classes("w-full gap-4")
                     table_container = ui.column().classes("w-full")
@@ -179,16 +187,27 @@ def render():
                             "Employee Weight Movement":lambda: kpi_summaries.employee_weight_summary(filtered, period),
                             "Employee Pallets":        lambda: kpi_summaries.employee_pallet_summary(filtered, period),
                             "Order Tier Distribution": lambda: kpi_summaries.order_tier_distribution(filtered),
-                            "Pallet Effort Model (Experimental)": lambda: kpi_summaries.pallet_effort_model(filtered),
                         }
 
                         try:
-                            if view in CHART_VIEWS:
+                            if view == "Pallet Effort Model (Experimental)":
+                                df_result, fig = kpi_summaries.pallet_effort_model(filtered)
+
+                                with chart_container:
+                                    ui.plotly(fig).classes("w-full")
+
+                                with table_container:
+                                    _render_dataframe(df_result, title="Pallet Effort by Tier & Employee")
+
+                            elif view in CHART_VIEWS:
                                 df_result = CHART_VIEWS[view]()
+
                                 with chart_container:
                                     import plotly.express as px
+
                                     df_plot = df_result.reset_index()
                                     col_y = df_plot.columns[-1]
+
                                     fig = px.line(
                                         df_plot,
                                         x="Period",
@@ -196,17 +215,21 @@ def render():
                                         title=view,
                                         markers=True,
                                     )
+
                                     fig.update_layout(
                                         height=400,
                                         margin=dict(l=30, r=20, t=40, b=60),
                                         plot_bgcolor="white",
                                     )
+
                                     fig.update_xaxes(showgrid=True, gridcolor="#eee")
                                     fig.update_yaxes(showgrid=True, gridcolor="#eee")
+
                                     ui.plotly(fig).classes("w-full")
 
                             elif view in TABLE_VIEWS:
                                 df_result = TABLE_VIEWS[view]()
+
                                 with table_container:
                                     _render_dataframe(df_result, title=view)
 

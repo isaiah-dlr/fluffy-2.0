@@ -28,6 +28,7 @@ body {
 
 .section-label {
     color: var(--q-secondary);
+    font-size: 1.0rem;
     font-weight: 600;
 }
 
