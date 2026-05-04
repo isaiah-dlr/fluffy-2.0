@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 import pandas as pd
+import io
 
 from . import config
 
@@ -204,3 +205,11 @@ def load_and_build_master() -> pd.DataFrame:
     qclog = load_qclog()
     weights = load_weights()
     return build_master_dataset(orders, qclog, weights)
+
+def excel_bytes(df):
+    buf = io.BytesIO()
+    df_out = df.copy()
+    for col in df_out.select_dtypes(include=["datetime", "datetimetz"]):
+        df_out[col] = df_out[col].dt.strftime("%Y-%m-%d")
+    df_out.to_excel(buf, index=False)
+    return buf.getvalue()

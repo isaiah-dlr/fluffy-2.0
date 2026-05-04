@@ -77,10 +77,28 @@ def render():
 
             # ---- MODEL TAB ----
             with ui.tab_panel(tab_model):
-                with ui.column().classes("w-full gap-5"):
+                with ui.column().classes("w-full gap-4"):
                     ui.label("Model Controls").style(
                         "font-size: 1.2rem; font-weight: 700; color: var(--q-primary);")
 
+
+                    # --- Analysis Controls ---
+                    with ui.grid(columns=2).classes("w-full gap-4 flex-wrap"):
+                        with ui.column().classes("gap-1"):
+                            ui.label("Select Period Level").classes("section-label")
+                            period_select = ui.toggle(
+                                options=["Daily","Weekly", "Monthly"],
+                                value="Weekly",
+                                ).props("unelevated spread").classes("col-span-2 q-btn-toggle")
+                        
+                        with ui.column().classes("gap-1"):
+                            ui.label("Select KPI to Report").classes("section-label")
+                            view_select = ui.select(
+                                label="Select Analysis",
+                                options=VIEW_OPTIONS,
+                                value="Overall Case Movement",
+                            ).style("min-width: 280px;")
+                            
                     # --- Date Range Selection ---
                     with ui.row().classes("w-full gap-4 flex-wrap"):
 
@@ -110,34 +128,17 @@ def render():
                                             end_menu.close()))
                                 end_date_input.on("click", end_menu.open)
 
-                    # --- Analysis Controls ---
-                    with ui.row().classes("w-full gap-4 flex-wrap"):
-                        with ui.column().classes("gap-1"):
-                            ui.label("Select Period Level").classes("section-label")
-                            period_select = ui.select(
-                                options=["Daily", "Weekly", "Monthly"],
-                                value="Daily",
-                            ).style("min-width: 160px;")
-                        
-                        with ui.column().classes("gap-1"):
-                            ui.label("Select KPI to Report").classes("section-label")
-                            view_select = ui.select(
-                                label="Select Analysis",
-                                options=VIEW_OPTIONS,
-                                value="Overall Case Movement",
-                            ).style("min-width: 280px;")
-
                     # --- Employee Filter & Selection ---    
-                    with ui.row().classes("w-full gap-4 flex-wrap"):
+                    with ui.grid(columns=2).classes("w-full gap-4 flex-wrap"):
                         with ui.column().classes("gap-1"):
                             ui.label("Select Report View").style("color: var(--q-primary); font-size: 1.2rem; font-weight: 600;")
-                            mode_radio = ui.radio(
+                            employee_mode_radio = ui.radio(
                                 ["Overall", "By Employee"],
                                 value="Overall",
                             ).props("inline").style(f"color: var(--q-secondary); font-size: 1rem; font-weight: 600;")
                         
                         with ui.column().classes("gap-1"):
-                            ui.label("Employee Filter (only for By Employee mode)").classes("section-label")
+                            employee_filter = ui.label("Employee Filter (only for By Employee mode)").classes("section-label")
 
                             employee_select = ui.select(
                                 options=employees,
@@ -146,6 +147,40 @@ def render():
                                 value=employees[:1],
                             ).props("dense options-dense use-chips clearable"
                                     ).classes("col-span-2 entity-select")
+                            
+                                
+                    # ---- Employee mode toggle ----
+                    def _toggle_employee_mode(e=None):
+                        """Show/hide date inputs depending on the selected employee mode.
+
+                        Handles three call signatures:
+                        • called with no argument (initial render)              → read widget value directly
+                        • called from on_change with a ValueChangeEventArguments → use e.value
+                        • called from 'update:model-value' Vue event             → use e.args (may be a list)
+                        """
+                        if e is None:
+                            selected_value = employee_mode_radio.value
+                        elif hasattr(e, "value"):
+                            # ValueChangeEventArguments (NiceGUI on_change)
+                            selected_value = e.value
+                        elif hasattr(e, "args"):
+                            # GenericEventArguments from a raw Vue event binding.
+                            # e.args can be the bare string OR a list like [new_val, old_val].
+                            raw = e.args
+                            selected_value = raw[0] if isinstance(raw, (list, tuple)) else raw
+                        else:
+                            selected_value = str(e)
+
+                        is_range = selected_value == "Overall"
+
+                        # Toggle visibility of the four inputs
+                        employee_select.set_visibility(not is_range)
+                        employee_filter.set_visibility(not is_range)
+
+                    employee_mode_radio.on("update:model-value", _toggle_employee_mode)
+                    _toggle_employee_mode()   # apply correct initial state without relying on an event object
+
+                    ui.separator()
 
                     chart_container = ui.column().classes("w-full gap-4")
                     table_container = ui.column().classes("w-full")
@@ -163,7 +198,7 @@ def render():
                             return
 
                         selected_employees = (
-                            employee_select.value if mode_radio.value == "By Employee" else None
+                            employee_select.value if employee_mode_radio.value == "By Employee" else None
                         )
 
                         filtered = kpi_summaries.filter_master(
@@ -186,7 +221,6 @@ def render():
                             "Employee Case Movement":  lambda: kpi_summaries.employee_cases_summary(filtered, period),
                             "Employee Weight Movement":lambda: kpi_summaries.employee_weight_summary(filtered, period),
                             "Employee Pallets":        lambda: kpi_summaries.employee_pallet_summary(filtered, period),
-                            "Order Tier Distribution": lambda: kpi_summaries.order_tier_distribution(filtered),
                         }
 
                         try:
@@ -198,6 +232,23 @@ def render():
 
                                 with table_container:
                                     _render_dataframe(df_result, title="Pallet Effort by Tier & Employee")
+
+                            elif view == "Order Tier Distribution":
+                                tier_dist_df = kpi_summaries.order_tier_distribution(filtered)
+                                # unpack 4 values now instead of 3
+                                summary_df, trend_fig, orders_fig, heatmap_fig = kpi_summaries.order_tier_period_summary(filtered, period)
+
+                                with chart_container:
+                                    ui.label(f"Effort Trend — {period}")
+                                    ui.plotly(trend_fig).classes("w-full")
+                                    ui.label(f"Orders by Tier — {period}")   # ← new
+                                    ui.plotly(orders_fig).classes("w-full")             # ← new
+                                    ui.label(f"Order Count Heatmap — {period} × Tier")
+                                    ui.plotly(heatmap_fig).classes("w-full")
+
+                                with table_container:
+                                    _render_dataframe(tier_dist_df, title="Overall Tier Distribution (full date range)")
+                                    _render_dataframe(summary_df, title=f"Period × Tier Breakdown ({period})")
 
                             elif view in CHART_VIEWS:
                                 df_result = CHART_VIEWS[view]()
@@ -274,32 +325,38 @@ def render():
 
                     for title, items in sections:
                         with ui.card().classes("w-full").style("border-radius: 10px;"):
-                            ui.label(title).style("font-weight: 600; color: var(--q-primary);")
+                            ui.label(title).style("font-weight: 600; font-size: 1.0rem; color: var(--q-primary);")
                             for item in items:
                                 with ui.row().classes("items-center gap-2"):
-                                    ui.label("•").style("color: var(--q-accent);")
-                                    ui.label(item)
+                                    ui.label("•").style("font-size: 1.0rem; color: var(--q-accent);")
+                                    ui.label(item).style("font-size: 1.0rem; color: var(--q-accent);")
 
                     with ui.card().classes("w-full").style("border-radius: 10px;"):
-                        ui.label("Merge Logic").style("font-weight: 600; color: var(--q-primary);")
-                        ui.label("All datasets are merged using a normalized Order Number key.")
+                        ui.label("Merge Logic").style("font-weight: 600; font-size: 1.0rem; color: var(--q-primary);")
+                        ui.label("All datasets are merged using a normalized Order Number key.").style("font-size: 1.0rem; color: var(--q-accent);")
 
                     with ui.card().classes("w-full").style("border-radius: 10px;"):
-                        ui.label("Feature Engineering").style("font-weight: 600; color: var(--q-primary);")
+                        ui.label("Feature Engineering").style("font-weight: 600; font-size: 1.0rem; color: var(--q-primary);")
                         for item in [
                             "Order Size Tier model (scaled composite index)",
                             "Pallet Effort multiplier model",
                             "Employee productivity metrics",
                         ]:
                             with ui.row().classes("items-center gap-2"):
-                                ui.label("•").style("color: var(--q-accent);")
-                                ui.label(item)
+                                ui.label("•").style("font-size: 1.0rem; color: var(--q-accent);")
+                                ui.label(item).style("font-size: 1.0rem; color: var(--q-accent);")
 
                     ui.separator()
                     ui.label("Cleaned Master Dataset Preview (first 50 rows)").style(
-                        "font-weight: 600; color: var(--q-primary);"
+                        "font-weight: 600; color: var(--q-primary); font-size: 1.2rem;"
                     )
                     _render_dataframe(master.head(50))
+
+                    ui.button("Download Master Dataset as Excel", on_click=lambda: ui.download(
+                        src=kpi_cleaner.excel_bytes(master),
+                        filename="master_dataset.xlsx",
+                        media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    )).classes('button')
 
 
 def _render_dataframe(df: pd.DataFrame, title: str = ""):

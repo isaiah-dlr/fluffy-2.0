@@ -180,7 +180,7 @@ def render():
         with ui.row().classes("w-full gap-4 flex-wrap items-end"):
 
             # --- Start Date ---
-            with ui.column().classes("gap-1"):
+            with ui.column().classes("gap-1") as start_date_col:
                 ui.label("Start Date").classes("text-sm font-medium text-gray-600")
                 with ui.input(value=str(min_date)).classes("w-44 compact-date") as start_date_input:
                     with ui.menu().props("no-parent-event").classes("date-menu") as start_menu:
@@ -194,7 +194,7 @@ def render():
                     start_date_input.on("click", start_menu.open)
 
             # --- End Date ---
-            with ui.column().classes("gap-1"):
+            with ui.column().classes("gap-1") as end_date_col:
                 ui.label("End Date").classes("text-sm font-medium text-gray-600")
                 with ui.input(value=str(max_date)).classes("w-44 compact-date") as end_date_input:
                     with ui.menu().props("no-parent-event").classes("date-menu") as end_menu:
@@ -222,13 +222,14 @@ def render():
                     anchor_date_input.on("click", anchor_menu.open)
 
             # --- Lookback periods (hidden initially) ---
-            lookback_input = ui.number(
-                "Periods to Look Back",
-                value=3,
-                min=0,
-                max=52,
-                step=1,
-            ).classes("w-52")
+            with ui.column().classes("gap-1") as lookback_col:
+                ui.label("Lookback Periods").classes("text-sm font-medium text-gray-600")
+                lookback_input = ui.number(
+                    value=3,
+                    min=0,
+                    max=52,
+                    step=1,
+                ).classes("w-44 compact-date")
 
         yoy_toggle = ui.checkbox("Include prior fiscal year same-dates?", value=False).style(
             f"color: var(--q-secondary); margin-top: 0.5rem; font-size: 1rem; font-weight: 600;"
@@ -259,10 +260,10 @@ def render():
             is_range = selected_value == "Date Range"
 
             # Toggle visibility of the four inputs
-            start_date_input.set_visibility(is_range)
-            end_date_input.set_visibility(is_range)
-            anchor_date_input.set_visibility(not is_range)
-            lookback_input.set_visibility(not is_range)
+            start_date_col.set_visibility(is_range)
+            end_date_col.set_visibility(is_range)
+            anchor_date_col.set_visibility(not is_range)
+            lookback_col.set_visibility(not is_range)
 
         window_mode_radio.on("update:model-value", _toggle_window_mode)
         _toggle_window_mode()   # apply correct initial state without relying on an event object

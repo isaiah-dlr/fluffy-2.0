@@ -33,7 +33,7 @@ def navbar():
         "background: var(--q-primary); box-shadow: 0 2px 8px rgba(0,0,0,0.3);"
     ):
         with ui.row().classes("items-center gap-3"):
-            ui.image(f"{str(asset_dir)}/fsd/fsdlogo.png").style("width: 64px; height: 32px; z-index: 1000;")
+            ui.image(f"{str(asset_dir)}/fsd/fsdlogo_white.png").style("width: 72px; height: 48px; padding: 4px; z-index: 1000;")
             ui.label("🥑").style("font-size: 1.8rem; font-weight: 700;")
     
         if is_logged_in():
